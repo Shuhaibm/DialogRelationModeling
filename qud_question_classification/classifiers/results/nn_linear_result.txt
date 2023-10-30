@@ -1,0 +1,118 @@
+********** First run - input question**********
+
+id_to_label:  {0: 'Result', 1: 'Comment', 2: 'Q_Elab', 3: 'Continuation', 4: 'Contrast', 5: 'Correction', 6: 'Acknowledgement', 7: 'Parallel', 8: 'Background', 9: 'Explanation', 10: 'Conditional', 11: 'Clarification_question', 12: 'Elaboration', 13: 'Alternation', 14: 'Question_answer_pair', 15: 'Narration'}
+Accuracy: 0.20
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        29
+           1       0.21      0.28      0.24       165
+           2       1.00      0.01      0.03        72
+           3       0.13      0.04      0.06       113
+           4       0.00      0.00      0.00        44
+           5       0.00      0.00      0.00        21
+           6       0.14      0.17      0.16       148
+           7       0.00      0.00      0.00        15
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00        31
+          10       0.00      0.00      0.00        18
+          11       0.00      0.00      0.00        33
+          12       0.09      0.32      0.14       101
+          13       0.00      0.00      0.00        19
+          14       0.37      0.39      0.38       305
+          15       0.00      0.00      0.00        13
+
+    accuracy                           0.20      1128
+   macro avg       0.12      0.08      0.06      1128
+weighted avg       0.23      0.20      0.18      1128
+
+
+
+********** Second run - input sentence pairs and question**********
+
+id_to_label:  {0: 'Result', 1: 'Comment', 2: 'Q_Elab', 3: 'Continuation', 4: 'Contrast', 5: 'Correction', 6: 'Acknowledgement', 7: 'Parallel', 8: 'Background', 9: 'Explanation', 10: 'Conditional', 11: 'Clarification_question', 12: 'Elaboration', 13: 'Alternation', 14: 'Question_answer_pair', 15: 'Narration'}
+Accuracy: 0.14
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        29
+           1       0.18      0.13      0.15       165
+           2       0.00      0.00      0.00        72
+           3       0.12      0.62      0.20       113
+           4       0.00      0.00      0.00        44
+           5       0.00      0.00      0.00        21
+           6       0.19      0.11      0.14       148
+           7       0.00      0.00      0.00        15
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00        31
+          10       0.00      0.00      0.00        18
+          11       0.00      0.00      0.00        33
+          12       0.13      0.35      0.19       101
+          13       0.00      0.00      0.00        19
+          14       0.38      0.05      0.09       305
+          15       0.00      0.00      0.00        13
+
+    accuracy                           0.14      1128
+   macro avg       0.06      0.08      0.05      1128
+weighted avg       0.18      0.14      0.10      1128
+
+
+
+********** Third run - masked speakers, input sentence pairs and question**********
+
+id_to_label:  {0: 'Result', 1: 'Comment', 2: 'Q_Elab', 3: 'Continuation', 4: 'Contrast', 5: 'Correction', 6: 'Acknowledgement', 7: 'Parallel', 8: 'Background', 9: 'Explanation', 10: 'Conditional', 11: 'Clarification_question', 12: 'Elaboration', 13: 'Alternation', 14: 'Question_answer_pair', 15: 'Narration'}
+Accuracy: 0.23
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        29
+           1       0.16      0.12      0.14       165
+           2       0.00      0.00      0.00        72
+           3       0.14      0.05      0.08       113
+           4       0.00      0.00      0.00        44
+           5       0.00      0.00      0.00        21
+           6       0.18      0.36      0.24       148
+           7       0.00      0.00      0.00        15
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00        31
+          10       0.00      0.00      0.00        18
+          11       0.00      0.00      0.00        33
+          12       0.00      0.00      0.00       101
+          13       0.00      0.00      0.00        19
+          14       0.29      0.60      0.39       305
+          15       0.00      0.00      0.00        13
+
+    accuracy                           0.23      1128
+   macro avg       0.05      0.07      0.05      1128
+weighted avg       0.14      0.23      0.16      1128
+
+
+
+********** Fourth run - masked speakers, input sentence pairs, distance and question**********
+
+id_to_label:  {0: 'Result', 1: 'Comment', 2: 'Q_Elab', 3: 'Continuation', 4: 'Contrast', 5: 'Correction', 6: 'Acknowledgement', 7: 'Parallel', 8: 'Background', 9: 'Explanation', 10: 'Conditional', 11: 'Clarification_question', 12: 'Elaboration', 13: 'Alternation', 14: 'Question_answer_pair', 15: 'Narration'}
+Accuracy: 0.21
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        29
+           1       0.17      0.02      0.04       165
+           2       1.00      0.01      0.03        72
+           3       0.17      0.26      0.20       113
+           4       0.00      0.00      0.00        44
+           5       0.00      0.00      0.00        21
+           6       0.00      0.00      0.00       148
+           7       0.00      0.00      0.00        15
+           8       0.00      0.00      0.00         1
+           9       0.00      0.00      0.00        31
+          10       0.00      0.00      0.00        18
+          11       0.00      0.00      0.00        33
+          12       0.11      0.45      0.18       101
+          13       0.00      0.00      0.00        19
+          14       0.30      0.51      0.38       305
+          15       0.00      0.00      0.00        13
+
+    accuracy                           0.21      1128
+   macro avg       0.11      0.08      0.05      1128
+weighted avg       0.20      0.21      0.15      1128
+
