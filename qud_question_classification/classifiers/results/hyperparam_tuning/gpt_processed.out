@@ -1,0 +1,2452 @@
+********** Run - model: gpt2, learning rate = 2e-05 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:30<12:20, 15.46it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:10, 15.20it/s]{'eval_loss': 1.510483741760254, 'eval_runtime': 2.2691, 'eval_samples_per_second': 603.311, 'eval_steps_per_second': 75.799, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:34, 15.52it/s]{'eval_loss': 1.2654775381088257, 'eval_runtime': 2.2694, 'eval_samples_per_second': 603.238, 'eval_steps_per_second': 75.79, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:20, 15.27it/s]{'eval_loss': 1.2253233194351196, 'eval_runtime': 2.2765, 'eval_samples_per_second': 601.365, 'eval_steps_per_second': 75.555, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:46<06:50, 15.51it/s]{'eval_loss': 1.272637963294983, 'eval_runtime': 2.3002, 'eval_samples_per_second': 595.178, 'eval_steps_per_second': 74.778, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:21<05:32, 15.30it/s]{'eval_loss': 1.2597683668136597, 'eval_runtime': 2.2768, 'eval_samples_per_second': 601.286, 'eval_steps_per_second': 75.545, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:54<04:05, 15.54it/s]{'eval_loss': 1.2959591150283813, 'eval_runtime': 2.2777, 'eval_samples_per_second': 601.053, 'eval_steps_per_second': 75.516, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:31<02:46, 15.29it/s]{'eval_loss': 1.3643016815185547, 'eval_runtime': 2.2601, 'eval_samples_per_second': 605.724, 'eval_steps_per_second': 76.103, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:03<01:21, 15.54it/s]{'eval_loss': 1.3849047422409058, 'eval_runtime': 2.2657, 'eval_samples_per_second': 604.224, 'eval_steps_per_second': 75.914, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:40<00:00, 15.29it/s]{'eval_loss': 1.4176623821258545, 'eval_runtime': 2.2619, 'eval_samples_per_second': 605.23, 'eval_steps_per_second': 76.041, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.4114850759506226, 'eval_runtime': 2.2673, 'eval_samples_per_second': 603.801, 'eval_steps_per_second': 75.861, 'epoch': 10.0}
+
+{'train_runtime': 942.3482, 'train_samples_per_second': 108.049, 'train_steps_per_second': 13.509, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.6728723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.86      0.77       148
+
+           Alternation       0.89      0.84      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.42      0.45      0.43        33
+
+               Comment       0.63      0.62      0.63       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.56      0.44      0.50       113
+
+              Contrast       0.55      0.39      0.45        44
+
+            Correction       0.50      0.24      0.32        21
+
+           Elaboration       0.57      0.57      0.57       101
+
+           Explanation       0.36      0.42      0.39        31
+
+             Narration       1.00      0.08      0.14        13
+
+              Parallel       0.71      0.33      0.45        15
+
+                Q_Elab       0.65      0.65      0.65        72
+
+  Question_answer_pair       0.84      0.92      0.88       305
+
+                Result       0.48      0.41      0.44        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.59      0.49      0.50      1128
+
+          weighted avg       0.67      0.67      0.66      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:30, 15.27it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<10:59, 15.43it/s]{'eval_loss': 1.510483741760254, 'eval_runtime': 2.271, 'eval_samples_per_second': 602.829, 'eval_steps_per_second': 75.739, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:43, 15.27it/s]{'eval_loss': 1.2654775381088257, 'eval_runtime': 2.271, 'eval_samples_per_second': 602.827, 'eval_steps_per_second': 75.739, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:11<08:13, 15.49it/s]{'eval_loss': 1.2253233194351196, 'eval_runtime': 2.2771, 'eval_samples_per_second': 601.215, 'eval_steps_per_second': 75.536, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:43<06:58, 15.22it/s]{'eval_loss': 1.272637963294983, 'eval_runtime': 2.3162, 'eval_samples_per_second': 591.049, 'eval_steps_per_second': 74.259, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:18<05:28, 15.51it/s]{'eval_loss': 1.2597683668136597, 'eval_runtime': 2.2606, 'eval_samples_per_second': 605.593, 'eval_steps_per_second': 76.086, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:50<04:10, 15.27it/s]{'eval_loss': 1.2959591150283813, 'eval_runtime': 2.263, 'eval_samples_per_second': 604.958, 'eval_steps_per_second': 76.006, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:25<02:43, 15.53it/s]{'eval_loss': 1.3643016815185547, 'eval_runtime': 2.26, 'eval_samples_per_second': 605.762, 'eval_steps_per_second': 76.107, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:57<01:26, 14.72it/s]{'eval_loss': 1.3849047422409058, 'eval_runtime': 2.3042, 'eval_samples_per_second': 594.13, 'eval_steps_per_second': 74.646, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:33<00:00, 15.59it/s]{'eval_loss': 1.4176623821258545, 'eval_runtime': 2.2761, 'eval_samples_per_second': 601.472, 'eval_steps_per_second': 75.568, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.4114850759506226, 'eval_runtime': 2.2739, 'eval_samples_per_second': 602.059, 'eval_steps_per_second': 75.642, 'epoch': 10.0}
+
+{'train_runtime': 935.4619, 'train_samples_per_second': 108.845, 'train_steps_per_second': 13.608, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.6728723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.86      0.77       148
+
+           Alternation       0.89      0.84      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.42      0.45      0.43        33
+
+               Comment       0.63      0.62      0.63       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.56      0.44      0.50       113
+
+              Contrast       0.55      0.39      0.45        44
+
+            Correction       0.50      0.24      0.32        21
+
+           Elaboration       0.57      0.57      0.57       101
+
+           Explanation       0.36      0.42      0.39        31
+
+             Narration       1.00      0.08      0.14        13
+
+              Parallel       0.71      0.33      0.45        15
+
+                Q_Elab       0.65      0.65      0.65        72
+
+  Question_answer_pair       0.84      0.92      0.88       305
+
+                Result       0.48      0.41      0.44        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.59      0.49      0.50      1128
+
+          weighted avg       0.67      0.67      0.66      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:27, 15.32it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:02, 15.38it/s]{'eval_loss': 1.510483741760254, 'eval_runtime': 2.2783, 'eval_samples_per_second': 600.893, 'eval_steps_per_second': 75.496, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:43, 15.28it/s]{'eval_loss': 1.2654775381088257, 'eval_runtime': 2.2743, 'eval_samples_per_second': 601.936, 'eval_steps_per_second': 75.627, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:12<08:12, 15.51it/s]{'eval_loss': 1.2253233194351196, 'eval_runtime': 2.2688, 'eval_samples_per_second': 603.397, 'eval_steps_per_second': 75.81, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:44<06:58, 15.21it/s]{'eval_loss': 1.272637963294983, 'eval_runtime': 2.2712, 'eval_samples_per_second': 602.778, 'eval_steps_per_second': 75.732, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:20<05:28, 15.48it/s]{'eval_loss': 1.2597683668136597, 'eval_runtime': 2.2701, 'eval_samples_per_second': 603.051, 'eval_steps_per_second': 75.767, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:52<04:11, 15.21it/s]{'eval_loss': 1.2959591150283813, 'eval_runtime': 2.2741, 'eval_samples_per_second': 601.995, 'eval_steps_per_second': 75.634, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:28<02:43, 15.53it/s]{'eval_loss': 1.3643016815185547, 'eval_runtime': 2.2852, 'eval_samples_per_second': 599.06, 'eval_steps_per_second': 75.265, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:00<01:23, 15.27it/s]{'eval_loss': 1.3849047422409058, 'eval_runtime': 2.2711, 'eval_samples_per_second': 602.796, 'eval_steps_per_second': 75.735, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:35<00:00, 15.56it/s]{'eval_loss': 1.4176623821258545, 'eval_runtime': 2.2702, 'eval_samples_per_second': 603.022, 'eval_steps_per_second': 75.763, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.4114850759506226, 'eval_runtime': 2.253, 'eval_samples_per_second': 607.641, 'eval_steps_per_second': 76.344, 'epoch': 10.0}
+
+{'train_runtime': 938.0358, 'train_samples_per_second': 108.546, 'train_steps_per_second': 13.571, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.6728723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.86      0.77       148
+
+           Alternation       0.89      0.84      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.42      0.45      0.43        33
+
+               Comment       0.63      0.62      0.63       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.56      0.44      0.50       113
+
+              Contrast       0.55      0.39      0.45        44
+
+            Correction       0.50      0.24      0.32        21
+
+           Elaboration       0.57      0.57      0.57       101
+
+           Explanation       0.36      0.42      0.39        31
+
+             Narration       1.00      0.08      0.14        13
+
+              Parallel       0.71      0.33      0.45        15
+
+                Q_Elab       0.65      0.65      0.65        72
+
+  Question_answer_pair       0.84      0.92      0.88       305
+
+                Result       0.48      0.41      0.44        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.59      0.49      0.50      1128
+
+          weighted avg       0.67      0.67      0.66      1128
+
+Average accuracy = 0.6728723404255318
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:26, 15.35it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:28, 14.79it/s]{'eval_loss': 1.9483941793441772, 'eval_runtime': 2.3086, 'eval_samples_per_second': 592.99, 'eval_steps_per_second': 74.503, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:42, 15.29it/s]{'eval_loss': 1.819043517112732, 'eval_runtime': 2.3108, 'eval_samples_per_second': 592.447, 'eval_steps_per_second': 74.434, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:12, 15.51it/s]{'eval_loss': 1.6199263334274292, 'eval_runtime': 2.3081, 'eval_samples_per_second': 593.125, 'eval_steps_per_second': 74.52, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:45<06:55, 15.30it/s]{'eval_loss': 1.7045602798461914, 'eval_runtime': 2.3148, 'eval_samples_per_second': 591.421, 'eval_steps_per_second': 74.306, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:20<05:31, 15.34it/s]{'eval_loss': 1.823047399520874, 'eval_runtime': 2.3094, 'eval_samples_per_second': 592.787, 'eval_steps_per_second': 74.477, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:52<04:08, 15.35it/s]{'eval_loss': 1.9921557903289795, 'eval_runtime': 2.3101, 'eval_samples_per_second': 592.608, 'eval_steps_per_second': 74.455, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:28<02:43, 15.53it/s]{'eval_loss': 2.077706813812256, 'eval_runtime': 2.3047, 'eval_samples_per_second': 593.991, 'eval_steps_per_second': 74.629, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:00<01:23, 15.31it/s]{'eval_loss': 2.1311745643615723, 'eval_runtime': 2.3099, 'eval_samples_per_second': 592.675, 'eval_steps_per_second': 74.463, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:36<00:00, 15.54it/s]{'eval_loss': 2.065730333328247, 'eval_runtime': 2.3117, 'eval_samples_per_second': 592.201, 'eval_steps_per_second': 74.404, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.1748111248016357, 'eval_runtime': 2.3145, 'eval_samples_per_second': 591.484, 'eval_steps_per_second': 74.314, 'epoch': 10.0}
+
+{'train_runtime': 938.726, 'train_samples_per_second': 108.466, 'train_steps_per_second': 13.561, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.4698581560283688
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.86      0.41      0.55       148
+
+           Alternation       0.84      0.84      0.84        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.39      0.40        33
+
+               Comment       0.51      0.59      0.55       165
+
+           Conditional       0.33      0.50      0.40        18
+
+          Continuation       0.36      0.56      0.44       113
+
+              Contrast       0.40      0.39      0.39        44
+
+            Correction       0.14      0.24      0.17        21
+
+           Elaboration       0.28      0.63      0.39       101
+
+           Explanation       0.26      0.48      0.34        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.38      0.20      0.26        15
+
+                Q_Elab       0.59      0.49      0.53        72
+
+  Question_answer_pair       0.96      0.39      0.55       305
+
+                Result       0.27      0.48      0.35        29
+
+              accuracy                           0.47      1128
+
+             macro avg       0.41      0.41      0.39      1128
+
+          weighted avg       0.61      0.47      0.49      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:30<12:24, 15.39it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:06<11:07, 15.27it/s]{'eval_loss': 1.9483941793441772, 'eval_runtime': 2.3177, 'eval_samples_per_second': 590.667, 'eval_steps_per_second': 74.211, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:38<09:33, 15.55it/s]{'eval_loss': 1.819043517112732, 'eval_runtime': 2.3443, 'eval_samples_per_second': 583.964, 'eval_steps_per_second': 73.369, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:14<08:18, 15.31it/s]{'eval_loss': 1.6199263334274292, 'eval_runtime': 2.3159, 'eval_samples_per_second': 591.144, 'eval_steps_per_second': 74.271, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:46<06:49, 15.54it/s]{'eval_loss': 1.7045602798461914, 'eval_runtime': 2.31, 'eval_samples_per_second': 592.633, 'eval_steps_per_second': 74.458, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:23<05:35, 15.17it/s]{'eval_loss': 1.823047399520874, 'eval_runtime': 2.3097, 'eval_samples_per_second': 592.727, 'eval_steps_per_second': 74.47, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:55<04:05, 15.55it/s]{'eval_loss': 1.9921557903289795, 'eval_runtime': 2.3105, 'eval_samples_per_second': 592.508, 'eval_steps_per_second': 74.442, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:31<02:46, 15.29it/s]{'eval_loss': 2.077706813812256, 'eval_runtime': 2.3104, 'eval_samples_per_second': 592.536, 'eval_steps_per_second': 74.446, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:22, 15.52it/s]{'eval_loss': 2.1311745643615723, 'eval_runtime': 2.3086, 'eval_samples_per_second': 592.996, 'eval_steps_per_second': 74.504, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:41<00:00, 15.25it/s]{'eval_loss': 2.065730333328247, 'eval_runtime': 2.3171, 'eval_samples_per_second': 590.827, 'eval_steps_per_second': 74.231, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.1748111248016357, 'eval_runtime': 2.316, 'eval_samples_per_second': 591.098, 'eval_steps_per_second': 74.265, 'epoch': 10.0}
+
+{'train_runtime': 943.7785, 'train_samples_per_second': 107.885, 'train_steps_per_second': 13.488, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.4698581560283688
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.86      0.41      0.55       148
+
+           Alternation       0.84      0.84      0.84        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.39      0.40        33
+
+               Comment       0.51      0.59      0.55       165
+
+           Conditional       0.33      0.50      0.40        18
+
+          Continuation       0.36      0.56      0.44       113
+
+              Contrast       0.40      0.39      0.39        44
+
+            Correction       0.14      0.24      0.17        21
+
+           Elaboration       0.28      0.63      0.39       101
+
+           Explanation       0.26      0.48      0.34        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.38      0.20      0.26        15
+
+                Q_Elab       0.59      0.49      0.53        72
+
+  Question_answer_pair       0.96      0.39      0.55       305
+
+                Result       0.27      0.48      0.35        29
+
+              accuracy                           0.47      1128
+
+             macro avg       0.41      0.41      0.39      1128
+
+          weighted avg       0.61      0.47      0.49      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:30<12:57, 14.73it/s]{'loss': 1.8842, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:10<11:14, 15.10it/s]{'eval_loss': 1.9483941793441772, 'eval_runtime': 2.3063, 'eval_samples_per_second': 593.592, 'eval_steps_per_second': 74.578, 'epoch': 1.0}
+
+{'loss': 1.3108, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:43<09:41, 15.31it/s]{'eval_loss': 1.819043517112732, 'eval_runtime': 2.3154, 'eval_samples_per_second': 591.258, 'eval_steps_per_second': 74.285, 'epoch': 2.0}
+
+{'loss': 1.1026, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:19<08:11, 15.54it/s]{'eval_loss': 1.6199263334274292, 'eval_runtime': 2.3399, 'eval_samples_per_second': 585.07, 'eval_steps_per_second': 73.508, 'epoch': 3.0}
+
+{'loss': 0.9742, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:54<06:55, 15.32it/s]{'eval_loss': 1.7045602798461914, 'eval_runtime': 2.303, 'eval_samples_per_second': 594.437, 'eval_steps_per_second': 74.685, 'epoch': 4.0}
+
+{'loss': 0.8375, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:30<05:41, 14.92it/s]{'eval_loss': 1.823047399520874, 'eval_runtime': 2.3094, 'eval_samples_per_second': 592.807, 'eval_steps_per_second': 74.48, 'epoch': 5.0}
+
+{'loss': 0.7516, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [11:02<04:09, 15.30it/s]{'eval_loss': 1.9921557903289795, 'eval_runtime': 2.3049, 'eval_samples_per_second': 593.95, 'eval_steps_per_second': 74.623, 'epoch': 6.0}
+
+{'loss': 0.6733, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:40<02:44, 15.52it/s]{'eval_loss': 2.077706813812256, 'eval_runtime': 2.3054, 'eval_samples_per_second': 593.825, 'eval_steps_per_second': 74.608, 'epoch': 7.0}
+
+{'loss': 0.5937, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:14<01:23, 15.29it/s]{'eval_loss': 2.1311745643615723, 'eval_runtime': 2.306, 'eval_samples_per_second': 593.66, 'eval_steps_per_second': 74.587, 'epoch': 8.0}
+
+{'loss': 0.5425, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:53<00:00, 15.55it/s]{'eval_loss': 2.065730333328247, 'eval_runtime': 2.3468, 'eval_samples_per_second': 583.356, 'eval_steps_per_second': 73.292, 'epoch': 9.0}
+
+{'loss': 0.5014, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.1748111248016357, 'eval_runtime': 2.308, 'eval_samples_per_second': 593.147, 'eval_steps_per_second': 74.522, 'epoch': 10.0}
+
+{'train_runtime': 955.5628, 'train_samples_per_second': 106.555, 'train_steps_per_second': 13.322, 'train_loss': 0.9171875623296961, 'epoch': 10.0}
+
+Accuracy: 0.4698581560283688
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.86      0.41      0.55       148
+
+           Alternation       0.84      0.84      0.84        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.39      0.40        33
+
+               Comment       0.51      0.59      0.55       165
+
+           Conditional       0.33      0.50      0.40        18
+
+          Continuation       0.36      0.56      0.44       113
+
+              Contrast       0.40      0.39      0.39        44
+
+            Correction       0.14      0.24      0.17        21
+
+           Elaboration       0.28      0.63      0.39       101
+
+           Explanation       0.26      0.48      0.34        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.38      0.20      0.26        15
+
+                Q_Elab       0.59      0.49      0.53        72
+
+  Question_answer_pair       0.96      0.39      0.55       305
+
+                Result       0.27      0.48      0.35        29
+
+              accuracy                           0.47      1128
+
+             macro avg       0.41      0.41      0.39      1128
+
+          weighted avg       0.61      0.47      0.49      1128
+
+Average accuracy = 0.4698581560283688
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:30<12:29, 15.28it/s]{'loss': 1.9127, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:08<10:56, 15.52it/s]{'eval_loss': 1.5566984415054321, 'eval_runtime': 2.3152, 'eval_samples_per_second': 591.308, 'eval_steps_per_second': 74.291, 'epoch': 1.0}
+
+{'loss': 1.4111, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:41<09:38, 15.41it/s]{'eval_loss': 1.4197880029678345, 'eval_runtime': 2.3151, 'eval_samples_per_second': 591.324, 'eval_steps_per_second': 74.293, 'epoch': 2.0}
+
+{'loss': 1.2207, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:17<08:07, 15.66it/s]{'eval_loss': 1.3637266159057617, 'eval_runtime': 2.3388, 'eval_samples_per_second': 585.341, 'eval_steps_per_second': 73.542, 'epoch': 3.0}
+
+{'loss': 1.0807, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:50<06:53, 15.37it/s]{'eval_loss': 1.4157278537750244, 'eval_runtime': 2.305, 'eval_samples_per_second': 593.918, 'eval_steps_per_second': 74.619, 'epoch': 4.0}
+
+{'loss': 0.9591, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:26<05:26, 15.62it/s]{'eval_loss': 1.4183623790740967, 'eval_runtime': 2.3091, 'eval_samples_per_second': 592.861, 'eval_steps_per_second': 74.487, 'epoch': 5.0}
+
+{'loss': 0.8586, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:58<04:26, 14.30it/s]{'eval_loss': 1.5119737386703491, 'eval_runtime': 2.3104, 'eval_samples_per_second': 592.544, 'eval_steps_per_second': 74.447, 'epoch': 6.0}
+
+{'loss': 0.766, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:33<02:41, 15.77it/s]{'eval_loss': 1.4694173336029053, 'eval_runtime': 2.2917, 'eval_samples_per_second': 597.375, 'eval_steps_per_second': 75.054, 'epoch': 7.0}
+
+{'loss': 0.6969, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:22, 15.48it/s]{'eval_loss': 1.4774749279022217, 'eval_runtime': 2.293, 'eval_samples_per_second': 597.044, 'eval_steps_per_second': 75.012, 'epoch': 8.0}
+
+{'loss': 0.6464, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:38<00:00, 15.74it/s]{'eval_loss': 1.5153671503067017, 'eval_runtime': 2.2882, 'eval_samples_per_second': 598.277, 'eval_steps_per_second': 75.167, 'epoch': 9.0}
+
+{'loss': 0.6127, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.5104880332946777, 'eval_runtime': 2.2917, 'eval_samples_per_second': 597.363, 'eval_steps_per_second': 75.052, 'epoch': 10.0}
+
+{'train_runtime': 940.7135, 'train_samples_per_second': 108.237, 'train_steps_per_second': 13.532, 'train_loss': 1.0164804127491653, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.648936170212766
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.79      0.74       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.61      0.66      0.63       165
+
+           Conditional       0.47      0.44      0.46        18
+
+          Continuation       0.54      0.42      0.48       113
+
+              Contrast       0.49      0.41      0.44        44
+
+            Correction       0.33      0.19      0.24        21
+
+           Elaboration       0.59      0.50      0.54       101
+
+           Explanation       0.43      0.52      0.47        31
+
+             Narration       0.20      0.08      0.11        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.55      0.65      0.59        72
+
+  Question_answer_pair       0.83      0.87      0.85       305
+
+                Result       0.50      0.48      0.49        29
+
+              accuracy                           0.65      1128
+
+             macro avg       0.51      0.47      0.48      1128
+
+          weighted avg       0.64      0.65      0.64      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:57, 14.73it/s]{'loss': 1.9127, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 12%|█▏        | 1502/12730 [01:54<3:52:24,  1.24s/it]
+
+ 20%|██        | 2546/12730 [03:08<10:50, 15.66it/s]{'eval_loss': 1.5566984415054321, 'eval_runtime': 2.2948, 'eval_samples_per_second': 596.575, 'eval_steps_per_second': 74.953, 'epoch': 1.0}
+
+{'loss': 1.4111, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:40<09:37, 15.44it/s]{'eval_loss': 1.4197880029678345, 'eval_runtime': 2.2949, 'eval_samples_per_second': 596.551, 'eval_steps_per_second': 74.95, 'epoch': 2.0}
+
+{'loss': 1.2207, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:15<08:07, 15.67it/s]{'eval_loss': 1.3637266159057617, 'eval_runtime': 2.2935, 'eval_samples_per_second': 596.9, 'eval_steps_per_second': 74.994, 'epoch': 3.0}
+
+{'loss': 1.0807, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:49<06:52, 15.43it/s]{'eval_loss': 1.4157278537750244, 'eval_runtime': 2.289, 'eval_samples_per_second': 598.07, 'eval_steps_per_second': 75.141, 'epoch': 4.0}
+
+{'loss': 0.9591, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:24<05:24, 15.72it/s]{'eval_loss': 1.4183623790740967, 'eval_runtime': 2.2981, 'eval_samples_per_second': 595.715, 'eval_steps_per_second': 74.845, 'epoch': 5.0}
+
+{'loss': 0.8586, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:58<04:06, 15.48it/s]{'eval_loss': 1.5119737386703491, 'eval_runtime': 2.2892, 'eval_samples_per_second': 598.028, 'eval_steps_per_second': 75.136, 'epoch': 6.0}
+
+{'loss': 0.766, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:33<02:42, 15.70it/s]{'eval_loss': 1.4694173336029053, 'eval_runtime': 2.3145, 'eval_samples_per_second': 591.494, 'eval_steps_per_second': 74.315, 'epoch': 7.0}
+
+{'loss': 0.6969, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:06<01:22, 15.48it/s]{'eval_loss': 1.4774749279022217, 'eval_runtime': 2.2876, 'eval_samples_per_second': 598.431, 'eval_steps_per_second': 75.186, 'epoch': 8.0}
+
+{'loss': 0.6464, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:43<00:00, 15.73it/s]{'eval_loss': 1.5153671503067017, 'eval_runtime': 2.2835, 'eval_samples_per_second': 599.524, 'eval_steps_per_second': 75.324, 'epoch': 9.0}
+
+{'loss': 0.6127, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.5104880332946777, 'eval_runtime': 2.3072, 'eval_samples_per_second': 593.356, 'eval_steps_per_second': 74.549, 'epoch': 10.0}
+
+{'train_runtime': 945.5966, 'train_samples_per_second': 107.678, 'train_steps_per_second': 13.462, 'train_loss': 1.0164804127491653, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.648936170212766
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.79      0.74       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.61      0.66      0.63       165
+
+           Conditional       0.47      0.44      0.46        18
+
+          Continuation       0.54      0.42      0.48       113
+
+              Contrast       0.49      0.41      0.44        44
+
+            Correction       0.33      0.19      0.24        21
+
+           Elaboration       0.59      0.50      0.54       101
+
+           Explanation       0.43      0.52      0.47        31
+
+             Narration       0.20      0.08      0.11        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.55      0.65      0.59        72
+
+  Question_answer_pair       0.83      0.87      0.85       305
+
+                Result       0.50      0.48      0.49        29
+
+              accuracy                           0.65      1128
+
+             macro avg       0.51      0.47      0.48      1128
+
+          weighted avg       0.64      0.65      0.64      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:30<12:20, 15.47it/s]{'loss': 1.9127, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<10:49, 15.68it/s]{'eval_loss': 1.5566984415054321, 'eval_runtime': 2.2861, 'eval_samples_per_second': 598.849, 'eval_steps_per_second': 75.239, 'epoch': 1.0}
+
+{'loss': 1.4111, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:35<09:36, 15.46it/s]{'eval_loss': 1.4197880029678345, 'eval_runtime': 2.2813, 'eval_samples_per_second': 600.092, 'eval_steps_per_second': 75.395, 'epoch': 2.0}
+
+{'loss': 1.2207, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:09<08:05, 15.73it/s]{'eval_loss': 1.3637266159057617, 'eval_runtime': 2.2846, 'eval_samples_per_second': 599.235, 'eval_steps_per_second': 75.287, 'epoch': 3.0}
+
+{'loss': 1.0807, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:41<06:50, 15.49it/s]{'eval_loss': 1.4157278537750244, 'eval_runtime': 2.3107, 'eval_samples_per_second': 592.452, 'eval_steps_per_second': 74.435, 'epoch': 4.0}
+
+{'loss': 0.9591, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:16<05:23, 15.75it/s]{'eval_loss': 1.4183623790740967, 'eval_runtime': 2.2809, 'eval_samples_per_second': 600.199, 'eval_steps_per_second': 75.408, 'epoch': 5.0}
+
+{'loss': 0.8586, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:47<04:06, 15.48it/s]{'eval_loss': 1.5119737386703491, 'eval_runtime': 2.2882, 'eval_samples_per_second': 598.275, 'eval_steps_per_second': 75.167, 'epoch': 6.0}
+
+{'loss': 0.766, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:22<02:41, 15.75it/s]{'eval_loss': 1.4694173336029053, 'eval_runtime': 2.284, 'eval_samples_per_second': 599.378, 'eval_steps_per_second': 75.305, 'epoch': 7.0}
+
+{'loss': 0.6969, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:53<01:22, 15.47it/s]{'eval_loss': 1.4774749279022217, 'eval_runtime': 2.3096, 'eval_samples_per_second': 592.734, 'eval_steps_per_second': 74.471, 'epoch': 8.0}
+
+{'loss': 0.6464, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:29<00:00, 15.72it/s]{'eval_loss': 1.5153671503067017, 'eval_runtime': 2.3146, 'eval_samples_per_second': 591.473, 'eval_steps_per_second': 74.312, 'epoch': 9.0}
+
+{'loss': 0.6127, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 1.5104880332946777, 'eval_runtime': 2.2832, 'eval_samples_per_second': 599.592, 'eval_steps_per_second': 75.332, 'epoch': 10.0}
+
+{'train_runtime': 931.5121, 'train_samples_per_second': 109.306, 'train_steps_per_second': 13.666, 'train_loss': 1.0164804127491653, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.648936170212766
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.79      0.74       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.61      0.66      0.63       165
+
+           Conditional       0.47      0.44      0.46        18
+
+          Continuation       0.54      0.42      0.48       113
+
+              Contrast       0.49      0.41      0.44        44
+
+            Correction       0.33      0.19      0.24        21
+
+           Elaboration       0.59      0.50      0.54       101
+
+           Explanation       0.43      0.52      0.47        31
+
+             Narration       0.20      0.08      0.11        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.55      0.65      0.59        72
+
+  Question_answer_pair       0.83      0.87      0.85       305
+
+                Result       0.50      0.48      0.49        29
+
+              accuracy                           0.65      1128
+
+             macro avg       0.51      0.47      0.48      1128
+
+          weighted avg       0.64      0.65      0.64      1128
+
+Average accuracy = 0.648936170212766
+
+********** Run complete **********
+
+********** Run - model: gpt2, learning rate = 0.0002 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:07, 15.74it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:17, 15.02it/s]{'eval_loss': 1.8115373849868774, 'eval_runtime': 2.2355, 'eval_samples_per_second': 612.382, 'eval_steps_per_second': 76.939, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:34<09:27, 15.69it/s]{'eval_loss': 1.5504213571548462, 'eval_runtime': 2.2349, 'eval_samples_per_second': 612.56, 'eval_steps_per_second': 76.961, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:08<08:14, 15.46it/s]{'eval_loss': 1.2402704954147339, 'eval_runtime': 2.235, 'eval_samples_per_second': 612.523, 'eval_steps_per_second': 76.957, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:39<06:45, 15.71it/s]{'eval_loss': 1.3733550310134888, 'eval_runtime': 2.2376, 'eval_samples_per_second': 611.809, 'eval_steps_per_second': 76.867, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:14<05:29, 15.47it/s]{'eval_loss': 1.3549985885620117, 'eval_runtime': 2.234, 'eval_samples_per_second': 612.798, 'eval_steps_per_second': 76.991, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:45<04:02, 15.74it/s]{'eval_loss': 1.5305726528167725, 'eval_runtime': 2.2353, 'eval_samples_per_second': 612.446, 'eval_steps_per_second': 76.947, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:19<02:46, 15.28it/s]{'eval_loss': 1.9785773754119873, 'eval_runtime': 2.2339, 'eval_samples_per_second': 612.818, 'eval_steps_per_second': 76.994, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:49<01:21, 15.71it/s]{'eval_loss': 2.148916244506836, 'eval_runtime': 2.2347, 'eval_samples_per_second': 612.612, 'eval_steps_per_second': 76.968, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:23<00:00, 15.50it/s]{'eval_loss': 2.5373401641845703, 'eval_runtime': 2.2355, 'eval_samples_per_second': 612.4, 'eval_steps_per_second': 76.941, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.9513587951660156, 'eval_runtime': 2.2281, 'eval_samples_per_second': 614.431, 'eval_steps_per_second': 77.197, 'epoch': 10.0}
+
+{'train_runtime': 925.9121, 'train_samples_per_second': 109.967, 'train_steps_per_second': 13.749, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.6205673758865248
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.74      0.74       148
+
+           Alternation       0.92      0.63      0.75        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.32      0.39      0.35        33
+
+               Comment       0.57      0.59      0.58       165
+
+           Conditional       0.57      0.67      0.62        18
+
+          Continuation       0.52      0.41      0.46       113
+
+              Contrast       0.33      0.41      0.37        44
+
+            Correction       0.26      0.24      0.25        21
+
+           Elaboration       0.52      0.48      0.49       101
+
+           Explanation       0.33      0.45      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.45      0.33      0.38        15
+
+                Q_Elab       0.57      0.60      0.59        72
+
+  Question_answer_pair       0.86      0.89      0.87       305
+
+                Result       0.21      0.21      0.21        29
+
+              accuracy                           0.62      1128
+
+             macro avg       0.45      0.44      0.44      1128
+
+          weighted avg       0.62      0.62      0.62      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:28<12:20, 15.47it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:02<10:49, 15.68it/s]{'eval_loss': 1.8115373849868774, 'eval_runtime': 2.2336, 'eval_samples_per_second': 612.917, 'eval_steps_per_second': 77.006, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:33<09:35, 15.49it/s]{'eval_loss': 1.5504213571548462, 'eval_runtime': 2.2526, 'eval_samples_per_second': 607.741, 'eval_steps_per_second': 76.356, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:07<08:04, 15.76it/s]{'eval_loss': 1.2402704954147339, 'eval_runtime': 2.2466, 'eval_samples_per_second': 609.362, 'eval_steps_per_second': 76.56, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<06:50, 15.51it/s]{'eval_loss': 1.3733550310134888, 'eval_runtime': 2.2092, 'eval_samples_per_second': 619.68, 'eval_steps_per_second': 77.856, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:11<05:22, 15.78it/s]{'eval_loss': 1.3549985885620117, 'eval_runtime': 2.2088, 'eval_samples_per_second': 619.782, 'eval_steps_per_second': 77.869, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:42<04:09, 15.30it/s]{'eval_loss': 1.5305726528167725, 'eval_runtime': 2.2052, 'eval_samples_per_second': 620.801, 'eval_steps_per_second': 77.997, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:17<02:41, 15.78it/s]{'eval_loss': 1.9785773754119873, 'eval_runtime': 2.2366, 'eval_samples_per_second': 612.095, 'eval_steps_per_second': 76.903, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:49<01:26, 14.75it/s]{'eval_loss': 2.148916244506836, 'eval_runtime': 2.2352, 'eval_samples_per_second': 612.477, 'eval_steps_per_second': 76.951, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:24<00:00, 15.76it/s]{'eval_loss': 2.5373401641845703, 'eval_runtime': 2.2212, 'eval_samples_per_second': 616.321, 'eval_steps_per_second': 77.434, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.9513587951660156, 'eval_runtime': 2.2127, 'eval_samples_per_second': 618.698, 'eval_steps_per_second': 77.733, 'epoch': 10.0}
+
+{'train_runtime': 926.744, 'train_samples_per_second': 109.869, 'train_steps_per_second': 13.736, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.6205673758865248
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.74      0.74       148
+
+           Alternation       0.92      0.63      0.75        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.32      0.39      0.35        33
+
+               Comment       0.57      0.59      0.58       165
+
+           Conditional       0.57      0.67      0.62        18
+
+          Continuation       0.52      0.41      0.46       113
+
+              Contrast       0.33      0.41      0.37        44
+
+            Correction       0.26      0.24      0.25        21
+
+           Elaboration       0.52      0.48      0.49       101
+
+           Explanation       0.33      0.45      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.45      0.33      0.38        15
+
+                Q_Elab       0.57      0.60      0.59        72
+
+  Question_answer_pair       0.86      0.89      0.87       305
+
+                Result       0.21      0.21      0.21        29
+
+              accuracy                           0.62      1128
+
+             macro avg       0.45      0.44      0.44      1128
+
+          weighted avg       0.62      0.62      0.62      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:28<12:18, 15.51it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:00, 15.43it/s]{'eval_loss': 1.8115373849868774, 'eval_runtime': 2.2234, 'eval_samples_per_second': 615.737, 'eval_steps_per_second': 77.361, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:35<09:34, 15.52it/s]{'eval_loss': 1.5504213571548462, 'eval_runtime': 2.2428, 'eval_samples_per_second': 610.403, 'eval_steps_per_second': 76.691, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:09<08:05, 15.74it/s]{'eval_loss': 1.2402704954147339, 'eval_runtime': 2.2135, 'eval_samples_per_second': 618.484, 'eval_steps_per_second': 77.706, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:41<06:53, 15.39it/s]{'eval_loss': 1.3733550310134888, 'eval_runtime': 2.2232, 'eval_samples_per_second': 615.788, 'eval_steps_per_second': 77.367, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:15<05:22, 15.77it/s]{'eval_loss': 1.3549985885620117, 'eval_runtime': 2.2468, 'eval_samples_per_second': 609.298, 'eval_steps_per_second': 76.552, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:46<04:07, 15.41it/s]{'eval_loss': 1.5305726528167725, 'eval_runtime': 2.2406, 'eval_samples_per_second': 610.992, 'eval_steps_per_second': 76.765, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:21<02:43, 15.54it/s]{'eval_loss': 1.9785773754119873, 'eval_runtime': 2.2448, 'eval_samples_per_second': 609.85, 'eval_steps_per_second': 76.621, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:52<01:22, 15.39it/s]{'eval_loss': 2.148916244506836, 'eval_runtime': 2.2384, 'eval_samples_per_second': 611.59, 'eval_steps_per_second': 76.84, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:27<00:00, 15.51it/s]{'eval_loss': 2.5373401641845703, 'eval_runtime': 2.2278, 'eval_samples_per_second': 614.518, 'eval_steps_per_second': 77.208, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.9513587951660156, 'eval_runtime': 2.2365, 'eval_samples_per_second': 612.111, 'eval_steps_per_second': 76.905, 'epoch': 10.0}
+
+{'train_runtime': 929.6434, 'train_samples_per_second': 109.526, 'train_steps_per_second': 13.693, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.6205673758865248
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.74      0.74       148
+
+           Alternation       0.92      0.63      0.75        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.32      0.39      0.35        33
+
+               Comment       0.57      0.59      0.58       165
+
+           Conditional       0.57      0.67      0.62        18
+
+          Continuation       0.52      0.41      0.46       113
+
+              Contrast       0.33      0.41      0.37        44
+
+            Correction       0.26      0.24      0.25        21
+
+           Elaboration       0.52      0.48      0.49       101
+
+           Explanation       0.33      0.45      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.45      0.33      0.38        15
+
+                Q_Elab       0.57      0.60      0.59        72
+
+  Question_answer_pair       0.86      0.89      0.87       305
+
+                Result       0.21      0.21      0.21        29
+
+              accuracy                           0.62      1128
+
+             macro avg       0.45      0.44      0.44      1128
+
+          weighted avg       0.62      0.62      0.62      1128
+
+Average accuracy = 0.6205673758865248
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:28<12:21, 15.46it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<10:48, 15.71it/s]{'eval_loss': 1.8187588453292847, 'eval_runtime': 2.2692, 'eval_samples_per_second': 603.289, 'eval_steps_per_second': 75.797, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:33<09:34, 15.50it/s]{'eval_loss': 1.73655104637146, 'eval_runtime': 2.2746, 'eval_samples_per_second': 601.856, 'eval_steps_per_second': 75.617, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:07<08:05, 15.75it/s]{'eval_loss': 1.334228754043579, 'eval_runtime': 2.2679, 'eval_samples_per_second': 603.636, 'eval_steps_per_second': 75.84, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:38<06:50, 15.49it/s]{'eval_loss': 1.449099063873291, 'eval_runtime': 2.276, 'eval_samples_per_second': 601.49, 'eval_steps_per_second': 75.571, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:13<05:35, 15.16it/s]{'eval_loss': 1.5720746517181396, 'eval_runtime': 2.2713, 'eval_samples_per_second': 602.729, 'eval_steps_per_second': 75.726, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:45<04:08, 15.36it/s]{'eval_loss': 1.602306842803955, 'eval_runtime': 2.3612, 'eval_samples_per_second': 579.802, 'eval_steps_per_second': 72.846, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:20<02:41, 15.78it/s]{'eval_loss': 2.1947743892669678, 'eval_runtime': 2.2922, 'eval_samples_per_second': 597.246, 'eval_steps_per_second': 75.038, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:50<01:22, 15.45it/s]{'eval_loss': 2.3682072162628174, 'eval_runtime': 2.2676, 'eval_samples_per_second': 603.716, 'eval_steps_per_second': 75.85, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:25<00:00, 15.61it/s]{'eval_loss': 2.7273993492126465, 'eval_runtime': 2.3068, 'eval_samples_per_second': 593.46, 'eval_steps_per_second': 74.562, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.1964802742004395, 'eval_runtime': 2.3182, 'eval_samples_per_second': 590.549, 'eval_steps_per_second': 74.196, 'epoch': 10.0}
+
+{'train_runtime': 927.7111, 'train_samples_per_second': 109.754, 'train_steps_per_second': 13.722, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.5310283687943262
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.51      0.88      0.64       148
+
+           Alternation       1.00      0.74      0.85        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.25      0.48      0.33        33
+
+               Comment       0.51      0.45      0.48       165
+
+           Conditional       0.80      0.44      0.57        18
+
+          Continuation       0.37      0.54      0.44       113
+
+              Contrast       0.37      0.32      0.34        44
+
+            Correction       0.38      0.14      0.21        21
+
+           Elaboration       0.65      0.17      0.27       101
+
+           Explanation       0.33      0.26      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.27      0.35        15
+
+                Q_Elab       0.52      0.35      0.42        72
+
+  Question_answer_pair       0.89      0.70      0.78       305
+
+                Result       0.16      0.41      0.23        29
+
+              accuracy                           0.53      1128
+
+             macro avg       0.45      0.38      0.39      1128
+
+          weighted avg       0.59      0.53      0.53      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:28<12:19, 15.49it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:15, 15.09it/s]{'eval_loss': 1.8187588453292847, 'eval_runtime': 2.2703, 'eval_samples_per_second': 603.011, 'eval_steps_per_second': 75.762, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:41, 15.33it/s]{'eval_loss': 1.73655104637146, 'eval_runtime': 2.3172, 'eval_samples_per_second': 590.787, 'eval_steps_per_second': 74.226, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:08, 15.65it/s]{'eval_loss': 1.334228754043579, 'eval_runtime': 2.2779, 'eval_samples_per_second': 600.982, 'eval_steps_per_second': 75.507, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:45<06:53, 15.40it/s]{'eval_loss': 1.449099063873291, 'eval_runtime': 2.272, 'eval_samples_per_second': 602.543, 'eval_steps_per_second': 75.703, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:20<05:23, 15.76it/s]{'eval_loss': 1.5720746517181396, 'eval_runtime': 2.3099, 'eval_samples_per_second': 592.673, 'eval_steps_per_second': 74.463, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:51<04:06, 15.51it/s]{'eval_loss': 1.602306842803955, 'eval_runtime': 2.2705, 'eval_samples_per_second': 602.956, 'eval_steps_per_second': 75.755, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:26<02:45, 15.35it/s]{'eval_loss': 2.1947743892669678, 'eval_runtime': 2.2693, 'eval_samples_per_second': 603.27, 'eval_steps_per_second': 75.794, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:00<01:23, 15.17it/s]{'eval_loss': 2.3682072162628174, 'eval_runtime': 2.2928, 'eval_samples_per_second': 597.098, 'eval_steps_per_second': 75.019, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:35<00:00, 15.64it/s]{'eval_loss': 2.7273993492126465, 'eval_runtime': 2.2791, 'eval_samples_per_second': 600.675, 'eval_steps_per_second': 75.468, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.1964802742004395, 'eval_runtime': 2.2829, 'eval_samples_per_second': 599.679, 'eval_steps_per_second': 75.343, 'epoch': 10.0}
+
+{'train_runtime': 937.6495, 'train_samples_per_second': 108.591, 'train_steps_per_second': 13.577, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.5310283687943262
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.51      0.88      0.64       148
+
+           Alternation       1.00      0.74      0.85        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.25      0.48      0.33        33
+
+               Comment       0.51      0.45      0.48       165
+
+           Conditional       0.80      0.44      0.57        18
+
+          Continuation       0.37      0.54      0.44       113
+
+              Contrast       0.37      0.32      0.34        44
+
+            Correction       0.38      0.14      0.21        21
+
+           Elaboration       0.65      0.17      0.27       101
+
+           Explanation       0.33      0.26      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.27      0.35        15
+
+                Q_Elab       0.52      0.35      0.42        72
+
+  Question_answer_pair       0.89      0.70      0.78       305
+
+                Result       0.16      0.41      0.23        29
+
+              accuracy                           0.53      1128
+
+             macro avg       0.45      0.38      0.39      1128
+
+          weighted avg       0.59      0.53      0.53      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:32<12:30, 15.27it/s]{'loss': 2.0625, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:07<10:48, 15.70it/s]{'eval_loss': 1.8187588453292847, 'eval_runtime': 2.2962, 'eval_samples_per_second': 596.204, 'eval_steps_per_second': 74.907, 'epoch': 1.0}
+
+{'loss': 1.558, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:39<09:39, 15.38it/s]{'eval_loss': 1.73655104637146, 'eval_runtime': 2.2754, 'eval_samples_per_second': 601.652, 'eval_steps_per_second': 75.591, 'epoch': 2.0}
+
+{'loss': 1.2375, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:16<08:04, 15.76it/s]{'eval_loss': 1.334228754043579, 'eval_runtime': 2.3052, 'eval_samples_per_second': 593.884, 'eval_steps_per_second': 74.615, 'epoch': 3.0}
+
+{'loss': 1.0449, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:47<06:50, 15.50it/s]{'eval_loss': 1.449099063873291, 'eval_runtime': 2.2693, 'eval_samples_per_second': 603.273, 'eval_steps_per_second': 75.795, 'epoch': 4.0}
+
+{'loss': 0.8713, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:23<05:25, 15.63it/s]{'eval_loss': 1.5720746517181396, 'eval_runtime': 2.2789, 'eval_samples_per_second': 600.72, 'eval_steps_per_second': 75.474, 'epoch': 5.0}
+
+{'loss': 0.7255, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:56<04:07, 15.41it/s]{'eval_loss': 1.602306842803955, 'eval_runtime': 2.3077, 'eval_samples_per_second': 593.237, 'eval_steps_per_second': 74.534, 'epoch': 6.0}
+
+{'loss': 0.5963, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:32<02:42, 15.70it/s]{'eval_loss': 2.1947743892669678, 'eval_runtime': 2.2674, 'eval_samples_per_second': 603.783, 'eval_steps_per_second': 75.859, 'epoch': 7.0}
+
+{'loss': 0.4695, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:23, 15.26it/s]{'eval_loss': 2.3682072162628174, 'eval_runtime': 2.2713, 'eval_samples_per_second': 602.738, 'eval_steps_per_second': 75.727, 'epoch': 8.0}
+
+{'loss': 0.3864, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:39<00:00, 14.80it/s]{'eval_loss': 2.7273993492126465, 'eval_runtime': 2.2915, 'eval_samples_per_second': 597.416, 'eval_steps_per_second': 75.059, 'epoch': 9.0}
+
+{'loss': 0.3078, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.1964802742004395, 'eval_runtime': 2.272, 'eval_samples_per_second': 602.549, 'eval_steps_per_second': 75.704, 'epoch': 10.0}
+
+{'train_runtime': 942.0413, 'train_samples_per_second': 108.084, 'train_steps_per_second': 13.513, 'train_loss': 0.9259777155993777, 'epoch': 10.0}
+
+Accuracy: 0.5310283687943262
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.51      0.88      0.64       148
+
+           Alternation       1.00      0.74      0.85        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.25      0.48      0.33        33
+
+               Comment       0.51      0.45      0.48       165
+
+           Conditional       0.80      0.44      0.57        18
+
+          Continuation       0.37      0.54      0.44       113
+
+              Contrast       0.37      0.32      0.34        44
+
+            Correction       0.38      0.14      0.21        21
+
+           Elaboration       0.65      0.17      0.27       101
+
+           Explanation       0.33      0.26      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.27      0.35        15
+
+                Q_Elab       0.52      0.35      0.42        72
+
+  Question_answer_pair       0.89      0.70      0.78       305
+
+                Result       0.16      0.41      0.23        29
+
+              accuracy                           0.53      1128
+
+             macro avg       0.45      0.38      0.39      1128
+
+          weighted avg       0.59      0.53      0.53      1128
+
+Average accuracy = 0.5310283687943262
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:30<12:24, 15.39it/s]{'loss': 1.7606, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:47, 15.72it/s]{'eval_loss': 1.5093600749969482, 'eval_runtime': 2.3079, 'eval_samples_per_second': 593.181, 'eval_steps_per_second': 74.527, 'epoch': 1.0}
+
+{'loss': 1.3087, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:38<09:36, 15.45it/s]{'eval_loss': 1.3480665683746338, 'eval_runtime': 2.305, 'eval_samples_per_second': 593.917, 'eval_steps_per_second': 74.619, 'epoch': 2.0}
+
+{'loss': 1.0912, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 39%|███▉      | 5002/12730 [06:11<2:31:29,  1.18s/it]
+
+ 40%|████      | 5092/12730 [06:17<08:04, 15.77it/s]{'eval_loss': 1.3526732921600342, 'eval_runtime': 2.2801, 'eval_samples_per_second': 600.407, 'eval_steps_per_second': 75.435, 'epoch': 3.0}
+
+{'loss': 0.865, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:49<06:50, 15.49it/s]{'eval_loss': 1.5256929397583008, 'eval_runtime': 2.2742, 'eval_samples_per_second': 601.972, 'eval_steps_per_second': 75.631, 'epoch': 4.0}
+
+{'loss': 0.6493, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:24<05:31, 15.35it/s]{'eval_loss': 1.8306883573532104, 'eval_runtime': 2.308, 'eval_samples_per_second': 593.148, 'eval_steps_per_second': 74.523, 'epoch': 5.0}
+
+{'loss': 0.4737, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 67%|██████▋   | 8502/12730 [10:34<1:23:36,  1.19s/it]
+
+ 70%|███████   | 8911/12730 [11:01<04:06, 15.50it/s]{'eval_loss': 2.168407678604126, 'eval_runtime': 2.2928, 'eval_samples_per_second': 597.079, 'eval_steps_per_second': 75.017, 'epoch': 6.0}
+
+{'loss': 0.322, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:36<02:43, 15.61it/s]{'eval_loss': 2.8065896034240723, 'eval_runtime': 2.2781, 'eval_samples_per_second': 600.933, 'eval_steps_per_second': 75.501, 'epoch': 7.0}
+
+{'loss': 0.2119, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:08<01:23, 15.31it/s]{'eval_loss': 3.2448225021362305, 'eval_runtime': 2.3343, 'eval_samples_per_second': 586.478, 'eval_steps_per_second': 73.685, 'epoch': 8.0}
+
+{'loss': 0.1375, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:45<00:00, 15.69it/s]{'eval_loss': 3.396728992462158, 'eval_runtime': 2.2847, 'eval_samples_per_second': 599.192, 'eval_steps_per_second': 75.282, 'epoch': 9.0}
+
+{'loss': 0.0844, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.474513053894043, 'eval_runtime': 2.2826, 'eval_samples_per_second': 599.746, 'eval_steps_per_second': 75.352, 'epoch': 10.0}
+
+{'train_runtime': 947.6094, 'train_samples_per_second': 107.449, 'train_steps_per_second': 13.434, 'train_loss': 0.6904361883674376, 'epoch': 10.0}
+
+Accuracy: 0.598404255319149
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.77      0.73       148
+
+           Alternation       0.88      0.74      0.80        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.45      0.43        33
+
+               Comment       0.58      0.52      0.55       165
+
+           Conditional       0.53      0.50      0.51        18
+
+          Continuation       0.42      0.37      0.40       113
+
+              Contrast       0.36      0.43      0.39        44
+
+            Correction       0.36      0.24      0.29        21
+
+           Elaboration       0.45      0.46      0.45       101
+
+           Explanation       0.27      0.32      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.40      0.40      0.40        15
+
+                Q_Elab       0.63      0.64      0.63        72
+
+  Question_answer_pair       0.84      0.83      0.83       305
+
+                Result       0.29      0.34      0.32        29
+
+              accuracy                           0.60      1128
+
+             macro avg       0.44      0.44      0.44      1128
+
+          weighted avg       0.60      0.60      0.60      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:30<12:57, 14.74it/s]{'loss': 1.7606, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:51, 15.62it/s]{'eval_loss': 1.5093600749969482, 'eval_runtime': 2.2836, 'eval_samples_per_second': 599.499, 'eval_steps_per_second': 75.321, 'epoch': 1.0}
+
+{'loss': 1.3087, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:42, 15.30it/s]{'eval_loss': 1.3480665683746338, 'eval_runtime': 2.2863, 'eval_samples_per_second': 598.776, 'eval_steps_per_second': 75.23, 'epoch': 2.0}
+
+{'loss': 1.0912, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:14<08:09, 15.60it/s]{'eval_loss': 1.3526732921600342, 'eval_runtime': 2.3185, 'eval_samples_per_second': 590.466, 'eval_steps_per_second': 74.186, 'epoch': 3.0}
+
+{'loss': 0.865, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:46<07:01, 15.08it/s]{'eval_loss': 1.5256929397583008, 'eval_runtime': 2.3463, 'eval_samples_per_second': 583.471, 'eval_steps_per_second': 73.307, 'epoch': 4.0}
+
+{'loss': 0.6493, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:21<05:27, 15.56it/s]{'eval_loss': 1.8306883573532104, 'eval_runtime': 2.3174, 'eval_samples_per_second': 590.759, 'eval_steps_per_second': 74.222, 'epoch': 5.0}
+
+{'loss': 0.4737, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:53<04:09, 15.31it/s]{'eval_loss': 2.168407678604126, 'eval_runtime': 2.3181, 'eval_samples_per_second': 590.579, 'eval_steps_per_second': 74.2, 'epoch': 6.0}
+
+{'loss': 0.322, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:29<02:43, 15.58it/s]{'eval_loss': 2.8065896034240723, 'eval_runtime': 2.3155, 'eval_samples_per_second': 591.225, 'eval_steps_per_second': 74.281, 'epoch': 7.0}
+
+{'loss': 0.2119, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:02<01:24, 15.04it/s]{'eval_loss': 3.2448225021362305, 'eval_runtime': 2.349, 'eval_samples_per_second': 582.8, 'eval_steps_per_second': 73.222, 'epoch': 8.0}
+
+{'loss': 0.1375, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:37<00:00, 15.61it/s]{'eval_loss': 3.396728992462158, 'eval_runtime': 2.3157, 'eval_samples_per_second': 591.188, 'eval_steps_per_second': 74.276, 'epoch': 9.0}
+
+{'loss': 0.0844, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.474513053894043, 'eval_runtime': 2.2898, 'eval_samples_per_second': 597.876, 'eval_steps_per_second': 75.117, 'epoch': 10.0}
+
+{'train_runtime': 939.4878, 'train_samples_per_second': 108.378, 'train_steps_per_second': 13.55, 'train_loss': 0.6904361883674376, 'epoch': 10.0}
+
+Accuracy: 0.598404255319149
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.77      0.73       148
+
+           Alternation       0.88      0.74      0.80        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.45      0.43        33
+
+               Comment       0.58      0.52      0.55       165
+
+           Conditional       0.53      0.50      0.51        18
+
+          Continuation       0.42      0.37      0.40       113
+
+              Contrast       0.36      0.43      0.39        44
+
+            Correction       0.36      0.24      0.29        21
+
+           Elaboration       0.45      0.46      0.45       101
+
+           Explanation       0.27      0.32      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.40      0.40      0.40        15
+
+                Q_Elab       0.63      0.64      0.63        72
+
+  Question_answer_pair       0.84      0.83      0.83       305
+
+                Result       0.29      0.34      0.32        29
+
+              accuracy                           0.60      1128
+
+             macro avg       0.44      0.44      0.44      1128
+
+          weighted avg       0.60      0.60      0.60      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:18, 15.51it/s]{'loss': 1.7606, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<10:49, 15.67it/s]{'eval_loss': 1.5093600749969482, 'eval_runtime': 2.2798, 'eval_samples_per_second': 600.495, 'eval_steps_per_second': 75.446, 'epoch': 1.0}
+
+{'loss': 1.3087, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:39, 15.39it/s]{'eval_loss': 1.3480665683746338, 'eval_runtime': 2.2893, 'eval_samples_per_second': 597.998, 'eval_steps_per_second': 75.132, 'epoch': 2.0}
+
+{'loss': 1.0912, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:11<08:07, 15.66it/s]{'eval_loss': 1.3526732921600342, 'eval_runtime': 2.2919, 'eval_samples_per_second': 597.327, 'eval_steps_per_second': 75.048, 'epoch': 3.0}
+
+{'loss': 0.865, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:44<06:52, 15.42it/s]{'eval_loss': 1.5256929397583008, 'eval_runtime': 2.2938, 'eval_samples_per_second': 596.814, 'eval_steps_per_second': 74.983, 'epoch': 4.0}
+
+{'loss': 0.6493, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:21<05:23, 15.74it/s]{'eval_loss': 1.8306883573532104, 'eval_runtime': 2.2835, 'eval_samples_per_second': 599.516, 'eval_steps_per_second': 75.323, 'epoch': 5.0}
+
+{'loss': 0.4737, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:53<04:10, 15.23it/s]{'eval_loss': 2.168407678604126, 'eval_runtime': 2.2785, 'eval_samples_per_second': 600.839, 'eval_steps_per_second': 75.489, 'epoch': 6.0}
+
+{'loss': 0.322, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:32<02:52, 14.77it/s]{'eval_loss': 2.8065896034240723, 'eval_runtime': 2.3222, 'eval_samples_per_second': 589.516, 'eval_steps_per_second': 74.066, 'epoch': 7.0}
+
+{'loss': 0.2119, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:23, 15.32it/s]{'eval_loss': 3.2448225021362305, 'eval_runtime': 2.2958, 'eval_samples_per_second': 596.305, 'eval_steps_per_second': 74.919, 'epoch': 8.0}
+
+{'loss': 0.1375, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:41<00:00, 15.52it/s]{'eval_loss': 3.396728992462158, 'eval_runtime': 2.2969, 'eval_samples_per_second': 596.028, 'eval_steps_per_second': 74.884, 'epoch': 9.0}
+
+{'loss': 0.0844, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.474513053894043, 'eval_runtime': 2.3166, 'eval_samples_per_second': 590.956, 'eval_steps_per_second': 74.247, 'epoch': 10.0}
+
+{'train_runtime': 943.4595, 'train_samples_per_second': 107.922, 'train_steps_per_second': 13.493, 'train_loss': 0.6904361883674376, 'epoch': 10.0}
+
+Accuracy: 0.598404255319149
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.69      0.77      0.73       148
+
+           Alternation       0.88      0.74      0.80        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.45      0.43        33
+
+               Comment       0.58      0.52      0.55       165
+
+           Conditional       0.53      0.50      0.51        18
+
+          Continuation       0.42      0.37      0.40       113
+
+              Contrast       0.36      0.43      0.39        44
+
+            Correction       0.36      0.24      0.29        21
+
+           Elaboration       0.45      0.46      0.45       101
+
+           Explanation       0.27      0.32      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.40      0.40      0.40        15
+
+                Q_Elab       0.63      0.64      0.63        72
+
+  Question_answer_pair       0.84      0.83      0.83       305
+
+                Result       0.29      0.34      0.32        29
+
+              accuracy                           0.60      1128
+
+             macro avg       0.44      0.44      0.44      1128
+
+          weighted avg       0.60      0.60      0.60      1128
+
+Average accuracy = 0.598404255319149
+
+********** Run complete **********
+
+********** Run - model: gpt2, learning rate = 0.0003 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:08, 15.73it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:17, 15.02it/s]{'eval_loss': 1.9304640293121338, 'eval_runtime': 2.2473, 'eval_samples_per_second': 609.178, 'eval_steps_per_second': 76.537, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:38<09:38, 15.40it/s]{'eval_loss': 1.650604248046875, 'eval_runtime': 2.3224, 'eval_samples_per_second': 589.477, 'eval_steps_per_second': 74.061, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:19, 15.30it/s]{'eval_loss': 1.5068209171295166, 'eval_runtime': 2.2804, 'eval_samples_per_second': 600.331, 'eval_steps_per_second': 75.425, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:46<06:47, 15.61it/s]{'eval_loss': 1.495283603668213, 'eval_runtime': 2.2724, 'eval_samples_per_second': 602.458, 'eval_steps_per_second': 75.692, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:22<05:31, 15.36it/s]{'eval_loss': 1.5176961421966553, 'eval_runtime': 2.2569, 'eval_samples_per_second': 606.584, 'eval_steps_per_second': 76.211, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:54<04:05, 15.58it/s]{'eval_loss': 1.5378742218017578, 'eval_runtime': 2.2464, 'eval_samples_per_second': 609.418, 'eval_steps_per_second': 76.567, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:30<02:47, 15.23it/s]{'eval_loss': 1.7870436906814575, 'eval_runtime': 2.2526, 'eval_samples_per_second': 607.741, 'eval_steps_per_second': 76.356, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:02<01:21, 15.70it/s]{'eval_loss': 1.7933886051177979, 'eval_runtime': 2.2771, 'eval_samples_per_second': 601.209, 'eval_steps_per_second': 75.535, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:36<00:00, 15.47it/s]{'eval_loss': 1.9258697032928467, 'eval_runtime': 2.2476, 'eval_samples_per_second': 609.102, 'eval_steps_per_second': 76.527, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.11771821975708, 'eval_runtime': 2.2781, 'eval_samples_per_second': 600.942, 'eval_steps_per_second': 75.502, 'epoch': 10.0}
+
+{'train_runtime': 939.0222, 'train_samples_per_second': 108.432, 'train_steps_per_second': 13.557, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+Accuracy: 0.5523049645390071
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.68      0.68      0.68       148
+
+           Alternation       0.53      0.53      0.53        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.55      0.56      0.56       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.36      0.40      0.38       113
+
+              Contrast       0.45      0.39      0.41        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.44      0.43      0.43       101
+
+           Explanation       0.24      0.23      0.23        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.21      0.20      0.21        15
+
+                Q_Elab       0.49      0.50      0.49        72
+
+  Question_answer_pair       0.80      0.81      0.80       305
+
+                Result       0.13      0.14      0.13        29
+
+              accuracy                           0.55      1128
+
+             macro avg       0.35      0.35      0.35      1128
+
+          weighted avg       0.55      0.55      0.55      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:20, 15.46it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:00, 15.43it/s]{'eval_loss': 1.9304640293121338, 'eval_runtime': 2.2496, 'eval_samples_per_second': 608.55, 'eval_steps_per_second': 76.458, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:43, 15.27it/s]{'eval_loss': 1.650604248046875, 'eval_runtime': 2.2606, 'eval_samples_per_second': 605.587, 'eval_steps_per_second': 76.085, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:12<08:12, 15.50it/s]{'eval_loss': 1.5068209171295166, 'eval_runtime': 2.258, 'eval_samples_per_second': 606.288, 'eval_steps_per_second': 76.174, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:44<06:56, 15.29it/s]{'eval_loss': 1.495283603668213, 'eval_runtime': 2.2851, 'eval_samples_per_second': 599.098, 'eval_steps_per_second': 75.27, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:20<05:27, 15.53it/s]{'eval_loss': 1.5176961421966553, 'eval_runtime': 2.2845, 'eval_samples_per_second': 599.248, 'eval_steps_per_second': 75.289, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:51<04:09, 15.28it/s]{'eval_loss': 1.5378742218017578, 'eval_runtime': 2.2815, 'eval_samples_per_second': 600.036, 'eval_steps_per_second': 75.388, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:27<02:43, 15.56it/s]{'eval_loss': 1.7870436906814575, 'eval_runtime': 2.2819, 'eval_samples_per_second': 599.929, 'eval_steps_per_second': 75.375, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:59<01:22, 15.38it/s]{'eval_loss': 1.7933886051177979, 'eval_runtime': 2.2838, 'eval_samples_per_second': 599.446, 'eval_steps_per_second': 75.314, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:36<00:00, 15.62it/s]{'eval_loss': 1.9258697032928467, 'eval_runtime': 2.2558, 'eval_samples_per_second': 606.872, 'eval_steps_per_second': 76.247, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.11771821975708, 'eval_runtime': 2.2358, 'eval_samples_per_second': 612.305, 'eval_steps_per_second': 76.929, 'epoch': 10.0}
+
+{'train_runtime': 938.8611, 'train_samples_per_second': 108.451, 'train_steps_per_second': 13.559, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+Accuracy: 0.5523049645390071
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.68      0.68      0.68       148
+
+           Alternation       0.53      0.53      0.53        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.55      0.56      0.56       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.36      0.40      0.38       113
+
+              Contrast       0.45      0.39      0.41        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.44      0.43      0.43       101
+
+           Explanation       0.24      0.23      0.23        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.21      0.20      0.21        15
+
+                Q_Elab       0.49      0.50      0.49        72
+
+  Question_answer_pair       0.80      0.81      0.80       305
+
+                Result       0.13      0.14      0.13        29
+
+              accuracy                           0.55      1128
+
+             macro avg       0.35      0.35      0.35      1128
+
+          weighted avg       0.55      0.55      0.55      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:32, 15.23it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:58, 15.47it/s]{'eval_loss': 1.9304640293121338, 'eval_runtime': 2.2654, 'eval_samples_per_second': 604.317, 'eval_steps_per_second': 75.926, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:43, 15.28it/s]{'eval_loss': 1.650604248046875, 'eval_runtime': 2.2647, 'eval_samples_per_second': 604.485, 'eval_steps_per_second': 75.947, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:12<08:26, 15.08it/s]{'eval_loss': 1.5068209171295166, 'eval_runtime': 2.2697, 'eval_samples_per_second': 603.157, 'eval_steps_per_second': 75.78, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:43<06:56, 15.27it/s]{'eval_loss': 1.495283603668213, 'eval_runtime': 2.2611, 'eval_samples_per_second': 605.448, 'eval_steps_per_second': 76.068, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:19<05:27, 15.54it/s]{'eval_loss': 1.5176961421966553, 'eval_runtime': 2.2699, 'eval_samples_per_second': 603.122, 'eval_steps_per_second': 75.776, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:51<04:09, 15.31it/s]{'eval_loss': 1.5378742218017578, 'eval_runtime': 2.2554, 'eval_samples_per_second': 606.995, 'eval_steps_per_second': 76.262, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:26<02:42, 15.67it/s]{'eval_loss': 1.7870436906814575, 'eval_runtime': 2.2685, 'eval_samples_per_second': 603.49, 'eval_steps_per_second': 75.822, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:58<01:22, 15.40it/s]{'eval_loss': 1.7933886051177979, 'eval_runtime': 2.2759, 'eval_samples_per_second': 601.528, 'eval_steps_per_second': 75.575, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:33<00:00, 15.64it/s]{'eval_loss': 1.9258697032928467, 'eval_runtime': 2.2463, 'eval_samples_per_second': 609.437, 'eval_steps_per_second': 76.569, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.11771821975708, 'eval_runtime': 2.251, 'eval_samples_per_second': 608.173, 'eval_steps_per_second': 76.41, 'epoch': 10.0}
+
+{'train_runtime': 935.5999, 'train_samples_per_second': 108.829, 'train_steps_per_second': 13.606, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+Accuracy: 0.5523049645390071
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.68      0.68      0.68       148
+
+           Alternation       0.53      0.53      0.53        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.55      0.56      0.56       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.36      0.40      0.38       113
+
+              Contrast       0.45      0.39      0.41        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.44      0.43      0.43       101
+
+           Explanation       0.24      0.23      0.23        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.21      0.20      0.21        15
+
+                Q_Elab       0.49      0.50      0.49        72
+
+  Question_answer_pair       0.80      0.81      0.80       305
+
+                Result       0.13      0.14      0.13        29
+
+              accuracy                           0.55      1128
+
+             macro avg       0.35      0.35      0.35      1128
+
+          weighted avg       0.55      0.55      0.55      1128
+
+Average accuracy = 0.5523049645390071
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:30<12:28, 15.31it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:55, 15.53it/s]{'eval_loss': 1.9503722190856934, 'eval_runtime': 2.3284, 'eval_samples_per_second': 587.959, 'eval_steps_per_second': 73.871, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:41, 15.32it/s]{'eval_loss': 1.6849863529205322, 'eval_runtime': 2.3364, 'eval_samples_per_second': 585.954, 'eval_steps_per_second': 73.619, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:11<08:09, 15.60it/s]{'eval_loss': 1.5655994415283203, 'eval_runtime': 2.3257, 'eval_samples_per_second': 588.649, 'eval_steps_per_second': 73.957, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:43<06:52, 15.41it/s]{'eval_loss': 1.7798186540603638, 'eval_runtime': 2.3285, 'eval_samples_per_second': 587.939, 'eval_steps_per_second': 73.868, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:18<05:24, 15.68it/s]{'eval_loss': 1.9152052402496338, 'eval_runtime': 2.3606, 'eval_samples_per_second': 579.934, 'eval_steps_per_second': 72.862, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:50<04:06, 15.47it/s]{'eval_loss': 1.8953057527542114, 'eval_runtime': 2.2835, 'eval_samples_per_second': 599.526, 'eval_steps_per_second': 75.324, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:25<02:43, 15.55it/s]{'eval_loss': 2.3026604652404785, 'eval_runtime': 2.3015, 'eval_samples_per_second': 594.831, 'eval_steps_per_second': 74.734, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:56<01:23, 15.33it/s]{'eval_loss': 2.7566936016082764, 'eval_runtime': 2.3191, 'eval_samples_per_second': 590.312, 'eval_steps_per_second': 74.166, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:33<00:00, 15.23it/s]{'eval_loss': 2.9929208755493164, 'eval_runtime': 2.3162, 'eval_samples_per_second': 591.059, 'eval_steps_per_second': 74.26, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.3702683448791504, 'eval_runtime': 2.3442, 'eval_samples_per_second': 584.001, 'eval_steps_per_second': 73.373, 'epoch': 10.0}
+
+{'train_runtime': 935.5119, 'train_samples_per_second': 108.839, 'train_steps_per_second': 13.608, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.37854609929078015
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.43      0.53      0.48       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.18      0.18      0.18        33
+
+               Comment       0.56      0.27      0.36       165
+
+           Conditional       1.00      0.17      0.29        18
+
+          Continuation       0.18      0.85      0.30       113
+
+              Contrast       0.60      0.27      0.37        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.29      0.02      0.04       101
+
+           Explanation       0.33      0.06      0.11        31
+
+             Narration       0.11      0.15      0.12        13
+
+              Parallel       0.83      0.33      0.48        15
+
+                Q_Elab       0.56      0.28      0.37        72
+
+  Question_answer_pair       0.96      0.51      0.66       305
+
+                Result       0.02      0.03      0.03        29
+
+              accuracy                           0.38      1128
+
+             macro avg       0.38      0.23      0.24      1128
+
+          weighted avg       0.54      0.38      0.39      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:30<12:36, 15.15it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:57, 15.49it/s]{'eval_loss': 1.9503722190856934, 'eval_runtime': 2.3188, 'eval_samples_per_second': 590.403, 'eval_steps_per_second': 74.178, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:43, 15.27it/s]{'eval_loss': 1.6849863529205322, 'eval_runtime': 2.3535, 'eval_samples_per_second': 581.675, 'eval_steps_per_second': 73.081, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:15<08:11, 15.53it/s]{'eval_loss': 1.5655994415283203, 'eval_runtime': 2.3187, 'eval_samples_per_second': 590.417, 'eval_steps_per_second': 74.18, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:47<06:57, 15.26it/s]{'eval_loss': 1.7798186540603638, 'eval_runtime': 2.3141, 'eval_samples_per_second': 591.598, 'eval_steps_per_second': 74.328, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:22<05:22, 15.77it/s]{'eval_loss': 1.9152052402496338, 'eval_runtime': 2.3127, 'eval_samples_per_second': 591.936, 'eval_steps_per_second': 74.37, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:55<04:08, 15.39it/s]{'eval_loss': 1.8953057527542114, 'eval_runtime': 2.277, 'eval_samples_per_second': 601.221, 'eval_steps_per_second': 75.537, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:32<02:43, 15.60it/s]{'eval_loss': 2.3026604652404785, 'eval_runtime': 2.2848, 'eval_samples_per_second': 599.184, 'eval_steps_per_second': 75.281, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:22, 15.38it/s]{'eval_loss': 2.7566936016082764, 'eval_runtime': 2.2792, 'eval_samples_per_second': 600.637, 'eval_steps_per_second': 75.464, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:40<00:00, 15.50it/s]{'eval_loss': 2.9929208755493164, 'eval_runtime': 2.3164, 'eval_samples_per_second': 591.013, 'eval_steps_per_second': 74.254, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.3702683448791504, 'eval_runtime': 2.3336, 'eval_samples_per_second': 586.639, 'eval_steps_per_second': 73.705, 'epoch': 10.0}
+
+{'train_runtime': 943.0213, 'train_samples_per_second': 107.972, 'train_steps_per_second': 13.499, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.37854609929078015
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.43      0.53      0.48       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.18      0.18      0.18        33
+
+               Comment       0.56      0.27      0.36       165
+
+           Conditional       1.00      0.17      0.29        18
+
+          Continuation       0.18      0.85      0.30       113
+
+              Contrast       0.60      0.27      0.37        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.29      0.02      0.04       101
+
+           Explanation       0.33      0.06      0.11        31
+
+             Narration       0.11      0.15      0.12        13
+
+              Parallel       0.83      0.33      0.48        15
+
+                Q_Elab       0.56      0.28      0.37        72
+
+  Question_answer_pair       0.96      0.51      0.66       305
+
+                Result       0.02      0.03      0.03        29
+
+              accuracy                           0.38      1128
+
+             macro avg       0.38      0.23      0.24      1128
+
+          weighted avg       0.54      0.38      0.39      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:26, 15.36it/s]{'loss': 2.0941, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:54, 15.55it/s]{'eval_loss': 1.9503722190856934, 'eval_runtime': 2.3555, 'eval_samples_per_second': 581.199, 'eval_steps_per_second': 73.021, 'epoch': 1.0}
+
+{'loss': 1.7395, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:44, 15.25it/s]{'eval_loss': 1.6849863529205322, 'eval_runtime': 2.3163, 'eval_samples_per_second': 591.024, 'eval_steps_per_second': 74.256, 'epoch': 2.0}
+
+{'loss': 1.4862, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:12<08:06, 15.71it/s]{'eval_loss': 1.5655994415283203, 'eval_runtime': 2.3152, 'eval_samples_per_second': 591.31, 'eval_steps_per_second': 74.292, 'epoch': 3.0}
+
+{'loss': 1.2928, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:47<06:56, 15.27it/s]{'eval_loss': 1.7798186540603638, 'eval_runtime': 2.3179, 'eval_samples_per_second': 590.611, 'eval_steps_per_second': 74.204, 'epoch': 4.0}
+
+{'loss': 1.1438, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:22<05:24, 15.68it/s]{'eval_loss': 1.9152052402496338, 'eval_runtime': 2.2878, 'eval_samples_per_second': 598.398, 'eval_steps_per_second': 75.182, 'epoch': 5.0}
+
+{'loss': 0.9962, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:55<04:07, 15.44it/s]{'eval_loss': 1.8953057527542114, 'eval_runtime': 2.2988, 'eval_samples_per_second': 595.523, 'eval_steps_per_second': 74.821, 'epoch': 6.0}
+
+{'loss': 0.8738, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:31<02:43, 15.56it/s]{'eval_loss': 2.3026604652404785, 'eval_runtime': 2.2917, 'eval_samples_per_second': 597.382, 'eval_steps_per_second': 75.055, 'epoch': 7.0}
+
+{'loss': 0.7628, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:03<01:22, 15.37it/s]{'eval_loss': 2.7566936016082764, 'eval_runtime': 2.2961, 'eval_samples_per_second': 596.241, 'eval_steps_per_second': 74.911, 'epoch': 8.0}
+
+{'loss': 0.678, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:39<00:00, 15.61it/s]{'eval_loss': 2.9929208755493164, 'eval_runtime': 2.3116, 'eval_samples_per_second': 592.22, 'eval_steps_per_second': 74.406, 'epoch': 9.0}
+
+{'loss': 0.5864, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 3.3702683448791504, 'eval_runtime': 2.316, 'eval_samples_per_second': 591.114, 'eval_steps_per_second': 74.267, 'epoch': 10.0}
+
+{'train_runtime': 941.8038, 'train_samples_per_second': 108.112, 'train_steps_per_second': 13.517, 'train_loss': 1.1653592980947443, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.37854609929078015
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.43      0.53      0.48       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.18      0.18      0.18        33
+
+               Comment       0.56      0.27      0.36       165
+
+           Conditional       1.00      0.17      0.29        18
+
+          Continuation       0.18      0.85      0.30       113
+
+              Contrast       0.60      0.27      0.37        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.29      0.02      0.04       101
+
+           Explanation       0.33      0.06      0.11        31
+
+             Narration       0.11      0.15      0.12        13
+
+              Parallel       0.83      0.33      0.48        15
+
+                Q_Elab       0.56      0.28      0.37        72
+
+  Question_answer_pair       0.96      0.51      0.66       305
+
+                Result       0.02      0.03      0.03        29
+
+              accuracy                           0.38      1128
+
+             macro avg       0.38      0.23      0.24      1128
+
+          weighted avg       0.54      0.38      0.39      1128
+
+Average accuracy = 0.37854609929078015
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:24, 15.38it/s]{'loss': 2.1155, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:07<10:55, 15.54it/s]{'eval_loss': 1.9331785440444946, 'eval_runtime': 2.3271, 'eval_samples_per_second': 588.286, 'eval_steps_per_second': 73.912, 'epoch': 1.0}
+
+{'loss': 1.6793, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:40<09:34, 15.50it/s]{'eval_loss': 1.6217966079711914, 'eval_runtime': 2.324, 'eval_samples_per_second': 589.072, 'eval_steps_per_second': 74.011, 'epoch': 2.0}
+
+{'loss': 1.4402, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:17<08:04, 15.76it/s]{'eval_loss': 1.636992335319519, 'eval_runtime': 2.3209, 'eval_samples_per_second': 589.861, 'eval_steps_per_second': 74.11, 'epoch': 3.0}
+
+{'loss': 1.2638, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:49<06:54, 15.37it/s]{'eval_loss': 1.6448829174041748, 'eval_runtime': 2.2915, 'eval_samples_per_second': 597.433, 'eval_steps_per_second': 75.061, 'epoch': 4.0}
+
+{'loss': 1.1119, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:24<05:28, 15.50it/s]{'eval_loss': 1.7734616994857788, 'eval_runtime': 2.3191, 'eval_samples_per_second': 590.312, 'eval_steps_per_second': 74.166, 'epoch': 5.0}
+
+{'loss': 0.9579, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:57<04:10, 15.27it/s]{'eval_loss': 1.7335630655288696, 'eval_runtime': 2.2981, 'eval_samples_per_second': 595.704, 'eval_steps_per_second': 74.844, 'epoch': 6.0}
+
+{'loss': 0.8263, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:32<02:43, 15.53it/s]{'eval_loss': 2.0169875621795654, 'eval_runtime': 2.2916, 'eval_samples_per_second': 597.401, 'eval_steps_per_second': 75.057, 'epoch': 7.0}
+
+{'loss': 0.7032, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:04<01:22, 15.51it/s]{'eval_loss': 2.2292723655700684, 'eval_runtime': 2.3117, 'eval_samples_per_second': 592.2, 'eval_steps_per_second': 74.403, 'epoch': 8.0}
+
+{'loss': 0.6191, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+ 94%|█████████▍| 12002/12730 [14:54<15:42,  1.30s/it]
+
+100%|██████████| 12730/12730 [15:44<00:00, 15.64it/s]{'eval_loss': 2.4597907066345215, 'eval_runtime': 2.2865, 'eval_samples_per_second': 598.732, 'eval_steps_per_second': 75.224, 'epoch': 9.0}
+
+{'loss': 0.5374, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.6750199794769287, 'eval_runtime': 2.3004, 'eval_samples_per_second': 595.12, 'eval_steps_per_second': 74.77, 'epoch': 10.0}
+
+{'train_runtime': 946.7125, 'train_samples_per_second': 107.551, 'train_steps_per_second': 13.447, 'train_loss': 1.1254504375352883, 'epoch': 10.0}
+
+Accuracy: 0.5585106382978723
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.65      0.74      0.69       148
+
+           Alternation       0.41      0.37      0.39        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.23      0.33      0.27        33
+
+               Comment       0.56      0.50      0.53       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.42      0.39      0.40       113
+
+              Contrast       0.36      0.36      0.36        44
+
+            Correction       0.33      0.14      0.20        21
+
+           Elaboration       0.37      0.38      0.37       101
+
+           Explanation       0.24      0.32      0.28        31
+
+             Narration       0.50      0.15      0.24        13
+
+              Parallel       0.25      0.13      0.17        15
+
+                Q_Elab       0.56      0.51      0.54        72
+
+  Question_answer_pair       0.81      0.84      0.82       305
+
+                Result       0.21      0.24      0.22        29
+
+              accuracy                           0.56      1128
+
+             macro avg       0.39      0.36      0.37      1128
+
+          weighted avg       0.56      0.56      0.56      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:20, 15.48it/s]{'loss': 2.1155, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<10:50, 15.66it/s]{'eval_loss': 1.9331785440444946, 'eval_runtime': 2.2834, 'eval_samples_per_second': 599.552, 'eval_steps_per_second': 75.327, 'epoch': 1.0}
+
+{'loss': 1.6793, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:46, 15.19it/s]{'eval_loss': 1.6217966079711914, 'eval_runtime': 2.336, 'eval_samples_per_second': 586.049, 'eval_steps_per_second': 73.631, 'epoch': 2.0}
+
+{'loss': 1.4402, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:05, 15.73it/s]{'eval_loss': 1.636992335319519, 'eval_runtime': 2.2953, 'eval_samples_per_second': 596.427, 'eval_steps_per_second': 74.935, 'epoch': 3.0}
+
+{'loss': 1.2638, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:46<06:54, 15.37it/s]{'eval_loss': 1.6448829174041748, 'eval_runtime': 2.2856, 'eval_samples_per_second': 598.964, 'eval_steps_per_second': 75.253, 'epoch': 4.0}
+
+{'loss': 1.1119, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:21<05:50, 14.54it/s]{'eval_loss': 1.7734616994857788, 'eval_runtime': 2.2845, 'eval_samples_per_second': 599.262, 'eval_steps_per_second': 75.291, 'epoch': 5.0}
+
+{'loss': 0.9579, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:53<04:07, 15.45it/s]{'eval_loss': 1.7335630655288696, 'eval_runtime': 2.3232, 'eval_samples_per_second': 589.275, 'eval_steps_per_second': 74.036, 'epoch': 6.0}
+
+{'loss': 0.8263, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:30<02:43, 15.59it/s]{'eval_loss': 2.0169875621795654, 'eval_runtime': 2.2883, 'eval_samples_per_second': 598.265, 'eval_steps_per_second': 75.165, 'epoch': 7.0}
+
+{'loss': 0.7032, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [14:02<01:23, 15.23it/s]{'eval_loss': 2.2292723655700684, 'eval_runtime': 2.2951, 'eval_samples_per_second': 596.486, 'eval_steps_per_second': 74.942, 'epoch': 8.0}
+
+{'loss': 0.6191, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:37<00:00, 15.55it/s]{'eval_loss': 2.4597907066345215, 'eval_runtime': 2.3077, 'eval_samples_per_second': 593.234, 'eval_steps_per_second': 74.533, 'epoch': 9.0}
+
+{'loss': 0.5374, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.6750199794769287, 'eval_runtime': 2.2968, 'eval_samples_per_second': 596.05, 'eval_steps_per_second': 74.887, 'epoch': 10.0}
+
+{'train_runtime': 940.0711, 'train_samples_per_second': 108.311, 'train_steps_per_second': 13.542, 'train_loss': 1.1254504375352883, 'epoch': 10.0}
+
+Accuracy: 0.5585106382978723
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.65      0.74      0.69       148
+
+           Alternation       0.41      0.37      0.39        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.23      0.33      0.27        33
+
+               Comment       0.56      0.50      0.53       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.42      0.39      0.40       113
+
+              Contrast       0.36      0.36      0.36        44
+
+            Correction       0.33      0.14      0.20        21
+
+           Elaboration       0.37      0.38      0.37       101
+
+           Explanation       0.24      0.32      0.28        31
+
+             Narration       0.50      0.15      0.24        13
+
+              Parallel       0.25      0.13      0.17        15
+
+                Q_Elab       0.56      0.51      0.54        72
+
+  Question_answer_pair       0.81      0.84      0.82       305
+
+                Result       0.21      0.24      0.22        29
+
+              accuracy                           0.56      1128
+
+             macro avg       0.39      0.36      0.37      1128
+
+          weighted avg       0.56      0.56      0.56      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:22, 15.42it/s]{'loss': 2.1155, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:11, 15.16it/s]{'eval_loss': 1.9331785440444946, 'eval_runtime': 2.297, 'eval_samples_per_second': 596.0, 'eval_steps_per_second': 74.881, 'epoch': 1.0}
+
+{'loss': 1.6793, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:34, 15.51it/s]{'eval_loss': 1.6217966079711914, 'eval_runtime': 2.4375, 'eval_samples_per_second': 561.634, 'eval_steps_per_second': 70.563, 'epoch': 2.0}
+
+{'loss': 1.4402, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:13<08:10, 15.58it/s]{'eval_loss': 1.636992335319519, 'eval_runtime': 2.3225, 'eval_samples_per_second': 589.457, 'eval_steps_per_second': 74.059, 'epoch': 3.0}
+
+{'loss': 1.2638, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:47<06:54, 15.37it/s]{'eval_loss': 1.6448829174041748, 'eval_runtime': 2.3044, 'eval_samples_per_second': 594.086, 'eval_steps_per_second': 74.64, 'epoch': 4.0}
+
+{'loss': 1.1119, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:22<05:25, 15.63it/s]{'eval_loss': 1.7734616994857788, 'eval_runtime': 2.2904, 'eval_samples_per_second': 597.72, 'eval_steps_per_second': 75.097, 'epoch': 5.0}
+
+{'loss': 0.9579, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:55<04:06, 15.48it/s]{'eval_loss': 1.7335630655288696, 'eval_runtime': 2.3267, 'eval_samples_per_second': 588.379, 'eval_steps_per_second': 73.923, 'epoch': 6.0}
+
+{'loss': 0.8263, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:30<02:42, 15.67it/s]{'eval_loss': 2.0169875621795654, 'eval_runtime': 2.2937, 'eval_samples_per_second': 596.844, 'eval_steps_per_second': 74.987, 'epoch': 7.0}
+
+{'loss': 0.7032, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 86%|████████▋ | 11002/12730 [13:35<31:38,  1.10s/it]
+
+ 90%|█████████ | 11457/12730 [14:05<01:22, 15.49it/s]{'eval_loss': 2.2292723655700684, 'eval_runtime': 2.3022, 'eval_samples_per_second': 594.653, 'eval_steps_per_second': 74.712, 'epoch': 8.0}
+
+{'loss': 0.6191, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:39<00:00, 15.70it/s]{'eval_loss': 2.4597907066345215, 'eval_runtime': 2.2961, 'eval_samples_per_second': 596.228, 'eval_steps_per_second': 74.91, 'epoch': 9.0}
+
+{'loss': 0.5374, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.6750199794769287, 'eval_runtime': 2.2947, 'eval_samples_per_second': 596.595, 'eval_steps_per_second': 74.956, 'epoch': 10.0}
+
+{'train_runtime': 941.3958, 'train_samples_per_second': 108.159, 'train_steps_per_second': 13.522, 'train_loss': 1.1254504375352883, 'epoch': 10.0}
+
+Accuracy: 0.5585106382978723
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.65      0.74      0.69       148
+
+           Alternation       0.41      0.37      0.39        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.23      0.33      0.27        33
+
+               Comment       0.56      0.50      0.53       165
+
+           Conditional       0.38      0.33      0.35        18
+
+          Continuation       0.42      0.39      0.40       113
+
+              Contrast       0.36      0.36      0.36        44
+
+            Correction       0.33      0.14      0.20        21
+
+           Elaboration       0.37      0.38      0.37       101
+
+           Explanation       0.24      0.32      0.28        31
+
+             Narration       0.50      0.15      0.24        13
+
+              Parallel       0.25      0.13      0.17        15
+
+                Q_Elab       0.56      0.51      0.54        72
+
+  Question_answer_pair       0.81      0.84      0.82       305
+
+                Result       0.21      0.24      0.22        29
+
+              accuracy                           0.56      1128
+
+             macro avg       0.39      0.36      0.37      1128
+
+          weighted avg       0.56      0.56      0.56      1128
+
+Average accuracy = 0.5585106382978723
+
+********** Run complete **********
+

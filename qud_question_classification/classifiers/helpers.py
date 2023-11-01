@@ -64,19 +64,25 @@ def get_sentence_pair_question_relation_data():
 def get_masked_sentence_pair_question_relation_data():
     X_train,X_test,X_val,y_train,y_test,y_val = [],[],[],[],[],[]
     for elem in train_stac_qud:
-        curr_x = "speaker_one: " + elem['sentence_one']['text'] + ' ' + "speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = elem['sentence_one']['speaker'] + ": " + elem['sentence_one']['text'] + ' ' + elem['sentence_two']['speaker'] + ": " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_train.append(curr_x)
         curr_y = elem['relation']
         y_train.append(curr_y)
 
     for elem in dev_stac_qud:
-        curr_x = "speaker_one: " + elem['sentence_one']['text'] + ' ' + "speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = elem['sentence_one']['speaker'] + ": " + elem['sentence_one']['text'] + ' ' + elem['sentence_two']['speaker'] + ": " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x = curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_val.append(curr_x)
         curr_y = elem['relation']
         y_val.append(curr_y)
 
     for elem in test_stac_qud:
-        curr_x = "speaker_one: " + elem['sentence_one']['text'] + ' ' + "speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = elem['sentence_one']['speaker'] + ": " + elem['sentence_one']['text'] + ' ' + elem['sentence_two']['speaker'] + ": " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x = curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_test.append(curr_x)
         curr_y = elem['relation']
         y_test.append(curr_y)
@@ -88,18 +94,24 @@ def get_masked_sentence_pair_distance_question_relation_data():
     X_train,X_test,X_val,y_train,y_test,y_val = [],[],[],[],[],[]
     for elem in train_stac_qud:
         curr_x = str(elem['sentence_one']['speechturn']) + " speaker_one: " + elem['sentence_one']['text'] + ' ' + str(elem['sentence_two']['speechturn']) + " speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x = curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_train.append(curr_x)
         curr_y = elem['relation']
         y_train.append(curr_y)
 
     for elem in dev_stac_qud:
         curr_x = str(elem['sentence_one']['speechturn']) + " speaker_one: " + elem['sentence_one']['text'] + ' ' + str(elem['sentence_two']['speechturn']) + " speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x = curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_val.append(curr_x)
         curr_y = elem['relation']
         y_val.append(curr_y)
 
     for elem in test_stac_qud:
         curr_x = str(elem['sentence_one']['speechturn']) + " speaker_one: " + elem['sentence_one']['text'] + ' ' + str(elem['sentence_two']['speechturn']) + " speaker_two: " + elem['sentence_two']['text'] + ' ' + elem['question']
+        curr_x = curr_x.replace(elem['sentence_one']['speaker'], "speaker_one")
+        curr_x = curr_x.replace(elem['sentence_two']['speaker'], "speaker_two")
         X_test.append(curr_x)
         curr_y = elem['relation']
         y_test.append(curr_y)
@@ -107,7 +119,7 @@ def get_masked_sentence_pair_distance_question_relation_data():
     return X_train,X_test,y_train,y_test,X_val,y_val
 
 
-def get_sentence_pair_question_relation_data_for_lm(tokenizer):
+def get_sentence_pair_question_relation_data_for_lm(tokenizer, model_name):
     labels = set([elem['relation'] for elem in train_stac_qud+test_stac_qud])
     label2id,id2label = {},{}
     for i,label in enumerate(labels):
@@ -116,9 +128,11 @@ def get_sentence_pair_question_relation_data_for_lm(tokenizer):
 
     X_train,X_test,y_train,y_test,X_val,y_val = get_sentence_pair_question_relation_data()
 
-    train_encodings = tokenizer(X_train, truncation=True, padding=True)
-    val_encodings = tokenizer(X_val, truncation=True, padding=True)
-    test_encodings = tokenizer(X_test, truncation=True, padding=True)
+    padding = True
+    
+    train_encodings = tokenizer(X_train, truncation=True, padding=padding)
+    val_encodings = tokenizer(X_val, truncation=True, padding=padding)
+    test_encodings = tokenizer(X_test, truncation=True, padding=padding)
 
     train_labels = [label2id[label] for label in y_train]
     val_labels = [label2id[label] for label in y_val]
@@ -130,7 +144,7 @@ def get_sentence_pair_question_relation_data_for_lm(tokenizer):
 
     return train_dataset,val_dataset,test_dataset,label2id,id2label,y_test
 
-def get_masked_sentence_pair_question_relation_data_for_lm(tokenizer):
+def get_masked_sentence_pair_question_relation_data_for_lm(tokenizer, model_name):
     labels = set([elem['relation'] for elem in train_stac_qud+test_stac_qud])
     label2id,id2label = {},{}
     for i,label in enumerate(labels):
@@ -139,9 +153,11 @@ def get_masked_sentence_pair_question_relation_data_for_lm(tokenizer):
 
     X_train,X_test,y_train,y_test,X_val,y_val = get_masked_sentence_pair_question_relation_data()
 
-    train_encodings = tokenizer(X_train, truncation=True, padding=True)
-    val_encodings = tokenizer(X_val, truncation=True, padding=True)
-    test_encodings = tokenizer(X_test, truncation=True, padding=True)
+    padding = True
+
+    train_encodings = tokenizer(X_train, truncation=True, padding=padding)
+    val_encodings = tokenizer(X_val, truncation=True, padding=padding)
+    test_encodings = tokenizer(X_test, truncation=True, padding=padding)
 
     train_labels = [label2id[label] for label in y_train]
     val_labels = [label2id[label] for label in y_val]
@@ -153,7 +169,7 @@ def get_masked_sentence_pair_question_relation_data_for_lm(tokenizer):
 
     return train_dataset,val_dataset,test_dataset,label2id,id2label,y_test
 
-def get_masked_sentence_pair_distance_question_relation_data_for_lm(tokenizer):
+def get_masked_sentence_pair_distance_question_relation_data_for_lm(tokenizer, model_name):
     labels = set([elem['relation'] for elem in train_stac_qud+test_stac_qud])
     label2id,id2label = {},{}
     for i,label in enumerate(labels):
@@ -162,9 +178,11 @@ def get_masked_sentence_pair_distance_question_relation_data_for_lm(tokenizer):
 
     X_train,X_test,y_train,y_test,X_val,y_val = get_masked_sentence_pair_distance_question_relation_data()
 
-    train_encodings = tokenizer(X_train, truncation=True, padding=True)
-    val_encodings = tokenizer(X_val, truncation=True, padding=True)
-    test_encodings = tokenizer(X_test, truncation=True, padding=True)
+    padding = True
+    
+    train_encodings = tokenizer(X_train, truncation=True, padding=padding)
+    val_encodings = tokenizer(X_val, truncation=True, padding=padding)
+    test_encodings = tokenizer(X_test, truncation=True, padding=padding)
 
     train_labels = [label2id[label] for label in y_train]
     val_labels = [label2id[label] for label in y_val]

@@ -31,11 +31,9 @@ def train_and_test_model(train_dataset,val_dataset,test_dataset,label2id,id2labe
         model = BertForSequenceClassification.from_pretrained(model_name, num_labels=len(label2id), label2id=label2id, id2label=id2label)
 
         training_args = TrainingArguments(
-            output_dir='./bert_sequence_classification_output',
+            output_dir='./todbert_sequence_classification_output',
             num_train_epochs=10,
             learning_rate=lr,
-            per_device_train_batch_size=8,
-            per_device_eval_batch_size=8,
             save_total_limit=1,
             evaluation_strategy="epoch",
             logging_strategy="epoch",
@@ -67,7 +65,7 @@ def train_and_test_model(train_dataset,val_dataset,test_dataset,label2id,id2labe
     print("Average accuracy = " + str(sum(all_accuracy)/3))
 
 
-model_name = "bert-base-uncased"
+model_name = "TODBERT/TOD-BERT-JNT-V1"
 
 print(f"\n\n********** Run - model: {model_name}, learning rate = {lr} **********\n")
 
@@ -81,7 +79,7 @@ elif run == 2:
     tokenizer = BertTokenizer.from_pretrained(model_name)
     train_dataset,val_dataset,test_dataset,label2id,id2label,y_test = get_masked_sentence_pair_question_relation_data_for_lm(tokenizer=tokenizer)
     train_and_test_model(train_dataset,val_dataset,test_dataset,label2id,id2label,y_test)
-elif run == 3:
+elif run == 3
     print("\n\n********** Third run - masked speakers, input sentence pairs, distance and question**********\n")
     tokenizer = BertTokenizer.from_pretrained(model_name)
     train_dataset,val_dataset,test_dataset,label2id,id2label,y_test = get_masked_sentence_pair_distance_question_relation_data_for_lm(tokenizer=tokenizer)

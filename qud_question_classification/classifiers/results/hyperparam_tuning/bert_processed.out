@@ -1,0 +1,2516 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: bert-base-uncased, learning rate = 2e-05 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:31, 15.25it/s]{'loss': 1.6944, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:13, 15.11it/s]{'eval_loss': 1.45225191116333, 'eval_runtime': 1.9506, 'eval_samples_per_second': 701.846, 'eval_steps_per_second': 88.179, 'epoch': 1.0}
+
+{'loss': 1.1693, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:42, 15.30it/s]{'eval_loss': 1.2528185844421387, 'eval_runtime': 1.9429, 'eval_samples_per_second': 704.599, 'eval_steps_per_second': 88.525, 'epoch': 2.0}
+
+{'loss': 0.8874, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:11<08:33, 14.89it/s]{'eval_loss': 1.2328389883041382, 'eval_runtime': 1.9509, 'eval_samples_per_second': 701.717, 'eval_steps_per_second': 88.163, 'epoch': 3.0}
+
+{'loss': 0.6589, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:42<06:55, 15.31it/s]{'eval_loss': 1.3300840854644775, 'eval_runtime': 1.9518, 'eval_samples_per_second': 701.413, 'eval_steps_per_second': 88.125, 'epoch': 4.0}
+
+{'loss': 0.4573, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:17<05:34, 15.24it/s]{'eval_loss': 1.5283513069152832, 'eval_runtime': 1.9526, 'eval_samples_per_second': 701.119, 'eval_steps_per_second': 88.088, 'epoch': 5.0}
+
+{'loss': 0.3118, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:49<04:08, 15.35it/s]{'eval_loss': 1.7929478883743286, 'eval_runtime': 1.9578, 'eval_samples_per_second': 699.266, 'eval_steps_per_second': 87.855, 'epoch': 6.0}
+
+{'loss': 0.2161, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:23<02:47, 15.21it/s]{'eval_loss': 1.9703102111816406, 'eval_runtime': 1.9532, 'eval_samples_per_second': 700.911, 'eval_steps_per_second': 88.062, 'epoch': 7.0}
+
+{'loss': 0.1489, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:55<01:27, 14.56it/s]{'eval_loss': 2.101637601852417, 'eval_runtime': 1.9872, 'eval_samples_per_second': 688.896, 'eval_steps_per_second': 86.552, 'epoch': 8.0}
+
+{'loss': 0.1126, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:30<00:00, 15.17it/s]{'eval_loss': 2.2427399158477783, 'eval_runtime': 1.9574, 'eval_samples_per_second': 699.385, 'eval_steps_per_second': 87.87, 'epoch': 9.0}
+
+{'loss': 0.0796, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.265531063079834, 'eval_runtime': 1.9604, 'eval_samples_per_second': 698.316, 'eval_steps_per_second': 87.736, 'epoch': 10.0}
+
+{'train_runtime': 932.7781, 'train_samples_per_second': 109.158, 'train_steps_per_second': 13.647, 'train_loss': 0.5736320603483789, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6693262411347518
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.82      0.77       148
+
+           Alternation       0.94      0.84      0.89        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.45      0.42        33
+
+               Comment       0.68      0.59      0.63       165
+
+           Conditional       0.74      0.78      0.76        18
+
+          Continuation       0.51      0.44      0.47       113
+
+              Contrast       0.53      0.55      0.54        44
+
+            Correction       0.35      0.29      0.32        21
+
+           Elaboration       0.51      0.53      0.52       101
+
+           Explanation       0.31      0.39      0.34        31
+
+             Narration       0.33      0.08      0.12        13
+
+              Parallel       0.44      0.47      0.45        15
+
+                Q_Elab       0.69      0.72      0.71        72
+
+  Question_answer_pair       0.90      0.90      0.90       305
+
+                Result       0.32      0.41      0.36        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.52      0.52      0.51      1128
+
+          weighted avg       0.67      0.67      0.67      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:30, 15.27it/s]{'loss': 1.6292, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:12, 15.14it/s]{'eval_loss': 1.3692854642868042, 'eval_runtime': 1.9751, 'eval_samples_per_second': 693.119, 'eval_steps_per_second': 87.083, 'epoch': 1.0}
+
+{'loss': 1.1122, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:34<09:39, 15.38it/s]{'eval_loss': 1.2420696020126343, 'eval_runtime': 1.9401, 'eval_samples_per_second': 705.631, 'eval_steps_per_second': 88.655, 'epoch': 2.0}
+
+{'loss': 0.8295, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:08<08:18, 15.31it/s]{'eval_loss': 1.2162431478500366, 'eval_runtime': 1.95, 'eval_samples_per_second': 702.049, 'eval_steps_per_second': 88.205, 'epoch': 3.0}
+
+{'loss': 0.6002, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:39<06:53, 15.39it/s]{'eval_loss': 1.4234211444854736, 'eval_runtime': 1.9392, 'eval_samples_per_second': 705.944, 'eval_steps_per_second': 88.694, 'epoch': 4.0}
+
+{'loss': 0.4153, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:13<05:33, 15.25it/s]{'eval_loss': 1.5943098068237305, 'eval_runtime': 1.9473, 'eval_samples_per_second': 703.018, 'eval_steps_per_second': 88.327, 'epoch': 5.0}
+
+{'loss': 0.2873, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:44<04:08, 15.40it/s]{'eval_loss': 1.894010305404663, 'eval_runtime': 1.9436, 'eval_samples_per_second': 704.354, 'eval_steps_per_second': 88.494, 'epoch': 6.0}
+
+{'loss': 0.1904, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:18<02:46, 15.31it/s]{'eval_loss': 2.116253137588501, 'eval_runtime': 1.9677, 'eval_samples_per_second': 695.735, 'eval_steps_per_second': 87.412, 'epoch': 7.0}
+
+{'loss': 0.1325, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:50<01:22, 15.38it/s]{'eval_loss': 2.264998197555542, 'eval_runtime': 1.9492, 'eval_samples_per_second': 702.341, 'eval_steps_per_second': 88.241, 'epoch': 8.0}
+
+{'loss': 0.0917, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:23<00:00, 15.31it/s]{'eval_loss': 2.388887405395508, 'eval_runtime': 1.9356, 'eval_samples_per_second': 707.258, 'eval_steps_per_second': 88.859, 'epoch': 9.0}
+
+{'loss': 0.0667, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.4040396213531494, 'eval_runtime': 1.9431, 'eval_samples_per_second': 704.527, 'eval_steps_per_second': 88.516, 'epoch': 10.0}
+
+{'train_runtime': 925.354, 'train_samples_per_second': 110.034, 'train_steps_per_second': 13.757, 'train_loss': 0.5355125804820214, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6710992907801419
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.77      0.75       148
+
+           Alternation       1.00      0.84      0.91        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.45      0.52      0.48        33
+
+               Comment       0.65      0.67      0.66       165
+
+           Conditional       0.63      0.67      0.65        18
+
+          Continuation       0.52      0.38      0.44       113
+
+              Contrast       0.53      0.52      0.53        44
+
+            Correction       0.33      0.33      0.33        21
+
+           Elaboration       0.54      0.54      0.54       101
+
+           Explanation       0.31      0.39      0.34        31
+
+             Narration       0.25      0.08      0.12        13
+
+              Parallel       0.57      0.53      0.55        15
+
+                Q_Elab       0.67      0.68      0.68        72
+
+  Question_answer_pair       0.89      0.89      0.89       305
+
+                Result       0.46      0.59      0.52        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.53      0.53      0.52      1128
+
+          weighted avg       0.67      0.67      0.67      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:33, 15.20it/s]{'loss': 1.6292, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:00, 15.42it/s]{'eval_loss': 1.3692854642868042, 'eval_runtime': 1.9673, 'eval_samples_per_second': 695.878, 'eval_steps_per_second': 87.43, 'epoch': 1.0}
+
+{'loss': 1.1122, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:35<09:56, 14.93it/s]{'eval_loss': 1.2420696020126343, 'eval_runtime': 1.9427, 'eval_samples_per_second': 704.673, 'eval_steps_per_second': 88.534, 'epoch': 2.0}
+
+{'loss': 0.8295, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:09<08:14, 15.43it/s]{'eval_loss': 1.2162431478500366, 'eval_runtime': 1.9538, 'eval_samples_per_second': 700.699, 'eval_steps_per_second': 88.035, 'epoch': 3.0}
+
+{'loss': 0.6002, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:39<06:56, 15.29it/s]{'eval_loss': 1.4234211444854736, 'eval_runtime': 1.9389, 'eval_samples_per_second': 706.082, 'eval_steps_per_second': 88.712, 'epoch': 4.0}
+
+{'loss': 0.4153, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:13<05:30, 15.39it/s]{'eval_loss': 1.5943098068237305, 'eval_runtime': 1.9439, 'eval_samples_per_second': 704.256, 'eval_steps_per_second': 88.482, 'epoch': 5.0}
+
+{'loss': 0.2873, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:43<04:08, 15.34it/s]{'eval_loss': 1.894010305404663, 'eval_runtime': 1.9584, 'eval_samples_per_second': 699.056, 'eval_steps_per_second': 87.829, 'epoch': 6.0}
+
+{'loss': 0.1904, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:16<02:45, 15.39it/s]{'eval_loss': 2.116253137588501, 'eval_runtime': 1.9579, 'eval_samples_per_second': 699.232, 'eval_steps_per_second': 87.851, 'epoch': 7.0}
+
+{'loss': 0.1325, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:47<01:23, 15.29it/s]{'eval_loss': 2.264998197555542, 'eval_runtime': 1.9473, 'eval_samples_per_second': 703.042, 'eval_steps_per_second': 88.33, 'epoch': 8.0}
+
+{'loss': 0.0917, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.43it/s]{'eval_loss': 2.388887405395508, 'eval_runtime': 1.9453, 'eval_samples_per_second': 703.754, 'eval_steps_per_second': 88.419, 'epoch': 9.0}
+
+{'loss': 0.0667, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.4040396213531494, 'eval_runtime': 1.9401, 'eval_samples_per_second': 705.625, 'eval_steps_per_second': 88.654, 'epoch': 10.0}
+
+{'train_runtime': 921.9342, 'train_samples_per_second': 110.442, 'train_steps_per_second': 13.808, 'train_loss': 0.5355125804820214, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6710992907801419
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.77      0.75       148
+
+           Alternation       1.00      0.84      0.91        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.45      0.52      0.48        33
+
+               Comment       0.65      0.67      0.66       165
+
+           Conditional       0.63      0.67      0.65        18
+
+          Continuation       0.52      0.38      0.44       113
+
+              Contrast       0.53      0.52      0.53        44
+
+            Correction       0.33      0.33      0.33        21
+
+           Elaboration       0.54      0.54      0.54       101
+
+           Explanation       0.31      0.39      0.34        31
+
+             Narration       0.25      0.08      0.12        13
+
+              Parallel       0.57      0.53      0.55        15
+
+                Q_Elab       0.67      0.68      0.68        72
+
+  Question_answer_pair       0.89      0.89      0.89       305
+
+                Result       0.46      0.59      0.52        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.53      0.53      0.52      1128
+
+          weighted avg       0.67      0.67      0.67      1128
+
+Average accuracy = 0.6705082742316785
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:28<12:26, 15.35it/s]{'loss': 1.6292, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:01<10:56, 15.50it/s]{'eval_loss': 2.180685520172119, 'eval_runtime': 1.9702, 'eval_samples_per_second': 694.863, 'eval_steps_per_second': 87.302, 'epoch': 1.0}
+
+{'loss': 1.1122, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:31<09:42, 15.29it/s]{'eval_loss': 2.217914342880249, 'eval_runtime': 1.9671, 'eval_samples_per_second': 695.949, 'eval_steps_per_second': 87.438, 'epoch': 2.0}
+
+{'loss': 0.8295, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:04<08:12, 15.52it/s]{'eval_loss': 2.0555410385131836, 'eval_runtime': 1.968, 'eval_samples_per_second': 695.639, 'eval_steps_per_second': 87.399, 'epoch': 3.0}
+
+{'loss': 0.6002, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:34<06:53, 15.39it/s]{'eval_loss': 2.56559157371521, 'eval_runtime': 1.9699, 'eval_samples_per_second': 694.947, 'eval_steps_per_second': 87.313, 'epoch': 4.0}
+
+{'loss': 0.4153, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:09<05:31, 15.37it/s]{'eval_loss': 2.8106563091278076, 'eval_runtime': 1.9719, 'eval_samples_per_second': 694.242, 'eval_steps_per_second': 87.224, 'epoch': 5.0}
+
+{'loss': 0.2873, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:38<04:08, 15.36it/s]{'eval_loss': 3.2714858055114746, 'eval_runtime': 1.967, 'eval_samples_per_second': 695.995, 'eval_steps_per_second': 87.444, 'epoch': 6.0}
+
+{'loss': 0.1904, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:13<02:44, 15.51it/s]{'eval_loss': 3.754450559616089, 'eval_runtime': 1.9717, 'eval_samples_per_second': 694.342, 'eval_steps_per_second': 87.237, 'epoch': 7.0}
+
+{'loss': 0.1325, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:43<01:24, 15.13it/s]{'eval_loss': 4.203830718994141, 'eval_runtime': 1.9672, 'eval_samples_per_second': 695.905, 'eval_steps_per_second': 87.433, 'epoch': 8.0}
+
+{'loss': 0.0917, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:16<00:00, 15.44it/s]{'eval_loss': 4.268733024597168, 'eval_runtime': 1.9739, 'eval_samples_per_second': 693.555, 'eval_steps_per_second': 87.138, 'epoch': 9.0}
+
+{'loss': 0.0667, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 4.261750221252441, 'eval_runtime': 1.9683, 'eval_samples_per_second': 695.523, 'eval_steps_per_second': 87.385, 'epoch': 10.0}
+
+{'train_runtime': 918.8913, 'train_samples_per_second': 110.807, 'train_steps_per_second': 13.854, 'train_loss': 0.5355125804820214, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.36347517730496454
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       1.00      0.03      0.07       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.37      0.33      0.35        33
+
+               Comment       0.52      0.58      0.55       165
+
+           Conditional       0.36      0.56      0.43        18
+
+          Continuation       0.26      0.45      0.33       113
+
+              Contrast       0.55      0.41      0.47        44
+
+            Correction       0.11      0.48      0.18        21
+
+           Elaboration       0.25      0.61      0.36       101
+
+           Explanation       0.17      0.52      0.26        31
+
+             Narration       0.04      0.08      0.05        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.75      0.38      0.50        72
+
+  Question_answer_pair       0.99      0.22      0.36       305
+
+                Result       0.26      0.52      0.34        29
+
+              accuracy                           0.36      1128
+
+             macro avg       0.44      0.39      0.34      1128
+
+          weighted avg       0.64      0.36      0.36      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:28<12:23, 15.42it/s]{'loss': 1.6292, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:02<11:20, 14.97it/s]{'eval_loss': 2.180685520172119, 'eval_runtime': 1.9684, 'eval_samples_per_second': 695.506, 'eval_steps_per_second': 87.383, 'epoch': 1.0}
+
+{'loss': 1.1122, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:33<09:38, 15.41it/s]{'eval_loss': 2.217914342880249, 'eval_runtime': 1.9902, 'eval_samples_per_second': 687.887, 'eval_steps_per_second': 86.425, 'epoch': 2.0}
+
+{'loss': 0.8295, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:06<08:12, 15.52it/s]{'eval_loss': 2.0555410385131836, 'eval_runtime': 1.9664, 'eval_samples_per_second': 696.213, 'eval_steps_per_second': 87.472, 'epoch': 3.0}
+
+{'loss': 0.6002, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:36<06:56, 15.29it/s]{'eval_loss': 2.56559157371521, 'eval_runtime': 1.9709, 'eval_samples_per_second': 694.617, 'eval_steps_per_second': 87.271, 'epoch': 4.0}
+
+{'loss': 0.4153, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:10<05:27, 15.53it/s]{'eval_loss': 2.8106563091278076, 'eval_runtime': 1.9709, 'eval_samples_per_second': 694.619, 'eval_steps_per_second': 87.271, 'epoch': 5.0}
+
+{'loss': 0.2873, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:40<04:10, 15.24it/s]{'eval_loss': 3.2714858055114746, 'eval_runtime': 1.9857, 'eval_samples_per_second': 689.418, 'eval_steps_per_second': 86.618, 'epoch': 6.0}
+
+{'loss': 0.1904, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:13<02:44, 15.48it/s]{'eval_loss': 3.754450559616089, 'eval_runtime': 1.9953, 'eval_samples_per_second': 686.125, 'eval_steps_per_second': 86.204, 'epoch': 7.0}
+
+{'loss': 0.1325, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:44<01:22, 15.37it/s]{'eval_loss': 4.203830718994141, 'eval_runtime': 1.9654, 'eval_samples_per_second': 696.534, 'eval_steps_per_second': 87.512, 'epoch': 8.0}
+
+{'loss': 0.0917, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:17<00:00, 15.45it/s]{'eval_loss': 4.268733024597168, 'eval_runtime': 1.9702, 'eval_samples_per_second': 694.839, 'eval_steps_per_second': 87.299, 'epoch': 9.0}
+
+{'loss': 0.0667, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 4.261750221252441, 'eval_runtime': 1.9717, 'eval_samples_per_second': 694.334, 'eval_steps_per_second': 87.236, 'epoch': 10.0}
+
+{'train_runtime': 919.354, 'train_samples_per_second': 110.752, 'train_steps_per_second': 13.847, 'train_loss': 0.5355125804820214, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.36347517730496454
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       1.00      0.03      0.07       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.37      0.33      0.35        33
+
+               Comment       0.52      0.58      0.55       165
+
+           Conditional       0.36      0.56      0.43        18
+
+          Continuation       0.26      0.45      0.33       113
+
+              Contrast       0.55      0.41      0.47        44
+
+            Correction       0.11      0.48      0.18        21
+
+           Elaboration       0.25      0.61      0.36       101
+
+           Explanation       0.17      0.52      0.26        31
+
+             Narration       0.04      0.08      0.05        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.75      0.38      0.50        72
+
+  Question_answer_pair       0.99      0.22      0.36       305
+
+                Result       0.26      0.52      0.34        29
+
+              accuracy                           0.36      1128
+
+             macro avg       0.44      0.39      0.34      1128
+
+          weighted avg       0.64      0.36      0.36      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:28<12:46, 14.94it/s]{'loss': 1.6292, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:01<11:01, 15.40it/s]{'eval_loss': 2.180685520172119, 'eval_runtime': 1.9682, 'eval_samples_per_second': 695.56, 'eval_steps_per_second': 87.39, 'epoch': 1.0}
+
+{'loss': 1.1122, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:31<09:38, 15.40it/s]{'eval_loss': 2.217914342880249, 'eval_runtime': 1.971, 'eval_samples_per_second': 694.575, 'eval_steps_per_second': 87.266, 'epoch': 2.0}
+
+{'loss': 0.8295, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:04<08:13, 15.48it/s]{'eval_loss': 2.0555410385131836, 'eval_runtime': 1.9711, 'eval_samples_per_second': 694.534, 'eval_steps_per_second': 87.261, 'epoch': 3.0}
+
+{'loss': 0.6002, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:35<06:55, 15.33it/s]{'eval_loss': 2.56559157371521, 'eval_runtime': 1.9702, 'eval_samples_per_second': 694.85, 'eval_steps_per_second': 87.3, 'epoch': 4.0}
+
+{'loss': 0.4153, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:10<05:29, 15.47it/s]{'eval_loss': 2.8106563091278076, 'eval_runtime': 1.9718, 'eval_samples_per_second': 694.278, 'eval_steps_per_second': 87.228, 'epoch': 5.0}
+
+{'loss': 0.2873, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:40<04:09, 15.29it/s]{'eval_loss': 3.2714858055114746, 'eval_runtime': 1.9709, 'eval_samples_per_second': 694.606, 'eval_steps_per_second': 87.27, 'epoch': 6.0}
+
+{'loss': 0.1904, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:13<02:45, 15.40it/s]{'eval_loss': 3.754450559616089, 'eval_runtime': 1.974, 'eval_samples_per_second': 693.509, 'eval_steps_per_second': 87.132, 'epoch': 7.0}
+
+{'loss': 0.1325, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:44<01:23, 15.25it/s]{'eval_loss': 4.203830718994141, 'eval_runtime': 1.9678, 'eval_samples_per_second': 695.699, 'eval_steps_per_second': 87.407, 'epoch': 8.0}
+
+{'loss': 0.0917, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:18<00:00, 15.43it/s]{'eval_loss': 4.268733024597168, 'eval_runtime': 1.9728, 'eval_samples_per_second': 693.952, 'eval_steps_per_second': 87.188, 'epoch': 9.0}
+
+{'loss': 0.0667, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 4.261750221252441, 'eval_runtime': 1.9698, 'eval_samples_per_second': 694.991, 'eval_steps_per_second': 87.318, 'epoch': 10.0}
+
+{'train_runtime': 920.9097, 'train_samples_per_second': 110.565, 'train_steps_per_second': 13.823, 'train_loss': 0.5355125804820214, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.36347517730496454
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       1.00      0.03      0.07       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.37      0.33      0.35        33
+
+               Comment       0.52      0.58      0.55       165
+
+           Conditional       0.36      0.56      0.43        18
+
+          Continuation       0.26      0.45      0.33       113
+
+              Contrast       0.55      0.41      0.47        44
+
+            Correction       0.11      0.48      0.18        21
+
+           Elaboration       0.25      0.61      0.36       101
+
+           Explanation       0.17      0.52      0.26        31
+
+             Narration       0.04      0.08      0.05        13
+
+              Parallel       0.62      0.33      0.43        15
+
+                Q_Elab       0.75      0.38      0.50        72
+
+  Question_answer_pair       0.99      0.22      0.36       305
+
+                Result       0.26      0.52      0.34        29
+
+              accuracy                           0.36      1128
+
+             macro avg       0.44      0.39      0.34      1128
+
+          weighted avg       0.64      0.36      0.36      1128
+
+Average accuracy = 0.36347517730496454
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:27<12:16, 15.56it/s]{'loss': 1.7623, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:00<11:11, 15.18it/s]{'eval_loss': 1.479712963104248, 'eval_runtime': 1.9771, 'eval_samples_per_second': 692.43, 'eval_steps_per_second': 86.996, 'epoch': 1.0}
+
+{'loss': 1.2309, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:30<09:33, 15.52it/s]{'eval_loss': 1.3313316106796265, 'eval_runtime': 1.9806, 'eval_samples_per_second': 691.201, 'eval_steps_per_second': 86.842, 'epoch': 2.0}
+
+{'loss': 0.9473, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:03<08:19, 15.30it/s]{'eval_loss': 1.39817476272583, 'eval_runtime': 1.9774, 'eval_samples_per_second': 692.331, 'eval_steps_per_second': 86.984, 'epoch': 3.0}
+
+{'loss': 0.7047, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<06:52, 15.43it/s]{'eval_loss': 1.4777889251708984, 'eval_runtime': 1.9787, 'eval_samples_per_second': 691.866, 'eval_steps_per_second': 86.925, 'epoch': 4.0}
+
+{'loss': 0.5014, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:09<05:30, 15.39it/s]{'eval_loss': 1.666434407234192, 'eval_runtime': 1.9782, 'eval_samples_per_second': 692.042, 'eval_steps_per_second': 86.948, 'epoch': 5.0}
+
+{'loss': 0.365, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:39<04:07, 15.43it/s]{'eval_loss': 1.8277831077575684, 'eval_runtime': 1.9816, 'eval_samples_per_second': 690.857, 'eval_steps_per_second': 86.799, 'epoch': 6.0}
+
+{'loss': 0.2546, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:13<02:45, 15.42it/s]{'eval_loss': 2.137096643447876, 'eval_runtime': 1.9793, 'eval_samples_per_second': 691.661, 'eval_steps_per_second': 86.9, 'epoch': 7.0}
+
+{'loss': 0.1854, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:43<01:22, 15.51it/s]{'eval_loss': 2.3329238891601562, 'eval_runtime': 1.9793, 'eval_samples_per_second': 691.671, 'eval_steps_per_second': 86.901, 'epoch': 8.0}
+
+{'loss': 0.1361, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:17<00:00, 15.43it/s]{'eval_loss': 2.4277713298797607, 'eval_runtime': 1.98, 'eval_samples_per_second': 691.425, 'eval_steps_per_second': 86.87, 'epoch': 9.0}
+
+{'loss': 0.1036, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.470536708831787, 'eval_runtime': 1.9793, 'eval_samples_per_second': 691.647, 'eval_steps_per_second': 86.898, 'epoch': 10.0}
+
+{'train_runtime': 919.7631, 'train_samples_per_second': 110.702, 'train_steps_per_second': 13.841, 'train_loss': 0.6191296298018798, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6400709219858156
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.72      0.76      0.74       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.45      0.55      0.49        33
+
+               Comment       0.67      0.62      0.65       165
+
+           Conditional       0.65      0.72      0.68        18
+
+          Continuation       0.47      0.39      0.43       113
+
+              Contrast       0.40      0.39      0.40        44
+
+            Correction       0.29      0.24      0.26        21
+
+           Elaboration       0.50      0.52      0.51       101
+
+           Explanation       0.34      0.42      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.69      0.60      0.64        15
+
+                Q_Elab       0.63      0.54      0.58        72
+
+  Question_answer_pair       0.84      0.88      0.86       305
+
+                Result       0.29      0.41      0.34        29
+
+              accuracy                           0.64      1128
+
+             macro avg       0.48      0.49      0.48      1128
+
+          weighted avg       0.64      0.64      0.64      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:28<12:23, 15.42it/s]{'loss': 1.7623, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:00, 15.42it/s]{'eval_loss': 1.479712963104248, 'eval_runtime': 1.9765, 'eval_samples_per_second': 692.623, 'eval_steps_per_second': 87.021, 'epoch': 1.0}
+
+{'loss': 1.2309, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:32<09:37, 15.44it/s]{'eval_loss': 1.3313316106796265, 'eval_runtime': 1.9793, 'eval_samples_per_second': 691.645, 'eval_steps_per_second': 86.898, 'epoch': 2.0}
+
+{'loss': 0.9473, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:05<08:21, 15.24it/s]{'eval_loss': 1.39817476272583, 'eval_runtime': 1.9793, 'eval_samples_per_second': 691.665, 'eval_steps_per_second': 86.9, 'epoch': 3.0}
+
+{'loss': 0.7047, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:35<06:52, 15.42it/s]{'eval_loss': 1.4777889251708984, 'eval_runtime': 2.0029, 'eval_samples_per_second': 683.516, 'eval_steps_per_second': 85.876, 'epoch': 4.0}
+
+{'loss': 0.5014, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:08<05:28, 15.52it/s]{'eval_loss': 1.666434407234192, 'eval_runtime': 1.9777, 'eval_samples_per_second': 692.206, 'eval_steps_per_second': 86.968, 'epoch': 5.0}
+
+{'loss': 0.365, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:40<04:07, 15.42it/s]{'eval_loss': 1.8277831077575684, 'eval_runtime': 1.9974, 'eval_samples_per_second': 685.38, 'eval_steps_per_second': 86.111, 'epoch': 6.0}
+
+{'loss': 0.2546, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:12<02:44, 15.52it/s]{'eval_loss': 2.137096643447876, 'eval_runtime': 1.9962, 'eval_samples_per_second': 685.815, 'eval_steps_per_second': 86.165, 'epoch': 7.0}
+
+{'loss': 0.1854, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:42<01:23, 15.25it/s]{'eval_loss': 2.3329238891601562, 'eval_runtime': 1.9847, 'eval_samples_per_second': 689.787, 'eval_steps_per_second': 86.664, 'epoch': 8.0}
+
+{'loss': 0.1361, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:15<00:00, 15.55it/s]{'eval_loss': 2.4277713298797607, 'eval_runtime': 1.984, 'eval_samples_per_second': 690.031, 'eval_steps_per_second': 86.695, 'epoch': 9.0}
+
+{'loss': 0.1036, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.470536708831787, 'eval_runtime': 1.9752, 'eval_samples_per_second': 693.079, 'eval_steps_per_second': 87.078, 'epoch': 10.0}
+
+{'train_runtime': 917.8403, 'train_samples_per_second': 110.934, 'train_steps_per_second': 13.87, 'train_loss': 0.6191296298018798, 'epoch': 10.0}
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6400709219858156
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.72      0.76      0.74       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.45      0.55      0.49        33
+
+               Comment       0.67      0.62      0.65       165
+
+           Conditional       0.65      0.72      0.68        18
+
+          Continuation       0.47      0.39      0.43       113
+
+              Contrast       0.40      0.39      0.40        44
+
+            Correction       0.29      0.24      0.26        21
+
+           Elaboration       0.50      0.52      0.51       101
+
+           Explanation       0.34      0.42      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.69      0.60      0.64        15
+
+                Q_Elab       0.63      0.54      0.58        72
+
+  Question_answer_pair       0.84      0.88      0.86       305
+
+                Result       0.29      0.41      0.34        29
+
+              accuracy                           0.64      1128
+
+             macro avg       0.48      0.49      0.48      1128
+
+          weighted avg       0.64      0.64      0.64      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:16, 15.55it/s]{'loss': 1.7623, 'learning_rate': 1.8e-05, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:02<11:03, 15.35it/s]{'eval_loss': 1.479712963104248, 'eval_runtime': 1.9962, 'eval_samples_per_second': 685.819, 'eval_steps_per_second': 86.166, 'epoch': 1.0}
+
+{'loss': 1.2309, 'learning_rate': 1.6000000000000003e-05, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:32<09:35, 15.48it/s]{'eval_loss': 1.3313316106796265, 'eval_runtime': 1.9748, 'eval_samples_per_second': 693.229, 'eval_steps_per_second': 87.097, 'epoch': 2.0}
+
+{'loss': 0.9473, 'learning_rate': 1.4e-05, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:05<08:23, 15.17it/s]{'eval_loss': 1.39817476272583, 'eval_runtime': 1.9819, 'eval_samples_per_second': 690.749, 'eval_steps_per_second': 86.785, 'epoch': 3.0}
+
+{'loss': 0.7047, 'learning_rate': 1.2e-05, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:36<06:48, 15.56it/s]{'eval_loss': 1.4777889251708984, 'eval_runtime': 1.9825, 'eval_samples_per_second': 690.534, 'eval_steps_per_second': 86.758, 'epoch': 4.0}
+
+{'loss': 0.5014, 'learning_rate': 1e-05, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:10<05:32, 15.32it/s]{'eval_loss': 1.666434407234192, 'eval_runtime': 1.981, 'eval_samples_per_second': 691.068, 'eval_steps_per_second': 86.825, 'epoch': 5.0}
+
+{'loss': 0.365, 'learning_rate': 8.000000000000001e-06, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:40<04:05, 15.53it/s]{'eval_loss': 1.8277831077575684, 'eval_runtime': 1.9819, 'eval_samples_per_second': 690.74, 'eval_steps_per_second': 86.784, 'epoch': 6.0}
+
+{'loss': 0.2546, 'learning_rate': 6e-06, 'epoch': 7.0}
+
+ 71%|███████   | 9001/12730 [1:14:21<592:32:03, 572.04s/it]
+
+ 71%|███████   | 9003/12730 [1:14:21<414:34:21, 400.45s/it]
+
+ 71%|███████   | 9005/12730 [1:14:21<290:03:54, 280.33s/it]
+
+ 71%|███████   | 9007/12730 [1:14:21<202:57:24, 196.25s/it]
+
+ 71%|███████   | 9009/12730 [1:14:21<142:00:47, 137.40s/it]
+
+ 71%|███████   | 9011/12730 [1:14:21<99:22:33, 96.20s/it]  
+
+ 71%|███████   | 9013/12730 [1:14:21<69:32:44, 67.36s/it]
+
+ 71%|███████   | 9015/12730 [1:14:22<48:40:32, 47.17s/it]
+
+ 71%|███████   | 9017/12730 [1:14:22<34:04:28, 33.04s/it]
+
+ 71%|███████   | 9019/12730 [1:14:22<23:51:33, 23.15s/it]
+
+ 71%|███████   | 9021/12730 [1:14:22<16:42:44, 16.22s/it]
+
+ 71%|███████   | 9023/12730 [1:14:22<11:42:43, 11.37s/it]
+
+ 71%|███████   | 9025/12730 [1:14:22<8:12:50,  7.98s/it] 
+
+ 71%|███████   | 9027/12730 [1:14:22<5:45:59,  5.61s/it]
+
+ 71%|███████   | 9029/12730 [1:14:22<4:03:15,  3.94s/it]
+
+ 71%|███████   | 9031/12730 [1:14:23<2:51:22,  2.78s/it]
+
+ 71%|███████   | 9033/12730 [1:14:23<2:01:05,  1.97s/it]
+
+ 71%|███████   | 9035/12730 [1:14:23<1:25:54,  1.39s/it]
+
+                                                       
+
+ 80%|████████  | 10184/12730 [1:15:43<02:50, 14.90it/s]{'eval_loss': 2.137096643447876, 'eval_runtime': 1.9772, 'eval_samples_per_second': 692.408, 'eval_steps_per_second': 86.994, 'epoch': 7.0}
+
+{'loss': 0.1854, 'learning_rate': 4.000000000000001e-06, 'epoch': 8.0}
+
+                                                       
+
+                                                       
+
+ 90%|█████████ | 11457/12730 [1:17:14<01:22, 15.50it/s]{'eval_loss': 2.3329238891601562, 'eval_runtime': 2.0154, 'eval_samples_per_second': 679.269, 'eval_steps_per_second': 85.343, 'epoch': 8.0}
+
+{'loss': 0.1361, 'learning_rate': 2.0000000000000003e-06, 'epoch': 9.0}
+
+                                                       
+
+                                                       
+
+100%|██████████| 12730/12730 [1:18:48<00:00, 15.28it/s]{'eval_loss': 2.4277713298797607, 'eval_runtime': 1.9883, 'eval_samples_per_second': 688.527, 'eval_steps_per_second': 86.506, 'epoch': 9.0}
+
+{'loss': 0.1036, 'learning_rate': 0.0, 'epoch': 10.0}
+
+                                                       
+
+                                                       
+
+{'eval_loss': 2.470536708831787, 'eval_runtime': 1.9857, 'eval_samples_per_second': 689.438, 'eval_steps_per_second': 86.62, 'epoch': 10.0}
+
+{'train_runtime': 4730.5624, 'train_samples_per_second': 21.524, 'train_steps_per_second': 2.691, 'train_loss': 0.6191296298018798, 'epoch': 10.0}
+
+Accuracy: 0.6400709219858156
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.72      0.76      0.74       148
+
+           Alternation       0.79      0.79      0.79        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.45      0.55      0.49        33
+
+               Comment       0.67      0.62      0.65       165
+
+           Conditional       0.65      0.72      0.68        18
+
+          Continuation       0.47      0.39      0.43       113
+
+              Contrast       0.40      0.39      0.40        44
+
+            Correction       0.29      0.24      0.26        21
+
+           Elaboration       0.50      0.52      0.51       101
+
+           Explanation       0.34      0.42      0.38        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.69      0.60      0.64        15
+
+                Q_Elab       0.63      0.54      0.58        72
+
+  Question_answer_pair       0.84      0.88      0.86       305
+
+                Result       0.29      0.41      0.34        29
+
+              accuracy                           0.64      1128
+
+             macro avg       0.48      0.49      0.48      1128
+
+          weighted avg       0.64      0.64      0.64      1128
+
+Average accuracy = 0.6400709219858156
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: bert-base-uncased, learning rate = 0.0002 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:27, 15.32it/s]{'loss': 2.362, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:06<11:11, 15.16it/s]{'eval_loss': 2.388899326324463, 'eval_runtime': 1.9408, 'eval_samples_per_second': 705.366, 'eval_steps_per_second': 88.622, 'epoch': 1.0}
+
+{'loss': 2.347, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:41, 15.33it/s]{'eval_loss': 2.3864362239837646, 'eval_runtime': 1.9262, 'eval_samples_per_second': 710.711, 'eval_steps_per_second': 89.293, 'epoch': 2.0}
+
+{'loss': 2.34, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:11<08:24, 15.13it/s]{'eval_loss': 2.395350456237793, 'eval_runtime': 1.9607, 'eval_samples_per_second': 698.203, 'eval_steps_per_second': 87.722, 'epoch': 3.0}
+
+{'loss': 2.3418, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:42<06:55, 15.34it/s]{'eval_loss': 2.398026704788208, 'eval_runtime': 1.9305, 'eval_samples_per_second': 709.136, 'eval_steps_per_second': 89.095, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:17<05:36, 15.13it/s]{'eval_loss': 2.385305166244507, 'eval_runtime': 1.9913, 'eval_samples_per_second': 687.481, 'eval_steps_per_second': 86.375, 'epoch': 5.0}
+
+{'loss': 2.3358, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:48<04:09, 15.32it/s]{'eval_loss': 2.387251377105713, 'eval_runtime': 1.9321, 'eval_samples_per_second': 708.543, 'eval_steps_per_second': 89.021, 'epoch': 6.0}
+
+{'loss': 2.3349, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:24<02:47, 15.21it/s]{'eval_loss': 2.389254570007324, 'eval_runtime': 1.9235, 'eval_samples_per_second': 711.716, 'eval_steps_per_second': 89.419, 'epoch': 7.0}
+
+{'loss': 2.3333, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:55<01:23, 15.24it/s]{'eval_loss': 2.382173776626587, 'eval_runtime': 1.9461, 'eval_samples_per_second': 703.463, 'eval_steps_per_second': 88.383, 'epoch': 8.0}
+
+{'loss': 2.3322, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:29<00:00, 15.21it/s]{'eval_loss': 2.381880760192871, 'eval_runtime': 1.9261, 'eval_samples_per_second': 710.779, 'eval_steps_per_second': 89.302, 'epoch': 9.0}
+
+{'loss': 2.3301, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3847789764404297, 'eval_runtime': 1.921, 'eval_samples_per_second': 712.635, 'eval_steps_per_second': 89.535, 'epoch': 10.0}
+
+{'train_runtime': 931.7066, 'train_samples_per_second': 109.283, 'train_steps_per_second': 13.663, 'train_loss': 2.339399483104625, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:43, 15.01it/s]{'loss': 2.3656, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:05, 15.29it/s]{'eval_loss': 2.3891139030456543, 'eval_runtime': 1.9559, 'eval_samples_per_second': 699.939, 'eval_steps_per_second': 87.94, 'epoch': 1.0}
+
+{'loss': 2.3475, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:35<09:50, 15.09it/s]{'eval_loss': 2.3860929012298584, 'eval_runtime': 1.9175, 'eval_samples_per_second': 713.958, 'eval_steps_per_second': 89.701, 'epoch': 2.0}
+
+{'loss': 2.3402, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:10<08:19, 15.30it/s]{'eval_loss': 2.397270917892456, 'eval_runtime': 1.9296, 'eval_samples_per_second': 709.472, 'eval_steps_per_second': 89.138, 'epoch': 3.0}
+
+{'loss': 2.3417, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:41<06:59, 15.18it/s]{'eval_loss': 2.397056818008423, 'eval_runtime': 1.914, 'eval_samples_per_second': 715.254, 'eval_steps_per_second': 89.864, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:16<05:36, 15.13it/s]{'eval_loss': 2.3859400749206543, 'eval_runtime': 1.9271, 'eval_samples_per_second': 710.402, 'eval_steps_per_second': 89.254, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:48<04:11, 15.17it/s]{'eval_loss': 2.387500286102295, 'eval_runtime': 1.9243, 'eval_samples_per_second': 711.423, 'eval_steps_per_second': 89.383, 'epoch': 6.0}
+
+{'loss': 2.3346, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:22<02:52, 14.74it/s]{'eval_loss': 2.3892931938171387, 'eval_runtime': 1.9344, 'eval_samples_per_second': 707.708, 'eval_steps_per_second': 88.916, 'epoch': 7.0}
+
+{'loss': 2.3329, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:54<01:23, 15.17it/s]{'eval_loss': 2.3820695877075195, 'eval_runtime': 1.9308, 'eval_samples_per_second': 709.042, 'eval_steps_per_second': 89.083, 'epoch': 8.0}
+
+{'loss': 2.3323, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:28<00:00, 15.27it/s]{'eval_loss': 2.381622314453125, 'eval_runtime': 1.9282, 'eval_samples_per_second': 710.006, 'eval_steps_per_second': 89.205, 'epoch': 9.0}
+
+{'loss': 2.3302, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3844268321990967, 'eval_runtime': 1.9322, 'eval_samples_per_second': 708.536, 'eval_steps_per_second': 89.02, 'epoch': 10.0}
+
+{'train_runtime': 930.7443, 'train_samples_per_second': 109.396, 'train_steps_per_second': 13.677, 'train_loss': 2.3397486828296836, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:28, 15.30it/s]{'loss': 2.3656, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:26, 14.84it/s]{'eval_loss': 2.3891139030456543, 'eval_runtime': 1.9373, 'eval_samples_per_second': 706.642, 'eval_steps_per_second': 88.782, 'epoch': 1.0}
+
+{'loss': 2.3475, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:46, 15.19it/s]{'eval_loss': 2.3860929012298584, 'eval_runtime': 1.9326, 'eval_samples_per_second': 708.365, 'eval_steps_per_second': 88.998, 'epoch': 2.0}
+
+{'loss': 2.3402, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:10<08:24, 15.15it/s]{'eval_loss': 2.397270917892456, 'eval_runtime': 1.932, 'eval_samples_per_second': 708.596, 'eval_steps_per_second': 89.027, 'epoch': 3.0}
+
+{'loss': 2.3417, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:42<07:01, 15.11it/s]{'eval_loss': 2.397056818008423, 'eval_runtime': 1.9267, 'eval_samples_per_second': 710.553, 'eval_steps_per_second': 89.273, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:16<05:36, 15.15it/s]{'eval_loss': 2.3859400749206543, 'eval_runtime': 1.93, 'eval_samples_per_second': 709.343, 'eval_steps_per_second': 89.121, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:47<04:09, 15.28it/s]{'eval_loss': 2.387500286102295, 'eval_runtime': 1.9233, 'eval_samples_per_second': 711.803, 'eval_steps_per_second': 89.43, 'epoch': 6.0}
+
+{'loss': 2.3346, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:22<02:48, 15.10it/s]{'eval_loss': 2.3892931938171387, 'eval_runtime': 1.9266, 'eval_samples_per_second': 710.562, 'eval_steps_per_second': 89.274, 'epoch': 7.0}
+
+{'loss': 2.3329, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:55<01:24, 15.15it/s]{'eval_loss': 2.3820695877075195, 'eval_runtime': 1.9594, 'eval_samples_per_second': 698.677, 'eval_steps_per_second': 87.781, 'epoch': 8.0}
+
+{'loss': 2.3323, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:30<00:00, 15.07it/s]{'eval_loss': 2.381622314453125, 'eval_runtime': 1.9273, 'eval_samples_per_second': 710.33, 'eval_steps_per_second': 89.245, 'epoch': 9.0}
+
+{'loss': 2.3302, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3844268321990967, 'eval_runtime': 1.9308, 'eval_samples_per_second': 709.038, 'eval_steps_per_second': 89.083, 'epoch': 10.0}
+
+{'train_runtime': 932.7057, 'train_samples_per_second': 109.166, 'train_steps_per_second': 13.648, 'train_loss': 2.3397486828296836, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Average accuracy = 0.2703900709219858
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:33, 15.21it/s]{'loss': 2.3656, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:06, 15.28it/s]{'eval_loss': 2.3891139030456543, 'eval_runtime': 1.9452, 'eval_samples_per_second': 703.788, 'eval_steps_per_second': 88.423, 'epoch': 1.0}
+
+{'loss': 2.3475, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:34<09:46, 15.20it/s]{'eval_loss': 2.3860929012298584, 'eval_runtime': 1.951, 'eval_samples_per_second': 701.709, 'eval_steps_per_second': 88.162, 'epoch': 2.0}
+
+{'loss': 2.3402, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:08<08:20, 15.26it/s]{'eval_loss': 2.397270917892456, 'eval_runtime': 1.9775, 'eval_samples_per_second': 692.298, 'eval_steps_per_second': 86.98, 'epoch': 3.0}
+
+{'loss': 2.3417, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:39<06:59, 15.17it/s]{'eval_loss': 2.397056818008423, 'eval_runtime': 1.9503, 'eval_samples_per_second': 701.939, 'eval_steps_per_second': 88.191, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:13<05:33, 15.28it/s]{'eval_loss': 2.3859400749206543, 'eval_runtime': 1.948, 'eval_samples_per_second': 702.76, 'eval_steps_per_second': 88.294, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:44<04:15, 14.97it/s]{'eval_loss': 2.387500286102295, 'eval_runtime': 1.9513, 'eval_samples_per_second': 701.594, 'eval_steps_per_second': 88.148, 'epoch': 6.0}
+
+{'loss': 2.3346, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:17<02:45, 15.34it/s]{'eval_loss': 2.3892929553985596, 'eval_runtime': 1.9568, 'eval_samples_per_second': 699.627, 'eval_steps_per_second': 87.901, 'epoch': 7.0}
+
+{'loss': 2.3329, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:48<01:23, 15.18it/s]{'eval_loss': 2.3820695877075195, 'eval_runtime': 1.9484, 'eval_samples_per_second': 702.625, 'eval_steps_per_second': 88.277, 'epoch': 8.0}
+
+{'loss': 2.3323, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:21<00:00, 15.28it/s]{'eval_loss': 2.381622314453125, 'eval_runtime': 1.9475, 'eval_samples_per_second': 702.945, 'eval_steps_per_second': 88.317, 'epoch': 9.0}
+
+{'loss': 2.3302, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3844268321990967, 'eval_runtime': 1.9733, 'eval_samples_per_second': 693.766, 'eval_steps_per_second': 87.164, 'epoch': 10.0}
+
+{'train_runtime': 923.1025, 'train_samples_per_second': 110.302, 'train_steps_per_second': 13.79, 'train_loss': 2.3397486828296836, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:29<12:41, 15.04it/s]{'loss': 2.3656, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<11:10, 15.19it/s]{'eval_loss': 2.3891139030456543, 'eval_runtime': 1.9578, 'eval_samples_per_second': 699.25, 'eval_steps_per_second': 87.853, 'epoch': 1.0}
+
+{'loss': 2.3475, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:34<09:47, 15.18it/s]{'eval_loss': 2.3860929012298584, 'eval_runtime': 1.9479, 'eval_samples_per_second': 702.801, 'eval_steps_per_second': 88.299, 'epoch': 2.0}
+
+{'loss': 2.3402, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:06<08:19, 15.30it/s]{'eval_loss': 2.397270917892456, 'eval_runtime': 1.948, 'eval_samples_per_second': 702.784, 'eval_steps_per_second': 88.297, 'epoch': 3.0}
+
+{'loss': 2.3417, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<07:04, 14.99it/s]{'eval_loss': 2.397056818008423, 'eval_runtime': 1.9984, 'eval_samples_per_second': 685.046, 'eval_steps_per_second': 86.069, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:10<05:32, 15.33it/s]{'eval_loss': 2.3859400749206543, 'eval_runtime': 1.9444, 'eval_samples_per_second': 704.059, 'eval_steps_per_second': 88.457, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:41<04:12, 15.12it/s]{'eval_loss': 2.387500286102295, 'eval_runtime': 1.9474, 'eval_samples_per_second': 703.003, 'eval_steps_per_second': 88.325, 'epoch': 6.0}
+
+{'loss': 2.3346, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:14<02:45, 15.34it/s]{'eval_loss': 2.3892929553985596, 'eval_runtime': 1.9447, 'eval_samples_per_second': 703.958, 'eval_steps_per_second': 88.445, 'epoch': 7.0}
+
+{'loss': 2.3329, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:45<01:24, 15.12it/s]{'eval_loss': 2.3820695877075195, 'eval_runtime': 1.9455, 'eval_samples_per_second': 703.685, 'eval_steps_per_second': 88.41, 'epoch': 8.0}
+
+{'loss': 2.3323, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.30it/s]{'eval_loss': 2.381622314453125, 'eval_runtime': 1.9542, 'eval_samples_per_second': 700.534, 'eval_steps_per_second': 88.014, 'epoch': 9.0}
+
+{'loss': 2.3302, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3844268321990967, 'eval_runtime': 1.9463, 'eval_samples_per_second': 703.394, 'eval_steps_per_second': 88.374, 'epoch': 10.0}
+
+{'train_runtime': 921.3212, 'train_samples_per_second': 110.515, 'train_steps_per_second': 13.817, 'train_loss': 2.3397486828296836, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:28<12:39, 15.09it/s]{'loss': 2.3656, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:02<11:09, 15.21it/s]{'eval_loss': 2.3891139030456543, 'eval_runtime': 1.9512, 'eval_samples_per_second': 701.63, 'eval_steps_per_second': 88.152, 'epoch': 1.0}
+
+{'loss': 2.3475, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:32<09:46, 15.18it/s]{'eval_loss': 2.3860929012298584, 'eval_runtime': 1.9481, 'eval_samples_per_second': 702.733, 'eval_steps_per_second': 88.291, 'epoch': 2.0}
+
+{'loss': 2.3402, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:06<08:19, 15.28it/s]{'eval_loss': 2.397270917892456, 'eval_runtime': 1.9477, 'eval_samples_per_second': 702.873, 'eval_steps_per_second': 88.308, 'epoch': 3.0}
+
+{'loss': 2.3417, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:38<07:01, 15.10it/s]{'eval_loss': 2.397056818008423, 'eval_runtime': 1.9783, 'eval_samples_per_second': 691.994, 'eval_steps_per_second': 86.941, 'epoch': 4.0}
+
+{'loss': 2.3369, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:11<05:34, 15.23it/s]{'eval_loss': 2.3859400749206543, 'eval_runtime': 1.9484, 'eval_samples_per_second': 702.625, 'eval_steps_per_second': 88.277, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:42<04:18, 14.77it/s]{'eval_loss': 2.387500286102295, 'eval_runtime': 1.9482, 'eval_samples_per_second': 702.694, 'eval_steps_per_second': 88.286, 'epoch': 6.0}
+
+{'loss': 2.3346, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:15<02:46, 15.27it/s]{'eval_loss': 2.3892929553985596, 'eval_runtime': 1.9453, 'eval_samples_per_second': 703.755, 'eval_steps_per_second': 88.419, 'epoch': 7.0}
+
+{'loss': 2.3329, 'learning_rate': 4e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:46<01:24, 15.08it/s]{'eval_loss': 2.3820695877075195, 'eval_runtime': 1.9516, 'eval_samples_per_second': 701.479, 'eval_steps_per_second': 88.133, 'epoch': 8.0}
+
+{'loss': 2.3323, 'learning_rate': 2e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.30it/s]{'eval_loss': 2.381622314453125, 'eval_runtime': 1.9493, 'eval_samples_per_second': 702.306, 'eval_steps_per_second': 88.237, 'epoch': 9.0}
+
+{'loss': 2.3302, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3844268321990967, 'eval_runtime': 1.9488, 'eval_samples_per_second': 702.474, 'eval_steps_per_second': 88.258, 'epoch': 10.0}
+
+{'train_runtime': 921.0416, 'train_samples_per_second': 110.549, 'train_steps_per_second': 13.821, 'train_loss': 2.3397486828296836, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Average accuracy = 0.2703900709219858
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:28<12:26, 15.36it/s]{'loss': 2.364, 'learning_rate': 0.00018, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:00<11:17, 15.04it/s]{'eval_loss': 2.391695261001587, 'eval_runtime': 1.994, 'eval_samples_per_second': 686.553, 'eval_steps_per_second': 86.258, 'epoch': 1.0}
+
+{'loss': 2.3472, 'learning_rate': 0.00016, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:31<09:38, 15.40it/s]{'eval_loss': 2.3844079971313477, 'eval_runtime': 1.9529, 'eval_samples_per_second': 700.993, 'eval_steps_per_second': 88.072, 'epoch': 2.0}
+
+{'loss': 2.3418, 'learning_rate': 0.00014, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:04<08:19, 15.29it/s]{'eval_loss': 2.398320198059082, 'eval_runtime': 1.9617, 'eval_samples_per_second': 697.876, 'eval_steps_per_second': 87.681, 'epoch': 3.0}
+
+{'loss': 2.3404, 'learning_rate': 0.00012, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:34<06:52, 15.42it/s]{'eval_loss': 2.396730899810791, 'eval_runtime': 1.953, 'eval_samples_per_second': 700.986, 'eval_steps_per_second': 88.071, 'epoch': 4.0}
+
+{'loss': 2.3376, 'learning_rate': 0.0001, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:07<05:33, 15.26it/s]{'eval_loss': 2.3849620819091797, 'eval_runtime': 1.9589, 'eval_samples_per_second': 698.872, 'eval_steps_per_second': 87.806, 'epoch': 5.0}
+
+{'loss': 2.3358, 'learning_rate': 8e-05, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:37<04:07, 15.42it/s]{'eval_loss': 2.3880295753479004, 'eval_runtime': 1.9529, 'eval_samples_per_second': 700.995, 'eval_steps_per_second': 88.072, 'epoch': 6.0}
+
+{'loss': 2.334, 'learning_rate': 6e-05, 'epoch': 7.0}
+
+ 71%|███████   | 8999/12730 [10:44<04:03, 15.32it/s]{'eval_loss': 2.389793634414673, 'eval_runtime': 1.9539, 'eval_samples_per_second': 700.66, 'eval_steps_per_second': 88.03, 'epoch': 7.0}
+
+Traceback (most recent call last):
+
+  File "bert_classifier.py", line 80, in <module>
+
+    train_and_test_model(train_dataset,val_dataset,test_dataset,label2id,id2label,y_test)
+
+  File "bert_classifier.py", line 44, in train_and_test_model
+
+    trainer.train()
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 1556, in train
+
+    return inner_training_loop(
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 1930, in _inner_training_loop
+
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 2268, in _maybe_log_save_evaluate
+
+    self._save_checkpoint(model, trial, metrics=metrics)
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 2325, in _save_checkpoint
+
+    self.save_model(output_dir, _internal_call=True)
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 2817, in save_model
+
+    self._save(output_dir)
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/transformers/trainer.py", line 2883, in _save
+
+    torch.save(self.args, os.path.join(output_dir, TRAINING_ARGS_NAME))
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/torch/serialization.py", line 422, in save
+
+    with _open_zipfile_writer(f) as opened_zipfile:
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/torch/serialization.py", line 309, in _open_zipfile_writer
+
+    return container(name_or_buffer)
+
+  File "/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/torch/serialization.py", line 287, in __init__
+
+    super(_open_zipfile_writer_file, self).__init__(torch._C.PyTorchFileWriter(str(name)))
+
+RuntimeError: Parent directory ./bert_sequence_classification_output/checkpoint-9000 does not exist.
+
+ 71%|███████   | 9000/12730 [10:48<04:28, 13.88it/s]Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: bert-base-uncased, learning rate = 0.0003 **********
+
+********** First run - input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:30<12:23, 15.41it/s]{'loss': 2.367, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:10, 15.18it/s]{'eval_loss': 2.3937294483184814, 'eval_runtime': 1.9269, 'eval_samples_per_second': 710.451, 'eval_steps_per_second': 89.26, 'epoch': 1.0}
+
+{'loss': 2.3498, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:36<09:38, 15.41it/s]{'eval_loss': 2.3857269287109375, 'eval_runtime': 1.9316, 'eval_samples_per_second': 708.752, 'eval_steps_per_second': 89.047, 'epoch': 2.0}
+
+{'loss': 2.3414, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:10<08:23, 15.17it/s]{'eval_loss': 2.3910534381866455, 'eval_runtime': 1.9274, 'eval_samples_per_second': 710.299, 'eval_steps_per_second': 89.241, 'epoch': 3.0}
+
+{'loss': 2.3421, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:42<06:54, 15.37it/s]{'eval_loss': 2.398658275604248, 'eval_runtime': 1.9295, 'eval_samples_per_second': 709.522, 'eval_steps_per_second': 89.144, 'epoch': 4.0}
+
+{'loss': 2.3727, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:17<05:32, 15.32it/s]{'eval_loss': 2.4110875129699707, 'eval_runtime': 1.9305, 'eval_samples_per_second': 709.128, 'eval_steps_per_second': 89.094, 'epoch': 5.0}
+
+{'loss': 2.3596, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:48<04:07, 15.46it/s]{'eval_loss': 2.395972490310669, 'eval_runtime': 1.9302, 'eval_samples_per_second': 709.266, 'eval_steps_per_second': 89.112, 'epoch': 6.0}
+
+{'loss': 2.3499, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:23<02:46, 15.28it/s]{'eval_loss': 2.4015355110168457, 'eval_runtime': 1.9303, 'eval_samples_per_second': 709.201, 'eval_steps_per_second': 89.103, 'epoch': 7.0}
+
+{'loss': 2.3465, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:54<01:22, 15.43it/s]{'eval_loss': 2.3841495513916016, 'eval_runtime': 1.9551, 'eval_samples_per_second': 700.202, 'eval_steps_per_second': 87.973, 'epoch': 8.0}
+
+{'loss': 2.3401, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:28<00:00, 15.31it/s]{'eval_loss': 2.382124423980713, 'eval_runtime': 1.9418, 'eval_samples_per_second': 705.009, 'eval_steps_per_second': 88.577, 'epoch': 9.0}
+
+{'loss': 2.3348, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795878887176514, 'eval_runtime': 1.9314, 'eval_samples_per_second': 708.805, 'eval_steps_per_second': 89.054, 'epoch': 10.0}
+
+{'train_runtime': 930.9447, 'train_samples_per_second': 109.373, 'train_steps_per_second': 13.674, 'train_loss': 2.350383797500982, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:30<12:30, 15.26it/s]{'loss': 2.3658, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:05<11:07, 15.27it/s]{'eval_loss': 2.3921964168548584, 'eval_runtime': 1.9329, 'eval_samples_per_second': 708.268, 'eval_steps_per_second': 88.986, 'epoch': 1.0}
+
+{'loss': 2.3492, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:37<09:42, 15.29it/s]{'eval_loss': 2.386261224746704, 'eval_runtime': 1.9313, 'eval_samples_per_second': 708.866, 'eval_steps_per_second': 89.061, 'epoch': 2.0}
+
+{'loss': 2.3416, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:12<08:17, 15.36it/s]{'eval_loss': 2.3913097381591797, 'eval_runtime': 1.9368, 'eval_samples_per_second': 706.828, 'eval_steps_per_second': 88.805, 'epoch': 3.0}
+
+{'loss': 2.3558, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:43<06:56, 15.30it/s]{'eval_loss': 2.4609215259552, 'eval_runtime': 1.9282, 'eval_samples_per_second': 709.973, 'eval_steps_per_second': 89.2, 'epoch': 4.0}
+
+{'loss': 2.371, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:17<05:30, 15.40it/s]{'eval_loss': 2.4054224491119385, 'eval_runtime': 1.923, 'eval_samples_per_second': 711.907, 'eval_steps_per_second': 89.443, 'epoch': 5.0}
+
+{'loss': 2.3578, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:48<04:12, 15.10it/s]{'eval_loss': 2.3963723182678223, 'eval_runtime': 1.9429, 'eval_samples_per_second': 704.622, 'eval_steps_per_second': 88.528, 'epoch': 6.0}
+
+{'loss': 2.3519, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:22<02:44, 15.48it/s]{'eval_loss': 2.402848720550537, 'eval_runtime': 1.9272, 'eval_samples_per_second': 710.347, 'eval_steps_per_second': 89.247, 'epoch': 7.0}
+
+{'loss': 2.3456, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:53<01:23, 15.28it/s]{'eval_loss': 2.384984254837036, 'eval_runtime': 1.9239, 'eval_samples_per_second': 711.567, 'eval_steps_per_second': 89.401, 'epoch': 8.0}
+
+{'loss': 2.341, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:26<00:00, 15.47it/s]{'eval_loss': 2.3824117183685303, 'eval_runtime': 1.9269, 'eval_samples_per_second': 710.486, 'eval_steps_per_second': 89.265, 'epoch': 9.0}
+
+{'loss': 2.3359, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795058727264404, 'eval_runtime': 1.9276, 'eval_samples_per_second': 710.216, 'eval_steps_per_second': 89.231, 'epoch': 10.0}
+
+{'train_runtime': 928.8681, 'train_samples_per_second': 109.617, 'train_steps_per_second': 13.705, 'train_loss': 2.3515661438899254, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:29<12:28, 15.31it/s]{'loss': 2.3658, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<10:59, 15.44it/s]{'eval_loss': 2.3921964168548584, 'eval_runtime': 1.9273, 'eval_samples_per_second': 710.31, 'eval_steps_per_second': 89.243, 'epoch': 1.0}
+
+{'loss': 2.3492, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:33<09:38, 15.39it/s]{'eval_loss': 2.386261224746704, 'eval_runtime': 1.9157, 'eval_samples_per_second': 714.626, 'eval_steps_per_second': 89.785, 'epoch': 2.0}
+
+{'loss': 2.3416, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:07<08:13, 15.47it/s]{'eval_loss': 2.3913097381591797, 'eval_runtime': 1.9247, 'eval_samples_per_second': 711.283, 'eval_steps_per_second': 89.365, 'epoch': 3.0}
+
+{'loss': 2.3558, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<06:52, 15.43it/s]{'eval_loss': 2.4609215259552, 'eval_runtime': 1.9224, 'eval_samples_per_second': 712.113, 'eval_steps_per_second': 89.469, 'epoch': 4.0}
+
+{'loss': 2.371, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:11<05:27, 15.54it/s]{'eval_loss': 2.4054224491119385, 'eval_runtime': 1.927, 'eval_samples_per_second': 710.418, 'eval_steps_per_second': 89.256, 'epoch': 5.0}
+
+{'loss': 2.3578, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:41<04:07, 15.41it/s]{'eval_loss': 2.3963723182678223, 'eval_runtime': 1.9382, 'eval_samples_per_second': 706.33, 'eval_steps_per_second': 88.743, 'epoch': 6.0}
+
+{'loss': 2.3519, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:15<02:43, 15.53it/s]{'eval_loss': 2.402848720550537, 'eval_runtime': 1.9379, 'eval_samples_per_second': 706.433, 'eval_steps_per_second': 88.756, 'epoch': 7.0}
+
+{'loss': 2.3456, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:46<01:23, 15.28it/s]{'eval_loss': 2.384984254837036, 'eval_runtime': 1.9235, 'eval_samples_per_second': 711.715, 'eval_steps_per_second': 89.419, 'epoch': 8.0}
+
+{'loss': 2.341, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.53it/s]{'eval_loss': 2.3824117183685303, 'eval_runtime': 1.9244, 'eval_samples_per_second': 711.384, 'eval_steps_per_second': 89.378, 'epoch': 9.0}
+
+{'loss': 2.3359, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795058727264404, 'eval_runtime': 1.9249, 'eval_samples_per_second': 711.208, 'eval_steps_per_second': 89.356, 'epoch': 10.0}
+
+{'train_runtime': 921.754, 'train_samples_per_second': 110.463, 'train_steps_per_second': 13.811, 'train_loss': 2.3515661438899254, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Average accuracy = 0.2703900709219858
+
+********** Second run - masked speakers, input sentence pairs and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:29<12:26, 15.35it/s]{'loss': 2.3658, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:03<10:58, 15.47it/s]{'eval_loss': 2.3921964168548584, 'eval_runtime': 1.9421, 'eval_samples_per_second': 704.899, 'eval_steps_per_second': 88.563, 'epoch': 1.0}
+
+{'loss': 2.3492, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:33<09:39, 15.38it/s]{'eval_loss': 2.386261224746704, 'eval_runtime': 1.9357, 'eval_samples_per_second': 707.226, 'eval_steps_per_second': 88.855, 'epoch': 2.0}
+
+{'loss': 2.3416, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:06<08:14, 15.45it/s]{'eval_loss': 2.3913097381591797, 'eval_runtime': 1.9474, 'eval_samples_per_second': 702.994, 'eval_steps_per_second': 88.324, 'epoch': 3.0}
+
+{'loss': 2.3558, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<06:54, 15.36it/s]{'eval_loss': 2.4609215259552, 'eval_runtime': 1.9388, 'eval_samples_per_second': 706.118, 'eval_steps_per_second': 88.716, 'epoch': 4.0}
+
+{'loss': 2.371, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:11<05:30, 15.40it/s]{'eval_loss': 2.4054224491119385, 'eval_runtime': 1.9464, 'eval_samples_per_second': 703.332, 'eval_steps_per_second': 88.366, 'epoch': 5.0}
+
+{'loss': 2.3578, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:42<04:08, 15.39it/s]{'eval_loss': 2.3963723182678223, 'eval_runtime': 1.9416, 'eval_samples_per_second': 705.099, 'eval_steps_per_second': 88.588, 'epoch': 6.0}
+
+{'loss': 2.3519, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:15<02:45, 15.43it/s]{'eval_loss': 2.402848720550537, 'eval_runtime': 1.9454, 'eval_samples_per_second': 703.722, 'eval_steps_per_second': 88.415, 'epoch': 7.0}
+
+{'loss': 2.3456, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:46<01:22, 15.37it/s]{'eval_loss': 2.384984254837036, 'eval_runtime': 1.9433, 'eval_samples_per_second': 704.456, 'eval_steps_per_second': 88.507, 'epoch': 8.0}
+
+{'loss': 2.341, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.49it/s]{'eval_loss': 2.3824117183685303, 'eval_runtime': 1.9401, 'eval_samples_per_second': 705.63, 'eval_steps_per_second': 88.655, 'epoch': 9.0}
+
+{'loss': 2.3359, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795058727264404, 'eval_runtime': 1.964, 'eval_samples_per_second': 697.055, 'eval_steps_per_second': 87.577, 'epoch': 10.0}
+
+{'train_runtime': 921.4825, 'train_samples_per_second': 110.496, 'train_steps_per_second': 13.815, 'train_loss': 2.3515661438899254, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:30<12:26, 15.35it/s]{'loss': 2.3658, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:04<11:09, 15.22it/s]{'eval_loss': 2.3921964168548584, 'eval_runtime': 1.9666, 'eval_samples_per_second': 696.11, 'eval_steps_per_second': 87.459, 'epoch': 1.0}
+
+{'loss': 2.3492, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:35<09:38, 15.41it/s]{'eval_loss': 2.386261224746704, 'eval_runtime': 1.9467, 'eval_samples_per_second': 703.236, 'eval_steps_per_second': 88.354, 'epoch': 2.0}
+
+{'loss': 2.3416, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:08<08:18, 15.32it/s]{'eval_loss': 2.3913097381591797, 'eval_runtime': 1.9419, 'eval_samples_per_second': 704.995, 'eval_steps_per_second': 88.575, 'epoch': 3.0}
+
+{'loss': 2.3558, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:39<06:53, 15.39it/s]{'eval_loss': 2.4609215259552, 'eval_runtime': 1.9456, 'eval_samples_per_second': 703.632, 'eval_steps_per_second': 88.404, 'epoch': 4.0}
+
+{'loss': 2.371, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:14<05:32, 15.33it/s]{'eval_loss': 2.4054224491119385, 'eval_runtime': 1.9483, 'eval_samples_per_second': 702.652, 'eval_steps_per_second': 88.281, 'epoch': 5.0}
+
+{'loss': 2.3578, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:45<04:06, 15.51it/s]{'eval_loss': 2.3963723182678223, 'eval_runtime': 1.933, 'eval_samples_per_second': 708.237, 'eval_steps_per_second': 88.982, 'epoch': 6.0}
+
+{'loss': 2.3519, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:18<02:46, 15.25it/s]{'eval_loss': 2.402848720550537, 'eval_runtime': 1.9467, 'eval_samples_per_second': 703.257, 'eval_steps_per_second': 88.357, 'epoch': 7.0}
+
+{'loss': 2.3456, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:49<01:22, 15.47it/s]{'eval_loss': 2.384984254837036, 'eval_runtime': 1.94, 'eval_samples_per_second': 705.652, 'eval_steps_per_second': 88.658, 'epoch': 8.0}
+
+{'loss': 2.341, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:22<00:00, 15.38it/s]{'eval_loss': 2.3824117183685303, 'eval_runtime': 1.9457, 'eval_samples_per_second': 703.621, 'eval_steps_per_second': 88.402, 'epoch': 9.0}
+
+{'loss': 2.3359, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795058727264404, 'eval_runtime': 1.9637, 'eval_samples_per_second': 697.167, 'eval_steps_per_second': 87.591, 'epoch': 10.0}
+
+{'train_runtime': 924.819, 'train_samples_per_second': 110.097, 'train_steps_per_second': 13.765, 'train_loss': 2.3515661438899254, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:28<12:25, 15.36it/s]{'loss': 2.3658, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:01<11:01, 15.39it/s]{'eval_loss': 2.3921964168548584, 'eval_runtime': 1.9472, 'eval_samples_per_second': 703.05, 'eval_steps_per_second': 88.331, 'epoch': 1.0}
+
+{'loss': 2.3492, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:34<09:41, 15.32it/s]{'eval_loss': 2.386261224746704, 'eval_runtime': 1.9443, 'eval_samples_per_second': 704.097, 'eval_steps_per_second': 88.462, 'epoch': 2.0}
+
+{'loss': 2.3416, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:07<08:13, 15.47it/s]{'eval_loss': 2.3913097381591797, 'eval_runtime': 1.9657, 'eval_samples_per_second': 696.443, 'eval_steps_per_second': 87.501, 'epoch': 3.0}
+
+{'loss': 2.3558, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:37<06:56, 15.27it/s]{'eval_loss': 2.4609215259552, 'eval_runtime': 1.9402, 'eval_samples_per_second': 705.595, 'eval_steps_per_second': 88.65, 'epoch': 4.0}
+
+{'loss': 2.371, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:11<05:28, 15.50it/s]{'eval_loss': 2.4054224491119385, 'eval_runtime': 1.9532, 'eval_samples_per_second': 700.909, 'eval_steps_per_second': 88.062, 'epoch': 5.0}
+
+{'loss': 2.3578, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:41<04:08, 15.37it/s]{'eval_loss': 2.3963723182678223, 'eval_runtime': 1.9492, 'eval_samples_per_second': 702.35, 'eval_steps_per_second': 88.243, 'epoch': 6.0}
+
+{'loss': 2.3519, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:15<02:45, 15.41it/s]{'eval_loss': 2.402848720550537, 'eval_runtime': 1.9478, 'eval_samples_per_second': 702.846, 'eval_steps_per_second': 88.305, 'epoch': 7.0}
+
+{'loss': 2.3456, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:45<01:22, 15.38it/s]{'eval_loss': 2.384984254837036, 'eval_runtime': 1.9465, 'eval_samples_per_second': 703.331, 'eval_steps_per_second': 88.366, 'epoch': 8.0}
+
+{'loss': 2.341, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:19<00:00, 15.30it/s]{'eval_loss': 2.3824117183685303, 'eval_runtime': 1.945, 'eval_samples_per_second': 703.85, 'eval_steps_per_second': 88.431, 'epoch': 9.0}
+
+{'loss': 2.3359, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3795058727264404, 'eval_runtime': 1.9654, 'eval_samples_per_second': 696.548, 'eval_steps_per_second': 87.514, 'epoch': 10.0}
+
+{'train_runtime': 921.4482, 'train_samples_per_second': 110.5, 'train_steps_per_second': 13.815, 'train_loss': 2.3515661438899254, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Average accuracy = 0.2703900709219858
+
+********** Third run - masked speakers, input sentence pairs, distance and question**********
+
+Random seed = 42
+
+ 10%|█         | 1273/12730 [01:28<12:27, 15.32it/s]{'loss': 2.3646, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [03:00<10:56, 15.51it/s]{'eval_loss': 2.3990230560302734, 'eval_runtime': 1.961, 'eval_samples_per_second': 698.13, 'eval_steps_per_second': 87.712, 'epoch': 1.0}
+
+{'loss': 2.3497, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:31<09:37, 15.42it/s]{'eval_loss': 2.385213851928711, 'eval_runtime': 1.9603, 'eval_samples_per_second': 698.356, 'eval_steps_per_second': 87.741, 'epoch': 2.0}
+
+{'loss': 2.3435, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:02<08:10, 15.58it/s]{'eval_loss': 2.394737720489502, 'eval_runtime': 1.9616, 'eval_samples_per_second': 697.895, 'eval_steps_per_second': 87.683, 'epoch': 3.0}
+
+{'loss': 2.3415, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:32<06:54, 15.36it/s]{'eval_loss': 2.397409200668335, 'eval_runtime': 1.9608, 'eval_samples_per_second': 698.181, 'eval_steps_per_second': 87.719, 'epoch': 4.0}
+
+{'loss': 2.3385, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:03<05:26, 15.58it/s]{'eval_loss': 2.3844149112701416, 'eval_runtime': 1.9595, 'eval_samples_per_second': 698.642, 'eval_steps_per_second': 87.777, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:32<04:08, 15.38it/s]{'eval_loss': 2.3845508098602295, 'eval_runtime': 1.9593, 'eval_samples_per_second': 698.726, 'eval_steps_per_second': 87.787, 'epoch': 6.0}
+
+{'loss': 2.3457, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:03<02:43, 15.58it/s]{'eval_loss': 2.431009292602539, 'eval_runtime': 1.9618, 'eval_samples_per_second': 697.833, 'eval_steps_per_second': 87.675, 'epoch': 7.0}
+
+{'loss': 2.3524, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:32<01:22, 15.45it/s]{'eval_loss': 2.3851797580718994, 'eval_runtime': 1.9578, 'eval_samples_per_second': 699.253, 'eval_steps_per_second': 87.854, 'epoch': 8.0}
+
+{'loss': 2.3408, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:04<00:00, 15.38it/s]{'eval_loss': 2.3840928077697754, 'eval_runtime': 1.9568, 'eval_samples_per_second': 699.608, 'eval_steps_per_second': 87.898, 'epoch': 9.0}
+
+{'loss': 2.3355, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3794102668762207, 'eval_runtime': 1.9567, 'eval_samples_per_second': 699.651, 'eval_steps_per_second': 87.904, 'epoch': 10.0}
+
+{'train_runtime': 906.3471, 'train_samples_per_second': 112.341, 'train_steps_per_second': 14.045, 'train_loss': 2.344782851010163, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 123
+
+ 10%|█         | 1273/12730 [01:27<12:23, 15.42it/s]{'loss': 2.3646, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [02:58<10:58, 15.45it/s]{'eval_loss': 2.3990230560302734, 'eval_runtime': 1.9553, 'eval_samples_per_second': 700.157, 'eval_steps_per_second': 87.967, 'epoch': 1.0}
+
+{'loss': 2.3497, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:28<09:37, 15.43it/s]{'eval_loss': 2.385213851928711, 'eval_runtime': 1.9806, 'eval_samples_per_second': 691.189, 'eval_steps_per_second': 86.84, 'epoch': 2.0}
+
+{'loss': 2.3435, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [06:00<08:12, 15.51it/s]{'eval_loss': 2.394737720489502, 'eval_runtime': 1.9576, 'eval_samples_per_second': 699.332, 'eval_steps_per_second': 87.863, 'epoch': 3.0}
+
+{'loss': 2.3415, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:29<06:54, 15.36it/s]{'eval_loss': 2.397409200668335, 'eval_runtime': 1.9728, 'eval_samples_per_second': 693.944, 'eval_steps_per_second': 87.186, 'epoch': 4.0}
+
+{'loss': 2.3385, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:02<05:27, 15.55it/s]{'eval_loss': 2.3844149112701416, 'eval_runtime': 1.9719, 'eval_samples_per_second': 694.249, 'eval_steps_per_second': 87.225, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:31<04:10, 15.25it/s]{'eval_loss': 2.3845508098602295, 'eval_runtime': 1.9598, 'eval_samples_per_second': 698.524, 'eval_steps_per_second': 87.762, 'epoch': 6.0}
+
+{'loss': 2.3457, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:02<02:43, 15.56it/s]{'eval_loss': 2.431009292602539, 'eval_runtime': 1.9612, 'eval_samples_per_second': 698.054, 'eval_steps_per_second': 87.703, 'epoch': 7.0}
+
+{'loss': 2.3524, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:31<01:22, 15.34it/s]{'eval_loss': 2.3851797580718994, 'eval_runtime': 1.958, 'eval_samples_per_second': 699.185, 'eval_steps_per_second': 87.845, 'epoch': 8.0}
+
+{'loss': 2.3408, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:03<00:00, 15.42it/s]{'eval_loss': 2.3840928077697754, 'eval_runtime': 1.96, 'eval_samples_per_second': 698.469, 'eval_steps_per_second': 87.755, 'epoch': 9.0}
+
+{'loss': 2.3355, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3794102668762207, 'eval_runtime': 1.9529, 'eval_samples_per_second': 700.994, 'eval_steps_per_second': 88.072, 'epoch': 10.0}
+
+{'train_runtime': 905.6532, 'train_samples_per_second': 112.427, 'train_steps_per_second': 14.056, 'train_loss': 2.344782851010163, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Random seed = 456
+
+ 10%|█         | 1273/12730 [01:27<12:21, 15.45it/s]{'loss': 2.3646, 'learning_rate': 0.00027, 'epoch': 1.0}
+
+ 20%|██        | 2546/12730 [02:58<10:58, 15.48it/s]{'eval_loss': 2.3990230560302734, 'eval_runtime': 1.9581, 'eval_samples_per_second': 699.151, 'eval_steps_per_second': 87.841, 'epoch': 1.0}
+
+{'loss': 2.3497, 'learning_rate': 0.00023999999999999998, 'epoch': 2.0}
+
+ 30%|███       | 3819/12730 [04:27<09:36, 15.45it/s]{'eval_loss': 2.385213851928711, 'eval_runtime': 1.959, 'eval_samples_per_second': 698.824, 'eval_steps_per_second': 87.8, 'epoch': 2.0}
+
+{'loss': 2.3435, 'learning_rate': 0.00020999999999999998, 'epoch': 3.0}
+
+ 40%|████      | 5092/12730 [05:59<08:12, 15.52it/s]{'eval_loss': 2.394737720489502, 'eval_runtime': 1.9605, 'eval_samples_per_second': 698.304, 'eval_steps_per_second': 87.734, 'epoch': 3.0}
+
+{'loss': 2.3415, 'learning_rate': 0.00017999999999999998, 'epoch': 4.0}
+
+ 50%|█████     | 6365/12730 [07:28<06:51, 15.45it/s]{'eval_loss': 2.397409200668335, 'eval_runtime': 1.9594, 'eval_samples_per_second': 698.693, 'eval_steps_per_second': 87.783, 'epoch': 4.0}
+
+{'loss': 2.3385, 'learning_rate': 0.00015, 'epoch': 5.0}
+
+ 60%|██████    | 7638/12730 [09:00<05:27, 15.55it/s]{'eval_loss': 2.3844149112701416, 'eval_runtime': 1.9528, 'eval_samples_per_second': 701.04, 'eval_steps_per_second': 88.078, 'epoch': 5.0}
+
+{'loss': 2.3356, 'learning_rate': 0.00011999999999999999, 'epoch': 6.0}
+
+ 70%|███████   | 8911/12730 [10:29<04:09, 15.33it/s]{'eval_loss': 2.3845508098602295, 'eval_runtime': 1.9564, 'eval_samples_per_second': 699.74, 'eval_steps_per_second': 87.915, 'epoch': 6.0}
+
+{'loss': 2.3457, 'learning_rate': 8.999999999999999e-05, 'epoch': 7.0}
+
+ 80%|████████  | 10184/12730 [12:00<02:43, 15.57it/s]{'eval_loss': 2.431009292602539, 'eval_runtime': 1.9576, 'eval_samples_per_second': 699.312, 'eval_steps_per_second': 87.861, 'epoch': 7.0}
+
+{'loss': 2.3524, 'learning_rate': 5.9999999999999995e-05, 'epoch': 8.0}
+
+ 90%|█████████ | 11457/12730 [13:30<01:22, 15.42it/s]{'eval_loss': 2.3851797580718994, 'eval_runtime': 1.9549, 'eval_samples_per_second': 700.276, 'eval_steps_per_second': 87.982, 'epoch': 8.0}
+
+{'loss': 2.3408, 'learning_rate': 2.9999999999999997e-05, 'epoch': 9.0}
+
+100%|██████████| 12730/12730 [15:03<00:00, 15.57it/s]{'eval_loss': 2.3840928077697754, 'eval_runtime': 1.9608, 'eval_samples_per_second': 698.19, 'eval_steps_per_second': 87.72, 'epoch': 9.0}
+
+{'loss': 2.3355, 'learning_rate': 0.0, 'epoch': 10.0}
+
+{'eval_loss': 2.3794102668762207, 'eval_runtime': 1.9717, 'eval_samples_per_second': 694.335, 'eval_steps_per_second': 87.236, 'epoch': 10.0}
+
+{'train_runtime': 904.9873, 'train_samples_per_second': 112.51, 'train_steps_per_second': 14.066, 'train_loss': 2.344782851010163, 'epoch': 10.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.2703900709219858
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.00      0.00      0.00       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.00      0.00      0.00       165
+
+           Conditional       0.00      0.00      0.00        18
+
+          Continuation       0.00      0.00      0.00       113
+
+              Contrast       0.00      0.00      0.00        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.00      0.00      0.00       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.00      0.00      0.00        72
+
+  Question_answer_pair       0.27      1.00      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.27      1128
+
+             macro avg       0.02      0.06      0.03      1128
+
+          weighted avg       0.07      0.27      0.12      1128
+
+Average accuracy = 0.2703900709219858
+
+********** Run complete **********
+
