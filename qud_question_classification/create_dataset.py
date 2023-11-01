@@ -10,8 +10,8 @@ stac_test = jsonlines.open('../data/stac/test_subindex.json')
 stac_train = jsonlines.open('../data/stac/train_subindex.json')
 
 # dev_stac_qud = json.load(open('./data/dev_stac_qud.json'))
-test_stac_qud = json.load(open('./data/test_stac_qud.json'))
-train_stac_qud = json.load(open('./data/train_stac_qud.json'))
+# test_stac_qud = json.load(open('./data/test_stac_qud.json'))
+# train_stac_qud = json.load(open('./data/train_stac_qud.json'))
 
 # Select the dataset
 curr_data_set = stac_dev
@@ -40,10 +40,10 @@ for i,line in enumerate(curr_data_set.iter()):
         
         data.append(curr_relation)
     
-with open("results.txt") as f: # TODO: change results as needed
+with open("./data/results_dev.txt") as f: # TODO: change results as needed
     for i,line in enumerate(f):
-        data[i]["question"] = line
+        data[i]["question"] = line.replace(" <|endoftext|>\n","")
 
 
-f = open("dev_stac_qud.json", "w")
+f = open("./data/dev_stac_qud.json", "w")
 f.write(json.dumps(data))

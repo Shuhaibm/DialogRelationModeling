@@ -8,12 +8,12 @@ random.seed(0)
 
 
 # Load stac datasets
-stac_dev = jsonlines.open('data/stac/dev_subindex.json')
-stac_test = jsonlines.open('data/stac/test_subindex.json')
-stac_train = jsonlines.open('data/stac/train_subindex.json')
+stac_dev = jsonlines.open('../data/stac/dev_subindex.json')
+stac_test = jsonlines.open('../data/stac/test_subindex.json')
+stac_train = jsonlines.open('../data/stac/train_subindex.json')
 
 # Select the dataset
-curr_data_set = stac_dev
+curr_data_set = stac_test
 
 
 # Proess data into following format:
