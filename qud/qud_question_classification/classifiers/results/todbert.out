@@ -1,0 +1,1830 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 1 - input sentence pairs **********
+
+Random seed = 42
+
+  0%|          | 1/5092 [00:01<1:28:40,  1.05s/it]
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:26<04:10, 15.26it/s]{'loss': 1.6616, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                  
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:57<02:41, 15.74it/s]{'eval_loss': 1.3258363008499146, 'eval_runtime': 1.7158, 'eval_samples_per_second': 797.872, 'eval_steps_per_second': 100.244, 'epoch': 1.0}
+
+{'loss': 1.1513, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                  
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:24<01:19, 15.92it/s]{'eval_loss': 1.1712244749069214, 'eval_runtime': 1.705, 'eval_samples_per_second': 802.943, 'eval_steps_per_second': 100.881, 'epoch': 2.0}
+
+{'loss': 0.9418, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                  
+
+                                                   
+
+100%|██████████| 5092/5092 [05:54<00:00, 15.76it/s]{'eval_loss': 1.1522765159606934, 'eval_runtime': 1.712, 'eval_samples_per_second': 799.634, 'eval_steps_per_second': 100.465, 'epoch': 3.0}
+
+{'loss': 0.794, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                  
+
+                                                   
+
+{'eval_loss': 1.1669105291366577, 'eval_runtime': 1.7087, 'eval_samples_per_second': 801.206, 'eval_steps_per_second': 100.663, 'epoch': 4.0}
+
+{'train_runtime': 356.6306, 'train_samples_per_second': 114.202, 'train_steps_per_second': 14.278, 'train_loss': 1.1371746917269123, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 98.36it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6764184397163121
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.74      0.83      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.48      0.44        33
+
+               Comment       0.59      0.65      0.62       165
+
+           Conditional       0.64      0.50      0.56        18
+
+          Continuation       0.55      0.45      0.50       113
+
+              Contrast       0.45      0.43      0.44        44
+
+            Correction       0.50      0.10      0.16        21
+
+           Elaboration       0.52      0.57      0.55       101
+
+           Explanation       0.37      0.45      0.41        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.45      0.33      0.38        15
+
+                Q_Elab       0.62      0.74      0.68        72
+
+  Question_answer_pair       0.90      0.92      0.91       305
+
+                Result       0.56      0.31      0.40        29
+
+              accuracy                           0.68      1128
+
+             macro avg       0.52      0.47      0.48      1128
+
+          weighted avg       0.67      0.68      0.67      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:26<04:01, 15.82it/s]{'loss': 1.6494, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:56<02:39, 15.95it/s]{'eval_loss': 1.3467124700546265, 'eval_runtime': 1.7141, 'eval_samples_per_second': 798.66, 'eval_steps_per_second': 100.343, 'epoch': 1.0}
+
+{'loss': 1.1732, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:23<01:20, 15.87it/s]{'eval_loss': 1.1932140588760376, 'eval_runtime': 1.6883, 'eval_samples_per_second': 810.898, 'eval_steps_per_second': 101.881, 'epoch': 2.0}
+
+{'loss': 0.9527, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:54<00:00, 16.00it/s]{'eval_loss': 1.1694093942642212, 'eval_runtime': 1.6885, 'eval_samples_per_second': 810.755, 'eval_steps_per_second': 101.863, 'epoch': 3.0}
+
+{'loss': 0.8084, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.1778303384780884, 'eval_runtime': 1.6861, 'eval_samples_per_second': 811.949, 'eval_steps_per_second': 102.013, 'epoch': 4.0}
+
+{'train_runtime': 355.7822, 'train_samples_per_second': 114.475, 'train_steps_per_second': 14.312, 'train_loss': 1.1459349627019098, 'epoch': 4.0}
+
+ 23%|██▎       | 33/141 [00:00<00:01, 98.35it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6693262411347518
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.75      0.80      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.39      0.39        33
+
+               Comment       0.64      0.69      0.66       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.52      0.45      0.48       113
+
+              Contrast       0.42      0.39      0.40        44
+
+            Correction       0.80      0.19      0.31        21
+
+           Elaboration       0.50      0.60      0.55       101
+
+           Explanation       0.39      0.48      0.43        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.38      0.33      0.36        15
+
+                Q_Elab       0.63      0.71      0.67        72
+
+  Question_answer_pair       0.88      0.90      0.88       305
+
+                Result       0.41      0.24      0.30        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.52      0.47      0.48      1128
+
+          weighted avg       0.66      0.67      0.66      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:25<03:58, 16.00it/s]{'loss': 1.6494, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:55<02:38, 16.05it/s]{'eval_loss': 1.3467124700546265, 'eval_runtime': 1.6702, 'eval_samples_per_second': 819.665, 'eval_steps_per_second': 102.982, 'epoch': 1.0}
+
+{'loss': 1.1732, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:22<01:19, 15.99it/s]{'eval_loss': 1.1932140588760376, 'eval_runtime': 1.6682, 'eval_samples_per_second': 820.625, 'eval_steps_per_second': 103.103, 'epoch': 2.0}
+
+{'loss': 0.9527, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:51<00:00, 16.06it/s]{'eval_loss': 1.1694093942642212, 'eval_runtime': 1.673, 'eval_samples_per_second': 818.28, 'eval_steps_per_second': 102.808, 'epoch': 3.0}
+
+{'loss': 0.8084, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                  
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.1778303384780884, 'eval_runtime': 1.6762, 'eval_samples_per_second': 816.748, 'eval_steps_per_second': 102.616, 'epoch': 4.0}
+
+{'train_runtime': 353.5731, 'train_samples_per_second': 115.19, 'train_steps_per_second': 14.402, 'train_loss': 1.1459349627019098, 'epoch': 4.0}
+
+ 23%|██▎       | 33/141 [00:00<00:01, 98.97it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.6693262411347518
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.75      0.80      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.39      0.39        33
+
+               Comment       0.64      0.69      0.66       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.52      0.45      0.48       113
+
+              Contrast       0.42      0.39      0.40        44
+
+            Correction       0.80      0.19      0.31        21
+
+           Elaboration       0.50      0.60      0.55       101
+
+           Explanation       0.39      0.48      0.43        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.38      0.33      0.36        15
+
+                Q_Elab       0.63      0.71      0.67        72
+
+  Question_answer_pair       0.88      0.90      0.88       305
+
+                Result       0.41      0.24      0.30        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.52      0.47      0.48      1128
+
+          weighted avg       0.66      0.67      0.66      1128
+
+Average accuracy = 0.6716903073286051
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 2 - input question **********
+
+Random seed = 42
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:19<03:38, 17.50it/s]{'loss': 2.2606, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:43<02:26, 17.37it/s]{'eval_loss': 2.2891669273376465, 'eval_runtime': 1.7679, 'eval_samples_per_second': 774.384, 'eval_steps_per_second': 97.293, 'epoch': 1.0}
+
+{'loss': 2.1015, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:03<01:12, 17.46it/s]{'eval_loss': 2.3055403232574463, 'eval_runtime': 1.7352, 'eval_samples_per_second': 788.949, 'eval_steps_per_second': 99.123, 'epoch': 2.0}
+
+{'loss': 1.9647, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:27<00:00, 17.22it/s]{'eval_loss': 2.331301212310791, 'eval_runtime': 1.7391, 'eval_samples_per_second': 787.168, 'eval_steps_per_second': 98.899, 'epoch': 3.0}
+
+{'loss': 1.8427, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.3699703216552734, 'eval_runtime': 1.7567, 'eval_samples_per_second': 779.288, 'eval_steps_per_second': 97.909, 'epoch': 4.0}
+
+{'train_runtime': 329.3778, 'train_samples_per_second': 123.651, 'train_steps_per_second': 15.459, 'train_loss': 2.0423566244384572, 'epoch': 4.0}
+
+ 31%|███       | 44/141 [00:00<00:00, 99.55it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.27925531914893614
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.27      0.16      0.20       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.23      0.71      0.35       165
+
+           Conditional       0.50      0.06      0.10        18
+
+          Continuation       0.14      0.04      0.07       113
+
+              Contrast       0.18      0.05      0.07        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.18      0.13      0.15       101
+
+           Explanation       1.00      0.03      0.06        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.10      0.03      0.04        72
+
+  Question_answer_pair       0.39      0.49      0.43       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.28      1128
+
+             macro avg       0.19      0.11      0.09      1128
+
+          weighted avg       0.25      0.28      0.22      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:19<03:39, 17.37it/s]{'loss': 2.2731, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:43<02:26, 17.36it/s]{'eval_loss': 2.2727246284484863, 'eval_runtime': 1.744, 'eval_samples_per_second': 784.979, 'eval_steps_per_second': 98.624, 'epoch': 1.0}
+
+{'loss': 2.1193, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:04<01:15, 16.90it/s]{'eval_loss': 2.3032796382904053, 'eval_runtime': 1.7398, 'eval_samples_per_second': 786.883, 'eval_steps_per_second': 98.863, 'epoch': 2.0}
+
+{'loss': 1.9946, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:28<00:00, 17.43it/s]{'eval_loss': 2.327104091644287, 'eval_runtime': 1.7481, 'eval_samples_per_second': 783.116, 'eval_steps_per_second': 98.39, 'epoch': 3.0}
+
+{'loss': 1.8863, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.362445116043091, 'eval_runtime': 1.7414, 'eval_samples_per_second': 786.169, 'eval_steps_per_second': 98.774, 'epoch': 4.0}
+
+{'train_runtime': 329.9921, 'train_samples_per_second': 123.421, 'train_steps_per_second': 15.431, 'train_loss': 2.068324758045709, 'epoch': 4.0}
+
+ 55%|█████▍    | 77/141 [00:00<00:00, 99.91it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.28900709219858156
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.29      0.15      0.20       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.24      0.74      0.37       165
+
+           Conditional       0.40      0.11      0.17        18
+
+          Continuation       0.24      0.10      0.14       113
+
+              Contrast       0.30      0.07      0.11        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.16      0.12      0.14       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.13      0.04      0.06        72
+
+  Question_answer_pair       0.39      0.50      0.44       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.29      1128
+
+             macro avg       0.14      0.11      0.10      1128
+
+          weighted avg       0.24      0.29      0.24      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:19<03:40, 17.33it/s]{'loss': 2.2731, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:42<02:26, 17.33it/s]{'eval_loss': 2.2727246284484863, 'eval_runtime': 1.7376, 'eval_samples_per_second': 787.874, 'eval_steps_per_second': 98.988, 'epoch': 1.0}
+
+{'loss': 2.1193, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:03<01:13, 17.31it/s]{'eval_loss': 2.3032796382904053, 'eval_runtime': 1.7349, 'eval_samples_per_second': 789.089, 'eval_steps_per_second': 99.14, 'epoch': 2.0}
+
+{'loss': 1.9946, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:27<00:00, 17.19it/s]{'eval_loss': 2.327104091644287, 'eval_runtime': 1.7382, 'eval_samples_per_second': 787.586, 'eval_steps_per_second': 98.952, 'epoch': 3.0}
+
+{'loss': 1.8863, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.362445116043091, 'eval_runtime': 1.7395, 'eval_samples_per_second': 787.02, 'eval_steps_per_second': 98.881, 'epoch': 4.0}
+
+{'train_runtime': 328.8531, 'train_samples_per_second': 123.849, 'train_steps_per_second': 15.484, 'train_loss': 2.068324758045709, 'epoch': 4.0}
+
+ 62%|██████▏   | 88/141 [00:00<00:00, 99.98it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.28900709219858156
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.29      0.15      0.20       148
+
+           Alternation       0.00      0.00      0.00        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.00      0.00      0.00        33
+
+               Comment       0.24      0.74      0.37       165
+
+           Conditional       0.40      0.11      0.17        18
+
+          Continuation       0.24      0.10      0.14       113
+
+              Contrast       0.30      0.07      0.11        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.16      0.12      0.14       101
+
+           Explanation       0.00      0.00      0.00        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.00      0.00      0.00        15
+
+                Q_Elab       0.13      0.04      0.06        72
+
+  Question_answer_pair       0.39      0.50      0.44       305
+
+                Result       0.00      0.00      0.00        29
+
+              accuracy                           0.29      1128
+
+             macro avg       0.14      0.11      0.10      1128
+
+          weighted avg       0.24      0.29      0.24      1128
+
+Average accuracy = 0.28575650118203305
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 3 - input sentence pairs and question **********
+
+Random seed = 42
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:30<04:08, 15.36it/s]{'loss': 1.8004, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:04<02:47, 15.22it/s]{'eval_loss': 1.4266119003295898, 'eval_runtime': 1.7669, 'eval_samples_per_second': 774.803, 'eval_steps_per_second': 97.346, 'epoch': 1.0}
+
+{'loss': 1.2479, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:36<01:23, 15.28it/s]{'eval_loss': 1.2100443840026855, 'eval_runtime': 1.7948, 'eval_samples_per_second': 762.763, 'eval_steps_per_second': 95.833, 'epoch': 2.0}
+
+{'loss': 0.9963, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:11<00:00, 15.30it/s]{'eval_loss': 1.1887094974517822, 'eval_runtime': 1.7607, 'eval_samples_per_second': 777.539, 'eval_steps_per_second': 97.689, 'epoch': 3.0}
+
+{'loss': 0.8502, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2082946300506592, 'eval_runtime': 1.7576, 'eval_samples_per_second': 778.907, 'eval_steps_per_second': 97.861, 'epoch': 4.0}
+
+{'train_runtime': 373.0149, 'train_samples_per_second': 109.186, 'train_steps_per_second': 13.651, 'train_loss': 1.2236992415722578, 'epoch': 4.0}
+
+ 62%|██████▏   | 88/141 [00:00<00:00, 99.88it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6764184397163121
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.74      0.82      0.78       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.39      0.39        33
+
+               Comment       0.64      0.68      0.66       165
+
+           Conditional       0.50      0.67      0.57        18
+
+          Continuation       0.51      0.46      0.49       113
+
+              Contrast       0.47      0.41      0.44        44
+
+            Correction       0.67      0.10      0.17        21
+
+           Elaboration       0.57      0.58      0.58       101
+
+           Explanation       0.37      0.48      0.42        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.60      0.40      0.48        15
+
+                Q_Elab       0.65      0.69      0.67        72
+
+  Question_answer_pair       0.85      0.92      0.89       305
+
+                Result       0.45      0.17      0.25        29
+
+              accuracy                           0.68      1128
+
+             macro avg       0.52      0.47      0.48      1128
+
+          weighted avg       0.66      0.68      0.66      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:29<04:10, 15.26it/s]{'loss': 1.7518, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:53, 14.69it/s]{'eval_loss': 1.4470134973526, 'eval_runtime': 1.7592, 'eval_samples_per_second': 778.182, 'eval_steps_per_second': 97.77, 'epoch': 1.0}
+
+{'loss': 1.2643, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:33<01:24, 15.14it/s]{'eval_loss': 1.2755303382873535, 'eval_runtime': 1.7576, 'eval_samples_per_second': 778.902, 'eval_steps_per_second': 97.861, 'epoch': 2.0}
+
+{'loss': 1.0195, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:07<00:00, 15.41it/s]{'eval_loss': 1.2370343208312988, 'eval_runtime': 1.7577, 'eval_samples_per_second': 778.847, 'eval_steps_per_second': 97.854, 'epoch': 3.0}
+
+{'loss': 0.8794, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2442570924758911, 'eval_runtime': 1.7581, 'eval_samples_per_second': 778.676, 'eval_steps_per_second': 97.832, 'epoch': 4.0}
+
+{'train_runtime': 368.8305, 'train_samples_per_second': 110.425, 'train_steps_per_second': 13.806, 'train_loss': 1.2287467243347407, 'epoch': 4.0}
+
+ 79%|███████▊  | 111/141 [00:01<00:00, 98.82it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6640070921985816
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.80      0.76       148
+
+           Alternation       0.94      0.84      0.89        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.42      0.45      0.43        33
+
+               Comment       0.59      0.67      0.63       165
+
+           Conditional       0.65      0.61      0.63        18
+
+          Continuation       0.54      0.47      0.50       113
+
+              Contrast       0.44      0.41      0.42        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.54      0.57      0.56       101
+
+           Explanation       0.40      0.45      0.42        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.33      0.20      0.25        15
+
+                Q_Elab       0.64      0.69      0.67        72
+
+  Question_answer_pair       0.84      0.91      0.88       305
+
+                Result       0.42      0.17      0.24        29
+
+              accuracy                           0.66      1128
+
+             macro avg       0.47      0.45      0.46      1128
+
+          weighted avg       0.64      0.66      0.65      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:28<04:07, 15.40it/s]{'loss': 1.7518, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:00<02:45, 15.37it/s]{'eval_loss': 1.4470134973526, 'eval_runtime': 1.7572, 'eval_samples_per_second': 779.091, 'eval_steps_per_second': 97.884, 'epoch': 1.0}
+
+{'loss': 1.2643, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:29<01:21, 15.53it/s]{'eval_loss': 1.2755303382873535, 'eval_runtime': 1.7506, 'eval_samples_per_second': 782.021, 'eval_steps_per_second': 98.252, 'epoch': 2.0}
+
+{'loss': 1.0195, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:02<00:00, 15.40it/s]{'eval_loss': 1.2370343208312988, 'eval_runtime': 1.7454, 'eval_samples_per_second': 784.356, 'eval_steps_per_second': 98.546, 'epoch': 3.0}
+
+{'loss': 0.8794, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2442570924758911, 'eval_runtime': 1.7709, 'eval_samples_per_second': 773.047, 'eval_steps_per_second': 97.125, 'epoch': 4.0}
+
+{'train_runtime': 364.1253, 'train_samples_per_second': 111.852, 'train_steps_per_second': 13.984, 'train_loss': 1.2287467243347407, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.6640070921985816
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.80      0.76       148
+
+           Alternation       0.94      0.84      0.89        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.42      0.45      0.43        33
+
+               Comment       0.59      0.67      0.63       165
+
+           Conditional       0.65      0.61      0.63        18
+
+          Continuation       0.54      0.47      0.50       113
+
+              Contrast       0.44      0.41      0.42        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.54      0.57      0.56       101
+
+           Explanation       0.40      0.45      0.42        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.33      0.20      0.25        15
+
+                Q_Elab       0.64      0.69      0.67        72
+
+  Question_answer_pair       0.84      0.91      0.88       305
+
+                Result       0.42      0.17      0.24        29
+
+              accuracy                           0.66      1128
+
+             macro avg       0.47      0.45      0.46      1128
+
+          weighted avg       0.64      0.66      0.65      1128
+
+Average accuracy = 0.668144208037825
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 4 - masked speakers, input sentence pairs and question **********
+
+Random seed = 42
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:29<04:06, 15.47it/s]{'loss': 1.7302, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:46, 15.33it/s]{'eval_loss': 1.8891476392745972, 'eval_runtime': 1.8274, 'eval_samples_per_second': 749.145, 'eval_steps_per_second': 94.122, 'epoch': 1.0}
+
+{'loss': 1.2265, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:34<01:22, 15.50it/s]{'eval_loss': 1.989597201347351, 'eval_runtime': 1.8274, 'eval_samples_per_second': 749.132, 'eval_steps_per_second': 94.12, 'epoch': 2.0}
+
+{'loss': 0.9858, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:07<00:00, 15.38it/s]{'eval_loss': 1.9219777584075928, 'eval_runtime': 1.8276, 'eval_samples_per_second': 749.081, 'eval_steps_per_second': 94.114, 'epoch': 3.0}
+
+{'loss': 0.8424, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.1193737983703613, 'eval_runtime': 1.8554, 'eval_samples_per_second': 737.847, 'eval_steps_per_second': 92.702, 'epoch': 4.0}
+
+{'train_runtime': 368.9822, 'train_samples_per_second': 110.379, 'train_steps_per_second': 13.8, 'train_loss': 1.1962326301520767, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.4228723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.50      0.01      0.03       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.36      0.36      0.36        33
+
+               Comment       0.45      0.61      0.52       165
+
+           Conditional       0.38      0.50      0.43        18
+
+          Continuation       0.28      0.53      0.36       113
+
+              Contrast       0.48      0.36      0.42        44
+
+            Correction       0.12      0.10      0.11        21
+
+           Elaboration       0.25      0.68      0.36       101
+
+           Explanation       0.21      0.45      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.07      0.12        15
+
+                Q_Elab       0.65      0.49      0.56        72
+
+  Question_answer_pair       0.93      0.45      0.61       305
+
+                Result       0.25      0.14      0.18        29
+
+              accuracy                           0.42      1128
+
+             macro avg       0.40      0.35      0.33      1128
+
+          weighted avg       0.55      0.42      0.41      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:27<04:08, 15.38it/s]{'loss': 1.7623, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:59<02:44, 15.46it/s]{'eval_loss': 1.8647593259811401, 'eval_runtime': 1.8271, 'eval_samples_per_second': 749.267, 'eval_steps_per_second': 94.137, 'epoch': 1.0}
+
+{'loss': 1.2595, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:29<01:22, 15.38it/s]{'eval_loss': 1.7944210767745972, 'eval_runtime': 1.8283, 'eval_samples_per_second': 748.799, 'eval_steps_per_second': 94.078, 'epoch': 2.0}
+
+{'loss': 1.0143, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:00<00:00, 15.52it/s]{'eval_loss': 1.8464564085006714, 'eval_runtime': 1.8288, 'eval_samples_per_second': 748.584, 'eval_steps_per_second': 94.051, 'epoch': 3.0}
+
+{'loss': 0.8611, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.000603675842285, 'eval_runtime': 1.8287, 'eval_samples_per_second': 748.62, 'eval_steps_per_second': 94.056, 'epoch': 4.0}
+
+{'train_runtime': 362.7214, 'train_samples_per_second': 112.285, 'train_steps_per_second': 14.038, 'train_loss': 1.2243322715549514, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.weight', 'classifier.bias']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.4228723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.86      0.16      0.27       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.43      0.39      0.41        33
+
+               Comment       0.45      0.59      0.51       165
+
+           Conditional       0.34      0.61      0.44        18
+
+          Continuation       0.28      0.57      0.37       113
+
+              Contrast       0.38      0.39      0.38        44
+
+            Correction       0.11      0.10      0.10        21
+
+           Elaboration       0.26      0.62      0.37       101
+
+           Explanation       0.19      0.45      0.27        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       1.00      0.07      0.12        15
+
+                Q_Elab       0.57      0.50      0.53        72
+
+  Question_answer_pair       0.95      0.38      0.54       305
+
+                Result       0.40      0.14      0.21        29
+
+              accuracy                           0.42      1128
+
+             macro avg       0.45      0.36      0.34      1128
+
+          weighted avg       0.60      0.42      0.43      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:27<04:08, 15.38it/s]{'loss': 1.7623, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:59<02:44, 15.46it/s]{'eval_loss': 1.8647593259811401, 'eval_runtime': 1.8264, 'eval_samples_per_second': 749.566, 'eval_steps_per_second': 94.175, 'epoch': 1.0}
+
+{'loss': 1.2595, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:29<01:22, 15.39it/s]{'eval_loss': 1.7944210767745972, 'eval_runtime': 1.823, 'eval_samples_per_second': 750.95, 'eval_steps_per_second': 94.349, 'epoch': 2.0}
+
+{'loss': 1.0143, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:03<00:00, 15.48it/s]{'eval_loss': 1.8464564085006714, 'eval_runtime': 1.824, 'eval_samples_per_second': 750.564, 'eval_steps_per_second': 94.3, 'epoch': 3.0}
+
+{'loss': 0.8611, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 2.000603675842285, 'eval_runtime': 1.8236, 'eval_samples_per_second': 750.732, 'eval_steps_per_second': 94.321, 'epoch': 4.0}
+
+{'train_runtime': 364.9736, 'train_samples_per_second': 111.592, 'train_steps_per_second': 13.952, 'train_loss': 1.2243322715549514, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.4228723404255319
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.86      0.16      0.27       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.43      0.39      0.41        33
+
+               Comment       0.45      0.59      0.51       165
+
+           Conditional       0.34      0.61      0.44        18
+
+          Continuation       0.28      0.57      0.37       113
+
+              Contrast       0.38      0.39      0.38        44
+
+            Correction       0.11      0.10      0.10        21
+
+           Elaboration       0.26      0.62      0.37       101
+
+           Explanation       0.19      0.45      0.27        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       1.00      0.07      0.12        15
+
+                Q_Elab       0.57      0.50      0.53        72
+
+  Question_answer_pair       0.95      0.38      0.54       305
+
+                Result       0.40      0.14      0.21        29
+
+              accuracy                           0.42      1128
+
+             macro avg       0.45      0.36      0.34      1128
+
+          weighted avg       0.60      0.42      0.43      1128
+
+Average accuracy = 0.4228723404255319
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 5 - input sentence pairs, distance and question **********
+
+Random seed = 42
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:29<04:06, 15.51it/s]{'loss': 1.787, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:03<02:49, 15.01it/s]{'eval_loss': 1.5525692701339722, 'eval_runtime': 1.8394, 'eval_samples_per_second': 744.259, 'eval_steps_per_second': 93.508, 'epoch': 1.0}
+
+{'loss': 1.3306, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:33<01:23, 15.25it/s]{'eval_loss': 1.3791080713272095, 'eval_runtime': 1.8385, 'eval_samples_per_second': 744.617, 'eval_steps_per_second': 93.553, 'epoch': 2.0}
+
+{'loss': 1.093, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:05<00:00, 15.32it/s]{'eval_loss': 1.3718937635421753, 'eval_runtime': 1.8467, 'eval_samples_per_second': 741.303, 'eval_steps_per_second': 93.137, 'epoch': 3.0}
+
+{'loss': 0.9389, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3701382875442505, 'eval_runtime': 1.8455, 'eval_samples_per_second': 741.824, 'eval_steps_per_second': 93.202, 'epoch': 4.0}
+
+{'train_runtime': 367.5034, 'train_samples_per_second': 110.823, 'train_steps_per_second': 13.856, 'train_loss': 1.2873774646120753, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 99.59it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6409574468085106
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.71      0.81      0.75       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.41      0.52      0.46        33
+
+               Comment       0.60      0.62      0.61       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.46      0.38      0.42       113
+
+              Contrast       0.40      0.41      0.40        44
+
+            Correction       0.50      0.05      0.09        21
+
+           Elaboration       0.52      0.45      0.48       101
+
+           Explanation       0.43      0.48      0.45        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.31      0.33      0.32        15
+
+                Q_Elab       0.58      0.69      0.63        72
+
+  Question_answer_pair       0.83      0.89      0.86       305
+
+                Result       0.53      0.34      0.42        29
+
+              accuracy                           0.64      1128
+
+             macro avg       0.48      0.46      0.46      1128
+
+          weighted avg       0.62      0.64      0.63      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:28<04:10, 15.25it/s]{'loss': 1.8293, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:00<02:45, 15.39it/s]{'eval_loss': 1.5519825220108032, 'eval_runtime': 1.8447, 'eval_samples_per_second': 742.143, 'eval_steps_per_second': 93.242, 'epoch': 1.0}
+
+{'loss': 1.361, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:31<01:23, 15.24it/s]{'eval_loss': 1.3721404075622559, 'eval_runtime': 1.8487, 'eval_samples_per_second': 740.529, 'eval_steps_per_second': 93.039, 'epoch': 2.0}
+
+{'loss': 1.1295, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:03<00:00, 15.36it/s]{'eval_loss': 1.356115460395813, 'eval_runtime': 1.8473, 'eval_samples_per_second': 741.089, 'eval_steps_per_second': 93.11, 'epoch': 3.0}
+
+{'loss': 0.9699, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3666821718215942, 'eval_runtime': 1.8764, 'eval_samples_per_second': 729.598, 'eval_steps_per_second': 91.666, 'epoch': 4.0}
+
+{'train_runtime': 365.4659, 'train_samples_per_second': 111.441, 'train_steps_per_second': 13.933, 'train_loss': 1.3223996817925177, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 99.51it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6285460992907801
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.70      0.77      0.74       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.48      0.43        33
+
+               Comment       0.58      0.62      0.60       165
+
+           Conditional       0.50      0.50      0.50        18
+
+          Continuation       0.47      0.35      0.40       113
+
+              Contrast       0.48      0.36      0.42        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.43      0.49      0.45       101
+
+           Explanation       0.31      0.45      0.37        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.31      0.27      0.29        15
+
+                Q_Elab       0.57      0.71      0.63        72
+
+  Question_answer_pair       0.84      0.90      0.87       305
+
+                Result       0.67      0.21      0.32        29
+
+              accuracy                           0.63      1128
+
+             macro avg       0.45      0.43      0.43      1128
+
+          weighted avg       0.61      0.63      0.61      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:28<04:12, 15.14it/s]{'loss': 1.8293, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:45, 15.40it/s]{'eval_loss': 1.5519825220108032, 'eval_runtime': 1.8452, 'eval_samples_per_second': 741.914, 'eval_steps_per_second': 93.213, 'epoch': 1.0}
+
+{'loss': 1.361, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:33<01:23, 15.25it/s]{'eval_loss': 1.3721404075622559, 'eval_runtime': 1.8495, 'eval_samples_per_second': 740.185, 'eval_steps_per_second': 92.996, 'epoch': 2.0}
+
+{'loss': 1.1295, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:07<00:00, 15.43it/s]{'eval_loss': 1.356115460395813, 'eval_runtime': 1.8507, 'eval_samples_per_second': 739.738, 'eval_steps_per_second': 92.94, 'epoch': 3.0}
+
+{'loss': 0.9699, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3666821718215942, 'eval_runtime': 1.8477, 'eval_samples_per_second': 740.927, 'eval_steps_per_second': 93.089, 'epoch': 4.0}
+
+{'train_runtime': 369.2514, 'train_samples_per_second': 110.299, 'train_steps_per_second': 13.79, 'train_loss': 1.3223996817925177, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 85.58it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.6285460992907801
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.70      0.77      0.74       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.48      0.43        33
+
+               Comment       0.58      0.62      0.60       165
+
+           Conditional       0.50      0.50      0.50        18
+
+          Continuation       0.47      0.35      0.40       113
+
+              Contrast       0.48      0.36      0.42        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.43      0.49      0.45       101
+
+           Explanation       0.31      0.45      0.37        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.31      0.27      0.29        15
+
+                Q_Elab       0.57      0.71      0.63        72
+
+  Question_answer_pair       0.84      0.90      0.87       305
+
+                Result       0.67      0.21      0.32        29
+
+              accuracy                           0.63      1128
+
+             macro avg       0.45      0.43      0.43      1128
+
+          weighted avg       0.61      0.63      0.61      1128
+
+Average accuracy = 0.6326832151300236
+
+********** Run complete **********
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+********** Run - model: TODBERT/TOD-BERT-JNT-V1, learning rate = 2e-05 **********
+
+********** Run 6 - masked speakers, input sentence pairs, distance and question **********
+
+Random seed = 42
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:30<04:08, 15.37it/s]{'loss': 1.7917, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:47, 15.21it/s]{'eval_loss': 1.4983949661254883, 'eval_runtime': 1.8401, 'eval_samples_per_second': 743.974, 'eval_steps_per_second': 93.472, 'epoch': 1.0}
+
+{'loss': 1.3065, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:33<01:22, 15.44it/s]{'eval_loss': 1.3497568368911743, 'eval_runtime': 1.8421, 'eval_samples_per_second': 743.191, 'eval_steps_per_second': 93.374, 'epoch': 2.0}
+
+{'loss': 1.085, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:06<00:00, 14.94it/s]{'eval_loss': 1.3237340450286865, 'eval_runtime': 1.8457, 'eval_samples_per_second': 741.725, 'eval_steps_per_second': 93.19, 'epoch': 3.0}
+
+{'loss': 0.9329, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3287800550460815, 'eval_runtime': 1.8435, 'eval_samples_per_second': 742.613, 'eval_steps_per_second': 93.301, 'epoch': 4.0}
+
+{'train_runtime': 368.1085, 'train_samples_per_second': 110.641, 'train_steps_per_second': 13.833, 'train_loss': 1.2790105179923779, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 98.84it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6356382978723404
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.71      0.80      0.75       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.35      0.48      0.41        33
+
+               Comment       0.60      0.62      0.61       165
+
+           Conditional       0.60      0.50      0.55        18
+
+          Continuation       0.47      0.36      0.41       113
+
+              Contrast       0.44      0.36      0.40        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.49      0.54      0.51       101
+
+           Explanation       0.29      0.39      0.33        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.46      0.40      0.43        15
+
+                Q_Elab       0.57      0.64      0.61        72
+
+  Question_answer_pair       0.84      0.88      0.86       305
+
+                Result       0.55      0.38      0.45        29
+
+              accuracy                           0.64      1128
+
+             macro avg       0.46      0.45      0.45      1128
+
+          weighted avg       0.62      0.64      0.62      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:28<04:10, 15.23it/s]{'loss': 1.8627, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:46, 15.30it/s]{'eval_loss': 1.5810335874557495, 'eval_runtime': 1.8481, 'eval_samples_per_second': 740.742, 'eval_steps_per_second': 93.066, 'epoch': 1.0}
+
+{'loss': 1.3856, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:32<01:23, 15.26it/s]{'eval_loss': 1.398205041885376, 'eval_runtime': 1.8476, 'eval_samples_per_second': 740.955, 'eval_steps_per_second': 93.093, 'epoch': 2.0}
+
+{'loss': 1.149, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:04<00:00, 15.48it/s]{'eval_loss': 1.35358726978302, 'eval_runtime': 1.841, 'eval_samples_per_second': 743.635, 'eval_steps_per_second': 93.43, 'epoch': 3.0}
+
+{'loss': 0.9896, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3553282022476196, 'eval_runtime': 1.8367, 'eval_samples_per_second': 745.34, 'eval_steps_per_second': 93.644, 'epoch': 4.0}
+
+{'train_runtime': 366.4246, 'train_samples_per_second': 111.15, 'train_steps_per_second': 13.896, 'train_loss': 1.346736551361204, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 99.51it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at TODBERT/TOD-BERT-JNT-V1 and are newly initialized: ['classifier.bias', 'classifier.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Accuracy: 0.6338652482269503
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.71      0.81      0.76       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.52      0.44        33
+
+               Comment       0.60      0.62      0.61       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.45      0.35      0.40       113
+
+              Contrast       0.39      0.34      0.37        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.49      0.45      0.47       101
+
+           Explanation       0.25      0.35      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.40      0.44        15
+
+                Q_Elab       0.58      0.69      0.63        72
+
+  Question_answer_pair       0.81      0.90      0.86       305
+
+                Result       0.70      0.24      0.36        29
+
+              accuracy                           0.63      1128
+
+             macro avg       0.46      0.44      0.44      1128
+
+          weighted avg       0.61      0.63      0.62      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:28<04:09, 15.29it/s]{'loss': 1.8627, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [03:02<02:45, 15.42it/s]{'eval_loss': 1.5810335874557495, 'eval_runtime': 1.8384, 'eval_samples_per_second': 744.659, 'eval_steps_per_second': 93.558, 'epoch': 1.0}
+
+{'loss': 1.3856, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:33<01:23, 15.30it/s]{'eval_loss': 1.398205041885376, 'eval_runtime': 1.8399, 'eval_samples_per_second': 744.063, 'eval_steps_per_second': 93.483, 'epoch': 2.0}
+
+{'loss': 1.149, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [06:06<00:00, 15.49it/s]{'eval_loss': 1.35358726978302, 'eval_runtime': 1.8458, 'eval_samples_per_second': 741.666, 'eval_steps_per_second': 93.182, 'epoch': 3.0}
+
+{'loss': 0.9896, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.3553282022476196, 'eval_runtime': 1.847, 'eval_samples_per_second': 741.217, 'eval_steps_per_second': 93.126, 'epoch': 4.0}
+
+{'train_runtime': 368.845, 'train_samples_per_second': 110.42, 'train_steps_per_second': 13.805, 'train_loss': 1.346736551361204, 'epoch': 4.0}
+
+ 16%|█▌        | 22/141 [00:00<00:01, 99.61it/s] 
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.6338652482269503
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.71      0.81      0.76       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.39      0.52      0.44        33
+
+               Comment       0.60      0.62      0.61       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.45      0.35      0.40       113
+
+              Contrast       0.39      0.34      0.37        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.49      0.45      0.47       101
+
+           Explanation       0.25      0.35      0.29        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.50      0.40      0.44        15
+
+                Q_Elab       0.58      0.69      0.63        72
+
+  Question_answer_pair       0.81      0.90      0.86       305
+
+                Result       0.70      0.24      0.36        29
+
+              accuracy                           0.63      1128
+
+             macro avg       0.46      0.44      0.44      1128
+
+          weighted avg       0.61      0.63      0.62      1128
+
+Average accuracy = 0.6344562647754137
+
+********** Run complete **********
+

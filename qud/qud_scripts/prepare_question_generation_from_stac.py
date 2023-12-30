@@ -87,5 +87,3 @@ for curr_article in articles:
         fw.write(' || '+sentences[anchor_pos]+' || '+sentences[answer_pos])
         # 5. Write "|" + answer sentence (placeholder for question), then write a new line
         fw.write(' | '+sentences[answer_pos-1]+'\n') #placeholder for question TODO replace with a better placeholder after looking at question generation script
-
-

@@ -1,0 +1,610 @@
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+********** Run - model: microsoft/DialoGPT-small, learning rate = 2e-05 **********
+
+********** Run 7 - input sentence pairs and place holder question (giberish) **********
+
+Random seed = 42
+
+  0%|          | 1/5092 [00:01<1:33:57,  1.11s/it]
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:21<03:39, 17.40it/s]{'loss': 2.1825, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:45<02:22, 17.90it/s]{'eval_loss': 1.5003139972686768, 'eval_runtime': 2.647, 'eval_samples_per_second': 517.183, 'eval_steps_per_second': 64.978, 'epoch': 1.0}
+
+{'loss': 1.3921, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:05<01:11, 17.92it/s]{'eval_loss': 1.264424443244934, 'eval_runtime': 2.6041, 'eval_samples_per_second': 525.707, 'eval_steps_per_second': 66.049, 'epoch': 2.0}
+
+{'loss': 1.1962, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:29<00:00, 17.79it/s]{'eval_loss': 1.1737399101257324, 'eval_runtime': 2.6609, 'eval_samples_per_second': 514.482, 'eval_steps_per_second': 64.639, 'epoch': 3.0}
+
+{'loss': 1.0955, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.1754997968673706, 'eval_runtime': 2.6616, 'eval_samples_per_second': 514.361, 'eval_steps_per_second': 64.624, 'epoch': 4.0}
+
+{'train_runtime': 332.4189, 'train_samples_per_second': 122.52, 'train_steps_per_second': 15.318, 'train_loss': 1.4665607173706918, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Accuracy: 0.6817375886524822
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.75      0.83      0.79       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.32      0.36      0.34        33
+
+               Comment       0.67      0.71      0.69       165
+
+           Conditional       0.55      0.33      0.41        18
+
+          Continuation       0.53      0.43      0.48       113
+
+              Contrast       0.46      0.39      0.42        44
+
+            Correction       0.00      0.00      0.00        21
+
+           Elaboration       0.51      0.66      0.58       101
+
+           Explanation       0.44      0.48      0.46        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.55      0.40      0.46        15
+
+                Q_Elab       0.60      0.69      0.65        72
+
+  Question_answer_pair       0.90      0.92      0.91       305
+
+                Result       0.50      0.38      0.43        29
+
+              accuracy                           0.68      1128
+
+             macro avg       0.48      0.46      0.47      1128
+
+          weighted avg       0.66      0.68      0.67      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:19<03:40, 17.29it/s]{'loss': 2.4903, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:45<02:23, 17.79it/s]{'eval_loss': 1.6896464824676514, 'eval_runtime': 2.7052, 'eval_samples_per_second': 506.058, 'eval_steps_per_second': 63.581, 'epoch': 1.0}
+
+{'loss': 1.545, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:07<01:12, 17.63it/s]{'eval_loss': 1.3738739490509033, 'eval_runtime': 2.7144, 'eval_samples_per_second': 504.339, 'eval_steps_per_second': 63.365, 'epoch': 2.0}
+
+{'loss': 1.2574, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:32<00:00, 17.80it/s]{'eval_loss': 1.226611852645874, 'eval_runtime': 2.6719, 'eval_samples_per_second': 512.374, 'eval_steps_per_second': 64.374, 'epoch': 3.0}
+
+{'loss': 1.1443, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2343910932540894, 'eval_runtime': 2.6503, 'eval_samples_per_second': 516.541, 'eval_steps_per_second': 64.898, 'epoch': 4.0}
+
+{'train_runtime': 335.5259, 'train_samples_per_second': 121.386, 'train_steps_per_second': 15.176, 'train_loss': 1.609243388449406, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Accuracy: 0.674645390070922
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.84      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.66      0.70      0.68       165
+
+           Conditional       0.42      0.28      0.33        18
+
+          Continuation       0.48      0.42      0.45       113
+
+              Contrast       0.49      0.43      0.46        44
+
+            Correction       0.33      0.05      0.08        21
+
+           Elaboration       0.48      0.66      0.56       101
+
+           Explanation       0.41      0.45      0.43        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.57      0.27      0.36        15
+
+                Q_Elab       0.66      0.64      0.65        72
+
+  Question_answer_pair       0.90      0.92      0.91       305
+
+                Result       0.53      0.31      0.39        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.50      0.45      0.46      1128
+
+          weighted avg       0.66      0.67      0.66      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:19<03:34, 17.84it/s]{'loss': 2.4903, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:45<02:22, 17.84it/s]{'eval_loss': 1.6896464824676514, 'eval_runtime': 2.6914, 'eval_samples_per_second': 508.665, 'eval_steps_per_second': 63.908, 'epoch': 1.0}
+
+{'loss': 1.545, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:07<01:12, 17.59it/s]{'eval_loss': 1.3738739490509033, 'eval_runtime': 2.6469, 'eval_samples_per_second': 517.203, 'eval_steps_per_second': 64.981, 'epoch': 2.0}
+
+{'loss': 1.2574, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:33<00:00, 17.83it/s]{'eval_loss': 1.226611852645874, 'eval_runtime': 2.6723, 'eval_samples_per_second': 512.301, 'eval_steps_per_second': 64.365, 'epoch': 3.0}
+
+{'loss': 1.1443, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2343910932540894, 'eval_runtime': 2.6537, 'eval_samples_per_second': 515.878, 'eval_steps_per_second': 64.814, 'epoch': 4.0}
+
+{'train_runtime': 335.6777, 'train_samples_per_second': 121.331, 'train_steps_per_second': 15.169, 'train_loss': 1.609243388449406, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.674645390070922
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.84      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.33      0.39      0.36        33
+
+               Comment       0.66      0.70      0.68       165
+
+           Conditional       0.42      0.28      0.33        18
+
+          Continuation       0.48      0.42      0.45       113
+
+              Contrast       0.49      0.43      0.46        44
+
+            Correction       0.33      0.05      0.08        21
+
+           Elaboration       0.48      0.66      0.56       101
+
+           Explanation       0.41      0.45      0.43        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.57      0.27      0.36        15
+
+                Q_Elab       0.66      0.64      0.65        72
+
+  Question_answer_pair       0.90      0.92      0.91       305
+
+                Result       0.53      0.31      0.39        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.50      0.45      0.46      1128
+
+          weighted avg       0.66      0.67      0.66      1128
+
+Average accuracy = 0.6770094562647753
+
+********** Run complete **********
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+********** Run - model: microsoft/DialoGPT-small, learning rate = 2e-05 **********
+
+********** Run 8 - input sentence pairs and uniform question **********
+
+Random seed = 42
+
+  0%|          | 1/5092 [00:01<1:38:01,  1.16s/it]
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:22<03:51, 16.49it/s]{'loss': 2.4663, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+ 49%|████▉     | 2501/5092 [02:51<45:28,  1.05s/it]
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:53<02:28, 17.12it/s]{'eval_loss': 1.6335381269454956, 'eval_runtime': 2.7401, 'eval_samples_per_second': 499.621, 'eval_steps_per_second': 62.772, 'epoch': 1.0}
+
+{'loss': 1.435, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:17<01:13, 17.37it/s]{'eval_loss': 1.3090637922286987, 'eval_runtime': 2.7296, 'eval_samples_per_second': 501.545, 'eval_steps_per_second': 63.014, 'epoch': 2.0}
+
+{'loss': 1.2247, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:45<00:00, 17.22it/s]{'eval_loss': 1.2073591947555542, 'eval_runtime': 2.69, 'eval_samples_per_second': 508.917, 'eval_steps_per_second': 63.94, 'epoch': 3.0}
+
+{'loss': 1.1219, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.1892447471618652, 'eval_runtime': 2.6839, 'eval_samples_per_second': 510.077, 'eval_steps_per_second': 64.086, 'epoch': 4.0}
+
+{'train_runtime': 347.86, 'train_samples_per_second': 117.082, 'train_steps_per_second': 14.638, 'train_loss': 1.5619767422013084, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Accuracy: 0.6790780141843972
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.74      0.84      0.79       148
+
+           Alternation       0.94      0.79      0.86        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.38      0.45      0.41        33
+
+               Comment       0.66      0.72      0.69       165
+
+           Conditional       0.53      0.56      0.54        18
+
+          Continuation       0.50      0.50      0.50       113
+
+              Contrast       0.65      0.39      0.49        44
+
+            Correction       0.50      0.10      0.16        21
+
+           Elaboration       0.51      0.60      0.55       101
+
+           Explanation       0.35      0.39      0.37        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       0.67      0.27      0.38        15
+
+                Q_Elab       0.62      0.62      0.62        72
+
+  Question_answer_pair       0.88      0.91      0.90       305
+
+                Result       0.50      0.24      0.33        29
+
+              accuracy                           0.68      1128
+
+             macro avg       0.53      0.46      0.47      1128
+
+          weighted avg       0.67      0.68      0.67      1128
+
+Random seed = 123
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:21<03:48, 16.73it/s]{'loss': 2.3334, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:49<02:27, 17.26it/s]{'eval_loss': 1.5044128894805908, 'eval_runtime': 2.6961, 'eval_samples_per_second': 507.764, 'eval_steps_per_second': 63.795, 'epoch': 1.0}
+
+{'loss': 1.3553, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:15<01:14, 17.19it/s]{'eval_loss': 1.253003478050232, 'eval_runtime': 2.6935, 'eval_samples_per_second': 508.254, 'eval_steps_per_second': 63.857, 'epoch': 2.0}
+
+{'loss': 1.1805, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:43<00:00, 17.38it/s]{'eval_loss': 1.2392176389694214, 'eval_runtime': 2.7168, 'eval_samples_per_second': 503.896, 'eval_steps_per_second': 63.309, 'epoch': 3.0}
+
+{'loss': 1.0852, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2124590873718262, 'eval_runtime': 2.6924, 'eval_samples_per_second': 508.467, 'eval_steps_per_second': 63.883, 'epoch': 4.0}
+
+{'train_runtime': 345.8451, 'train_samples_per_second': 117.764, 'train_steps_per_second': 14.723, 'train_loss': 1.4885969019647856, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at microsoft/DialoGPT-small and are newly initialized: ['score.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+
+Accuracy: 0.6719858156028369
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.83      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.34      0.45      0.39        33
+
+               Comment       0.61      0.68      0.65       165
+
+           Conditional       0.47      0.39      0.42        18
+
+          Continuation       0.54      0.40      0.46       113
+
+              Contrast       0.60      0.34      0.43        44
+
+            Correction       0.67      0.10      0.17        21
+
+           Elaboration       0.51      0.72      0.60       101
+
+           Explanation       0.46      0.42      0.44        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       1.00      0.27      0.42        15
+
+                Q_Elab       0.62      0.61      0.62        72
+
+  Question_answer_pair       0.87      0.92      0.89       305
+
+                Result       0.42      0.28      0.33        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.55      0.45      0.47      1128
+
+          weighted avg       0.67      0.67      0.66      1128
+
+Random seed = 456
+
+                                                   
+
+ 25%|██▌       | 1273/5092 [01:21<03:42, 17.15it/s]{'loss': 2.3334, 'learning_rate': 1.5000000000000002e-05, 'epoch': 1.0}
+
+                                                   
+
+                                                   
+
+ 50%|█████     | 2546/5092 [02:47<02:27, 17.30it/s]{'eval_loss': 1.5044128894805908, 'eval_runtime': 2.6883, 'eval_samples_per_second': 509.239, 'eval_steps_per_second': 63.98, 'epoch': 1.0}
+
+{'loss': 1.3553, 'learning_rate': 1e-05, 'epoch': 2.0}
+
+                                                   
+
+                                                   
+
+ 75%|███████▌  | 3819/5092 [04:10<01:17, 16.42it/s]{'eval_loss': 1.253003478050232, 'eval_runtime': 2.6772, 'eval_samples_per_second': 511.357, 'eval_steps_per_second': 64.247, 'epoch': 2.0}
+
+{'loss': 1.1805, 'learning_rate': 5e-06, 'epoch': 3.0}
+
+                                                   
+
+                                                   
+
+100%|██████████| 5092/5092 [05:37<00:00, 17.38it/s]{'eval_loss': 1.2392176389694214, 'eval_runtime': 2.6991, 'eval_samples_per_second': 507.202, 'eval_steps_per_second': 63.724, 'epoch': 3.0}
+
+{'loss': 1.0852, 'learning_rate': 0.0, 'epoch': 4.0}
+
+                                                   
+
+                                                   
+
+{'eval_loss': 1.2124590873718262, 'eval_runtime': 2.6837, 'eval_samples_per_second': 510.121, 'eval_steps_per_second': 64.091, 'epoch': 4.0}
+
+{'train_runtime': 339.9071, 'train_samples_per_second': 119.821, 'train_steps_per_second': 14.981, 'train_loss': 1.4885969019647856, 'epoch': 4.0}
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+/lustre03/project/6066577/shuhaibm/env/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Accuracy: 0.6719858156028369
+
+                        precision    recall  f1-score   support
+
+       Acknowledgement       0.73      0.83      0.78       148
+
+           Alternation       1.00      0.79      0.88        19
+
+            Background       0.00      0.00      0.00         1
+
+Clarification_question       0.34      0.45      0.39        33
+
+               Comment       0.61      0.68      0.65       165
+
+           Conditional       0.47      0.39      0.42        18
+
+          Continuation       0.54      0.40      0.46       113
+
+              Contrast       0.60      0.34      0.43        44
+
+            Correction       0.67      0.10      0.17        21
+
+           Elaboration       0.51      0.72      0.60       101
+
+           Explanation       0.46      0.42      0.44        31
+
+             Narration       0.00      0.00      0.00        13
+
+              Parallel       1.00      0.27      0.42        15
+
+                Q_Elab       0.62      0.61      0.62        72
+
+  Question_answer_pair       0.87      0.92      0.89       305
+
+                Result       0.42      0.28      0.33        29
+
+              accuracy                           0.67      1128
+
+             macro avg       0.55      0.45      0.47      1128
+
+          weighted avg       0.67      0.67      0.66      1128
+
+Average accuracy = 0.6743498817966902
+
+********** Run complete **********
+
