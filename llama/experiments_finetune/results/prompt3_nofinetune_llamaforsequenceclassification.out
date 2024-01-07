@@ -1,0 +1,3397 @@
+
+Lmod is automatically replacing "intel/2020.1.217" with "gcc/9.3.0".
+
+
+Lmod is automatically replacing "intel/2020.1.217" with "gcc/9.3.0".
+
+/project/6066577/shuhaibm/env_llama/lib/python3.10/site-packages/transformers/trainer_pt_utils.py:218: UserWarning: Failed to initialize NumPy: module compiled against API version 0x10 but this version of numpy is 0xf . Check the section C-API incompatibility at the Troubleshooting ImportError section at https://numpy.org/devdocs/user/troubleshooting-importerror.html#c-api-incompatibility for indications on how to solve this problem . (Triggered internally at /tmp/pip-req-build-ab6z7mql/torch/csrc/utils/tensor_numpy.cpp:84.)
+  device: Optional[torch.device] = torch.device("cuda"),
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:15<01:18, 15.61s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:30<01:01, 15.44s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:44<00:43, 14.58s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:59<00:29, 14.57s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [01:14<00:14, 14.74s/it]Loading checkpoint shards: 100%|██████████| 6/6 [01:21<00:00, 12.27s/it]Loading checkpoint shards: 100%|██████████| 6/6 [01:21<00:00, 13.59s/it]
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+0
+(9) Correction
+(7) Elaboration
+1
+(9) Correction
+(2) Question answer pair
+2
+(9) Correction
+(2) Question answer pair
+3
+(9) Correction
+(2) Question answer pair
+4
+(9) Correction
+(7) Elaboration
+5
+(9) Correction
+(4) Acknowledgement
+6
+(9) Correction
+(4) Acknowledgement
+7
+(9) Correction
+(4) Acknowledgement
+8
+(9) Correction
+(0) Comment
+9
+(9) Correction
+(4) Acknowledgement
+10
+(5) Question elaboration
+(0) Comment
+11
+(5) Question elaboration
+(2) Question answer pair
+12
+(5) Question elaboration
+(8) Explanation
+13
+(5) Question elaboration
+(2) Question answer pair
+14
+(9) Correction
+(3) Continuation
+15
+(9) Correction
+(7) Elaboration
+16
+(9) Correction
+(8) Explanation
+17
+(5) Question elaboration
+(2) Question answer pair
+18
+(5) Question elaboration
+(2) Question answer pair
+19
+(5) Question elaboration
+(7) Elaboration
+20
+(5) Question elaboration
+(7) Elaboration
+21
+(5) Question elaboration
+(2) Question answer pair
+22
+(9) Correction
+(0) Comment
+23
+(9) Correction
+(13) Narration
+24
+(9) Correction
+(0) Comment
+25
+(5) Question elaboration
+(3) Continuation
+26
+(5) Question elaboration
+(0) Comment
+27
+(5) Question elaboration
+(2) Question answer pair
+28
+(9) Correction
+(10) Contrast
+29
+(5) Question elaboration
+(3) Continuation
+30
+(9) Correction
+(3) Continuation
+31
+(9) Correction
+(2) Question answer pair
+32
+(9) Correction
+(2) Question answer pair
+33
+(9) Correction
+(15) Parallel
+34
+(9) Correction
+(4) Acknowledgement
+35
+(9) Correction
+(4) Acknowledgement
+36
+(9) Correction
+(7) Elaboration
+37
+(9) Correction
+(2) Question answer pair
+38
+(9) Correction
+(2) Question answer pair
+39
+(9) Correction
+(2) Question answer pair
+40
+(9) Correction
+(3) Continuation
+41
+(9) Correction
+(1) Clarification question
+42
+(9) Correction
+(4) Acknowledgement
+43
+(9) Correction
+(4) Acknowledgement
+44
+(9) Correction
+(2) Question answer pair
+45
+(9) Correction
+(1) Clarification question
+46
+(9) Correction
+(2) Question answer pair
+47
+(9) Correction
+(3) Continuation
+48
+(9) Correction
+(7) Elaboration
+49
+(9) Correction
+(4) Acknowledgement
+50
+(9) Correction
+(0) Comment
+51
+(9) Correction
+(13) Narration
+52
+(9) Correction
+(3) Continuation
+53
+(9) Correction
+(13) Narration
+54
+(9) Correction
+(3) Continuation
+55
+(9) Correction
+(0) Comment
+56
+(9) Correction
+(4) Acknowledgement
+57
+(9) Correction
+(4) Acknowledgement
+58
+(9) Correction
+(4) Acknowledgement
+59
+(9) Correction
+(4) Acknowledgement
+60
+(9) Correction
+(7) Elaboration
+61
+(9) Correction
+(2) Question answer pair
+62
+(9) Correction
+(10) Contrast
+63
+(9) Correction
+(0) Comment
+64
+(9) Correction
+(4) Acknowledgement
+65
+(9) Correction
+(7) Elaboration
+66
+(9) Correction
+(4) Acknowledgement
+67
+(9) Correction
+(2) Question answer pair
+68
+(9) Correction
+(2) Question answer pair
+69
+(9) Correction
+(2) Question answer pair
+70
+(9) Correction
+(7) Elaboration
+71
+(9) Correction
+(5) Question elaboration
+72
+(9) Correction
+(2) Question answer pair
+73
+(9) Correction
+(2) Question answer pair
+74
+(9) Correction
+(2) Question answer pair
+75
+(9) Correction
+(2) Question answer pair
+76
+(9) Correction
+(2) Question answer pair
+77
+(9) Correction
+(2) Question answer pair
+78
+(9) Correction
+(5) Question elaboration
+79
+(9) Correction
+(2) Question answer pair
+80
+(9) Correction
+(4) Acknowledgement
+81
+(9) Correction
+(11) Conditional
+82
+(9) Correction
+(2) Question answer pair
+83
+(9) Correction
+(7) Elaboration
+84
+(9) Correction
+(4) Acknowledgement
+85
+(9) Correction
+(2) Question answer pair
+86
+(9) Correction
+(10) Contrast
+87
+(9) Correction
+(2) Question answer pair
+88
+(9) Correction
+(15) Parallel
+89
+(9) Correction
+(2) Question answer pair
+90
+(9) Correction
+(2) Question answer pair
+91
+(9) Correction
+(0) Comment
+92
+(9) Correction
+(10) Contrast
+93
+(9) Correction
+(5) Question elaboration
+94
+(9) Correction
+(11) Conditional
+95
+(9) Correction
+(2) Question answer pair
+96
+(9) Correction
+(10) Contrast
+97
+(9) Correction
+(11) Conditional
+98
+(9) Correction
+(8) Explanation
+99
+(9) Correction
+(7) Elaboration
+100
+(9) Correction
+(2) Question answer pair
+101
+(9) Correction
+(2) Question answer pair
+102
+(9) Correction
+(15) Parallel
+103
+(9) Correction
+(4) Acknowledgement
+104
+(9) Correction
+(0) Comment
+105
+(9) Correction
+(0) Comment
+106
+(9) Correction
+(0) Comment
+107
+(9) Correction
+(2) Question answer pair
+108
+(9) Correction
+(0) Comment
+109
+(9) Correction
+(2) Question answer pair
+110
+(9) Correction
+(2) Question answer pair
+111
+(9) Correction
+(0) Comment
+112
+(9) Correction
+(0) Comment
+113
+(9) Correction
+(0) Comment
+114
+(5) Question elaboration
+(4) Acknowledgement
+115
+(9) Correction
+(2) Question answer pair
+116
+(5) Question elaboration
+(5) Question elaboration
+117
+(9) Correction
+(5) Question elaboration
+118
+(9) Correction
+(0) Comment
+119
+(5) Question elaboration
+(5) Question elaboration
+120
+(5) Question elaboration
+(2) Question answer pair
+121
+(9) Correction
+(11) Conditional
+122
+(9) Correction
+(9) Correction
+123
+(9) Correction
+(4) Acknowledgement
+124
+(9) Correction
+(5) Question elaboration
+125
+(5) Question elaboration
+(2) Question answer pair
+126
+(9) Correction
+(10) Contrast
+127
+(5) Question elaboration
+(4) Acknowledgement
+128
+(9) Correction
+(0) Comment
+129
+(9) Correction
+(4) Acknowledgement
+130
+(5) Question elaboration
+(6) Result
+131
+(9) Correction
+(6) Result
+132
+(9) Correction
+(2) Question answer pair
+133
+(9) Correction
+(3) Continuation
+134
+(9) Correction
+(2) Question answer pair
+135
+(9) Correction
+(0) Comment
+136
+(9) Correction
+(2) Question answer pair
+137
+(9) Correction
+(5) Question elaboration
+138
+(9) Correction
+(2) Question answer pair
+139
+(9) Correction
+(0) Comment
+140
+(9) Correction
+(5) Question elaboration
+141
+(9) Correction
+(2) Question answer pair
+142
+(9) Correction
+(2) Question answer pair
+143
+(9) Correction
+(5) Question elaboration
+144
+(9) Correction
+(3) Continuation
+145
+(9) Correction
+(2) Question answer pair
+146
+(9) Correction
+(4) Acknowledgement
+147
+(9) Correction
+(7) Elaboration
+148
+(9) Correction
+(2) Question answer pair
+149
+(9) Correction
+(7) Elaboration
+150
+(9) Correction
+(2) Question answer pair
+151
+(9) Correction
+(7) Elaboration
+152
+(9) Correction
+(2) Question answer pair
+153
+(9) Correction
+(0) Comment
+154
+(9) Correction
+(0) Comment
+155
+(9) Correction
+(2) Question answer pair
+156
+(9) Correction
+(2) Question answer pair
+157
+(9) Correction
+(5) Question elaboration
+158
+(9) Correction
+(14) Alternation
+159
+(9) Correction
+(10) Contrast
+160
+(9) Correction
+(2) Question answer pair
+161
+(9) Correction
+(4) Acknowledgement
+162
+(9) Correction
+(6) Result
+163
+(9) Correction
+(11) Conditional
+164
+(9) Correction
+(2) Question answer pair
+165
+(9) Correction
+(3) Continuation
+166
+(9) Correction
+(5) Question elaboration
+167
+(9) Correction
+(3) Continuation
+168
+(9) Correction
+(10) Contrast
+169
+(9) Correction
+(0) Comment
+170
+(9) Correction
+(7) Elaboration
+171
+(9) Correction
+(3) Continuation
+172
+(9) Correction
+(0) Comment
+173
+(9) Correction
+(6) Result
+174
+(9) Correction
+(4) Acknowledgement
+175
+(9) Correction
+(2) Question answer pair
+176
+(9) Correction
+(7) Elaboration
+177
+(9) Correction
+(7) Elaboration
+178
+(9) Correction
+(5) Question elaboration
+179
+(9) Correction
+(15) Parallel
+180
+(9) Correction
+(2) Question answer pair
+181
+(9) Correction
+(4) Acknowledgement
+182
+(9) Correction
+(1) Clarification question
+183
+(9) Correction
+(4) Acknowledgement
+184
+(9) Correction
+(6) Result
+185
+(9) Correction
+(4) Acknowledgement
+186
+(9) Correction
+(4) Acknowledgement
+187
+(9) Correction
+(2) Question answer pair
+188
+(9) Correction
+(9) Correction
+189
+(9) Correction
+(2) Question answer pair
+190
+(9) Correction
+(13) Narration
+191
+(9) Correction
+(7) Elaboration
+192
+(9) Correction
+(2) Question answer pair
+193
+(9) Correction
+(5) Question elaboration
+194
+(9) Correction
+(2) Question answer pair
+195
+(9) Correction
+(2) Question answer pair
+196
+(9) Correction
+(1) Clarification question
+197
+(9) Correction
+(1) Clarification question
+198
+(9) Correction
+(10) Contrast
+199
+(9) Correction
+(6) Result
+200
+(9) Correction
+(4) Acknowledgement
+201
+(9) Correction
+(3) Continuation
+202
+(9) Correction
+(7) Elaboration
+203
+(9) Correction
+(2) Question answer pair
+204
+(9) Correction
+(2) Question answer pair
+205
+(9) Correction
+(2) Question answer pair
+206
+(9) Correction
+(2) Question answer pair
+207
+(9) Correction
+(5) Question elaboration
+208
+(9) Correction
+(2) Question answer pair
+209
+(9) Correction
+(2) Question answer pair
+210
+(9) Correction
+(4) Acknowledgement
+211
+(9) Correction
+(0) Comment
+212
+(9) Correction
+(10) Contrast
+213
+(9) Correction
+(0) Comment
+214
+(9) Correction
+(2) Question answer pair
+215
+(9) Correction
+(2) Question answer pair
+216
+(9) Correction
+(5) Question elaboration
+217
+(9) Correction
+(3) Continuation
+218
+(9) Correction
+(7) Elaboration
+219
+(9) Correction
+(9) Correction
+220
+(9) Correction
+(5) Question elaboration
+221
+(9) Correction
+(2) Question answer pair
+222
+(9) Correction
+(4) Acknowledgement
+223
+(9) Correction
+(4) Acknowledgement
+224
+(9) Correction
+(3) Continuation
+225
+(9) Correction
+(1) Clarification question
+226
+(9) Correction
+(2) Question answer pair
+227
+(9) Correction
+(5) Question elaboration
+228
+(9) Correction
+(5) Question elaboration
+229
+(9) Correction
+(2) Question answer pair
+230
+(9) Correction
+(3) Continuation
+231
+(9) Correction
+(4) Acknowledgement
+232
+(9) Correction
+(2) Question answer pair
+233
+(9) Correction
+(4) Acknowledgement
+234
+(9) Correction
+(5) Question elaboration
+235
+(9) Correction
+(5) Question elaboration
+236
+(9) Correction
+(7) Elaboration
+237
+(9) Correction
+(2) Question answer pair
+238
+(9) Correction
+(4) Acknowledgement
+239
+(9) Correction
+(3) Continuation
+240
+(9) Correction
+(2) Question answer pair
+241
+(9) Correction
+(2) Question answer pair
+242
+(9) Correction
+(2) Question answer pair
+243
+(9) Correction
+(9) Correction
+244
+(9) Correction
+(4) Acknowledgement
+245
+(9) Correction
+(10) Contrast
+246
+(9) Correction
+(5) Question elaboration
+247
+(9) Correction
+(1) Clarification question
+248
+(9) Correction
+(2) Question answer pair
+249
+(9) Correction
+(11) Conditional
+250
+(9) Correction
+(2) Question answer pair
+251
+(9) Correction
+(4) Acknowledgement
+252
+(9) Correction
+(3) Continuation
+253
+(9) Correction
+(2) Question answer pair
+254
+(9) Correction
+(2) Question answer pair
+255
+(9) Correction
+(7) Elaboration
+256
+(9) Correction
+(3) Continuation
+257
+(9) Correction
+(3) Continuation
+258
+(9) Correction
+(4) Acknowledgement
+259
+(9) Correction
+(12) Background
+260
+(9) Correction
+(2) Question answer pair
+261
+(9) Correction
+(2) Question answer pair
+262
+(9) Correction
+(5) Question elaboration
+263
+(9) Correction
+(2) Question answer pair
+264
+(9) Correction
+(10) Contrast
+265
+(9) Correction
+(2) Question answer pair
+266
+(9) Correction
+(2) Question answer pair
+267
+(9) Correction
+(9) Correction
+268
+(9) Correction
+(1) Clarification question
+269
+(9) Correction
+(2) Question answer pair
+270
+(9) Correction
+(4) Acknowledgement
+271
+(9) Correction
+(4) Acknowledgement
+272
+(5) Question elaboration
+(9) Correction
+273
+(9) Correction
+(8) Explanation
+274
+(9) Correction
+(7) Elaboration
+275
+(9) Correction
+(7) Elaboration
+276
+(9) Correction
+(4) Acknowledgement
+277
+(9) Correction
+(8) Explanation
+278
+(9) Correction
+(4) Acknowledgement
+279
+(9) Correction
+(4) Acknowledgement
+280
+(9) Correction
+(11) Conditional
+281
+(9) Correction
+(8) Explanation
+282
+(9) Correction
+(4) Acknowledgement
+283
+(9) Correction
+(7) Elaboration
+284
+(9) Correction
+(2) Question answer pair
+285
+(9) Correction
+(4) Acknowledgement
+286
+(9) Correction
+(7) Elaboration
+287
+(9) Correction
+(2) Question answer pair
+288
+(9) Correction
+(7) Elaboration
+289
+(9) Correction
+(2) Question answer pair
+290
+(9) Correction
+(2) Question answer pair
+291
+(9) Correction
+(5) Question elaboration
+292
+(9) Correction
+(4) Acknowledgement
+293
+(9) Correction
+(2) Question answer pair
+294
+(9) Correction
+(2) Question answer pair
+295
+(9) Correction
+(5) Question elaboration
+296
+(5) Question elaboration
+(2) Question answer pair
+297
+(5) Question elaboration
+(11) Conditional
+298
+(5) Question elaboration
+(0) Comment
+299
+(5) Question elaboration
+(3) Continuation
+300
+(5) Question elaboration
+(4) Acknowledgement
+301
+(5) Question elaboration
+(7) Elaboration
+302
+(5) Question elaboration
+(5) Question elaboration
+303
+(5) Question elaboration
+(2) Question answer pair
+304
+(5) Question elaboration
+(2) Question answer pair
+305
+(11) Conditional
+(3) Continuation
+306
+(5) Question elaboration
+(4) Acknowledgement
+307
+(5) Question elaboration
+(6) Result
+308
+(5) Question elaboration
+(3) Continuation
+309
+(5) Question elaboration
+(4) Acknowledgement
+310
+(11) Conditional
+(7) Elaboration
+311
+(11) Conditional
+(2) Question answer pair
+312
+(11) Conditional
+(2) Question answer pair
+313
+(5) Question elaboration
+(10) Contrast
+314
+(5) Question elaboration
+(10) Contrast
+315
+(11) Conditional
+(10) Contrast
+316
+(11) Conditional
+(3) Continuation
+317
+(5) Question elaboration
+(2) Question answer pair
+318
+(5) Question elaboration
+(5) Question elaboration
+319
+(5) Question elaboration
+(2) Question answer pair
+320
+(5) Question elaboration
+(2) Question answer pair
+321
+(5) Question elaboration
+(14) Alternation
+322
+(5) Question elaboration
+(7) Elaboration
+323
+(5) Question elaboration
+(3) Continuation
+324
+(5) Question elaboration
+(2) Question answer pair
+325
+(9) Correction
+(0) Comment
+326
+(5) Question elaboration
+(5) Question elaboration
+327
+(5) Question elaboration
+(3) Continuation
+328
+(11) Conditional
+(15) Parallel
+329
+(5) Question elaboration
+(2) Question answer pair
+330
+(11) Conditional
+(2) Question answer pair
+331
+(9) Correction
+(2) Question answer pair
+332
+(9) Correction
+(5) Question elaboration
+333
+(9) Correction
+(5) Question elaboration
+334
+(9) Correction
+(2) Question answer pair
+335
+(9) Correction
+(0) Comment
+336
+(9) Correction
+(7) Elaboration
+337
+(9) Correction
+(2) Question answer pair
+338
+(9) Correction
+(2) Question answer pair
+339
+(9) Correction
+(6) Result
+340
+(9) Correction
+(1) Clarification question
+341
+(9) Correction
+(2) Question answer pair
+342
+(9) Correction
+(2) Question answer pair
+343
+(9) Correction
+(3) Continuation
+344
+(9) Correction
+(4) Acknowledgement
+345
+(9) Correction
+(4) Acknowledgement
+346
+(9) Correction
+(0) Comment
+347
+(9) Correction
+(0) Comment
+348
+(9) Correction
+(9) Correction
+349
+(5) Question elaboration
+(4) Acknowledgement
+350
+(9) Correction
+(4) Acknowledgement
+351
+(9) Correction
+(4) Acknowledgement
+352
+(9) Correction
+(3) Continuation
+353
+(9) Correction
+(4) Acknowledgement
+354
+(9) Correction
+(4) Acknowledgement
+355
+(9) Correction
+(1) Clarification question
+356
+(9) Correction
+(11) Conditional
+357
+(9) Correction
+(4) Acknowledgement
+358
+(5) Question elaboration
+(4) Acknowledgement
+359
+(9) Correction
+(4) Acknowledgement
+360
+(9) Correction
+(0) Comment
+361
+(9) Correction
+(0) Comment
+362
+(9) Correction
+(0) Comment
+363
+(9) Correction
+(0) Comment
+364
+(9) Correction
+(3) Continuation
+365
+(9) Correction
+(0) Comment
+366
+(9) Correction
+(0) Comment
+367
+(9) Correction
+(3) Continuation
+368
+(9) Correction
+(0) Comment
+369
+(9) Correction
+(0) Comment
+370
+(9) Correction
+(7) Elaboration
+371
+(9) Correction
+(3) Continuation
+372
+(9) Correction
+(0) Comment
+373
+(9) Correction
+(7) Elaboration
+374
+(9) Correction
+(6) Result
+375
+(9) Correction
+(7) Elaboration
+376
+(9) Correction
+(2) Question answer pair
+377
+(9) Correction
+(1) Clarification question
+378
+(9) Correction
+(9) Correction
+379
+(9) Correction
+(4) Acknowledgement
+380
+(9) Correction
+(4) Acknowledgement
+381
+(9) Correction
+(4) Acknowledgement
+382
+(9) Correction
+(3) Continuation
+383
+(9) Correction
+(8) Explanation
+384
+(9) Correction
+(2) Question answer pair
+385
+(9) Correction
+(13) Narration
+386
+(9) Correction
+(13) Narration
+387
+(9) Correction
+(11) Conditional
+388
+(9) Correction
+(13) Narration
+389
+(9) Correction
+(2) Question answer pair
+390
+(9) Correction
+(4) Acknowledgement
+391
+(9) Correction
+(9) Correction
+392
+(9) Correction
+(2) Question answer pair
+393
+(9) Correction
+(11) Conditional
+394
+(9) Correction
+(2) Question answer pair
+395
+(9) Correction
+(3) Continuation
+396
+(9) Correction
+(3) Continuation
+397
+(9) Correction
+(4) Acknowledgement
+398
+(9) Correction
+(3) Continuation
+399
+(9) Correction
+(2) Question answer pair
+400
+(9) Correction
+(2) Question answer pair
+401
+(9) Correction
+(3) Continuation
+402
+(9) Correction
+(2) Question answer pair
+403
+(9) Correction
+(2) Question answer pair
+404
+(9) Correction
+(8) Explanation
+405
+(9) Correction
+(8) Explanation
+406
+(9) Correction
+(0) Comment
+407
+(9) Correction
+(2) Question answer pair
+408
+(9) Correction
+(2) Question answer pair
+409
+(9) Correction
+(5) Question elaboration
+410
+(9) Correction
+(2) Question answer pair
+411
+(9) Correction
+(4) Acknowledgement
+412
+(9) Correction
+(7) Elaboration
+413
+(9) Correction
+(2) Question answer pair
+414
+(9) Correction
+(2) Question answer pair
+415
+(9) Correction
+(14) Alternation
+416
+(9) Correction
+(2) Question answer pair
+417
+(9) Correction
+(2) Question answer pair
+418
+(9) Correction
+(1) Clarification question
+419
+(9) Correction
+(5) Question elaboration
+420
+(9) Correction
+(2) Question answer pair
+421
+(9) Correction
+(0) Comment
+422
+(9) Correction
+(0) Comment
+423
+(9) Correction
+(8) Explanation
+424
+(9) Correction
+(2) Question answer pair
+425
+(9) Correction
+(4) Acknowledgement
+426
+(9) Correction
+(4) Acknowledgement
+427
+(9) Correction
+(3) Continuation
+428
+(9) Correction
+(7) Elaboration
+429
+(9) Correction
+(7) Elaboration
+430
+(9) Correction
+(2) Question answer pair
+431
+(9) Correction
+(14) Alternation
+432
+(9) Correction
+(3) Continuation
+433
+(9) Correction
+(3) Continuation
+434
+(9) Correction
+(0) Comment
+435
+(9) Correction
+(10) Contrast
+436
+(9) Correction
+(0) Comment
+437
+(9) Correction
+(3) Continuation
+438
+(9) Correction
+(2) Question answer pair
+439
+(9) Correction
+(2) Question answer pair
+440
+(9) Correction
+(10) Contrast
+441
+(9) Correction
+(14) Alternation
+442
+(9) Correction
+(7) Elaboration
+443
+(9) Correction
+(3) Continuation
+444
+(9) Correction
+(14) Alternation
+445
+(9) Correction
+(9) Correction
+446
+(9) Correction
+(0) Comment
+447
+(9) Correction
+(6) Result
+448
+(9) Correction
+(2) Question answer pair
+449
+(9) Correction
+(4) Acknowledgement
+450
+(9) Correction
+(11) Conditional
+451
+(9) Correction
+(2) Question answer pair
+452
+(9) Correction
+(13) Narration
+453
+(9) Correction
+(7) Elaboration
+454
+(9) Correction
+(2) Question answer pair
+455
+(9) Correction
+(2) Question answer pair
+456
+(9) Correction
+(4) Acknowledgement
+457
+(9) Correction
+(4) Acknowledgement
+458
+(9) Correction
+(2) Question answer pair
+459
+(9) Correction
+(14) Alternation
+460
+(9) Correction
+(14) Alternation
+461
+(9) Correction
+(2) Question answer pair
+462
+(9) Correction
+(6) Result
+463
+(9) Correction
+(4) Acknowledgement
+464
+(9) Correction
+(5) Question elaboration
+465
+(9) Correction
+(2) Question answer pair
+466
+(9) Correction
+(4) Acknowledgement
+467
+(9) Correction
+(3) Continuation
+468
+(9) Correction
+(7) Elaboration
+469
+(9) Correction
+(6) Result
+470
+(9) Correction
+(2) Question answer pair
+471
+(9) Correction
+(7) Elaboration
+472
+(9) Correction
+(2) Question answer pair
+473
+(9) Correction
+(2) Question answer pair
+474
+(9) Correction
+(5) Question elaboration
+475
+(9) Correction
+(2) Question answer pair
+476
+(9) Correction
+(3) Continuation
+477
+(9) Correction
+(2) Question answer pair
+478
+(9) Correction
+(4) Acknowledgement
+479
+(9) Correction
+(4) Acknowledgement
+480
+(9) Correction
+(9) Correction
+481
+(9) Correction
+(4) Acknowledgement
+482
+(9) Correction
+(0) Comment
+483
+(9) Correction
+(10) Contrast
+484
+(9) Correction
+(0) Comment
+485
+(9) Correction
+(8) Explanation
+486
+(9) Correction
+(3) Continuation
+487
+(9) Correction
+(13) Narration
+488
+(9) Correction
+(4) Acknowledgement
+489
+(9) Correction
+(0) Comment
+490
+(9) Correction
+(1) Clarification question
+491
+(9) Correction
+(4) Acknowledgement
+492
+(9) Correction
+(6) Result
+493
+(9) Correction
+(3) Continuation
+494
+(9) Correction
+(2) Question answer pair
+495
+(9) Correction
+(0) Comment
+496
+(9) Correction
+(1) Clarification question
+497
+(9) Correction
+(11) Conditional
+498
+(9) Correction
+(2) Question answer pair
+499
+(9) Correction
+(4) Acknowledgement
+500
+(9) Correction
+(3) Continuation
+501
+(9) Correction
+(2) Question answer pair
+502
+(9) Correction
+(2) Question answer pair
+503
+(9) Correction
+(0) Comment
+504
+(9) Correction
+(4) Acknowledgement
+505
+(9) Correction
+(4) Acknowledgement
+506
+(9) Correction
+(3) Continuation
+507
+(9) Correction
+(7) Elaboration
+508
+(9) Correction
+(2) Question answer pair
+509
+(9) Correction
+(7) Elaboration
+510
+(9) Correction
+(14) Alternation
+511
+(9) Correction
+(2) Question answer pair
+512
+(9) Correction
+(2) Question answer pair
+513
+(9) Correction
+(2) Question answer pair
+514
+(9) Correction
+(2) Question answer pair
+515
+(9) Correction
+(4) Acknowledgement
+516
+(9) Correction
+(4) Acknowledgement
+517
+(9) Correction
+(3) Continuation
+518
+(9) Correction
+(14) Alternation
+519
+(9) Correction
+(2) Question answer pair
+520
+(9) Correction
+(2) Question answer pair
+521
+(9) Correction
+(2) Question answer pair
+522
+(9) Correction
+(15) Parallel
+523
+(9) Correction
+(15) Parallel
+524
+(9) Correction
+(3) Continuation
+525
+(9) Correction
+(2) Question answer pair
+526
+(9) Correction
+(2) Question answer pair
+527
+(9) Correction
+(3) Continuation
+528
+(9) Correction
+(5) Question elaboration
+529
+(9) Correction
+(2) Question answer pair
+530
+(9) Correction
+(5) Question elaboration
+531
+(9) Correction
+(2) Question answer pair
+532
+(9) Correction
+(5) Question elaboration
+533
+(9) Correction
+(2) Question answer pair
+534
+(9) Correction
+(4) Acknowledgement
+535
+(9) Correction
+(9) Correction
+536
+(9) Correction
+(3) Continuation
+537
+(9) Correction
+(8) Explanation
+538
+(9) Correction
+(11) Conditional
+539
+(9) Correction
+(0) Comment
+540
+(9) Correction
+(8) Explanation
+541
+(9) Correction
+(4) Acknowledgement
+542
+(9) Correction
+(5) Question elaboration
+543
+(9) Correction
+(3) Continuation
+544
+(9) Correction
+(4) Acknowledgement
+545
+(9) Correction
+(4) Acknowledgement
+546
+(9) Correction
+(2) Question answer pair
+547
+(9) Correction
+(4) Acknowledgement
+548
+(9) Correction
+(3) Continuation
+549
+(9) Correction
+(3) Continuation
+550
+(9) Correction
+(4) Acknowledgement
+551
+(9) Correction
+(7) Elaboration
+552
+(9) Correction
+(5) Question elaboration
+553
+(9) Correction
+(7) Elaboration
+554
+(9) Correction
+(2) Question answer pair
+555
+(9) Correction
+(0) Comment
+556
+(9) Correction
+(0) Comment
+557
+(9) Correction
+(8) Explanation
+558
+(9) Correction
+(0) Comment
+559
+(9) Correction
+(2) Question answer pair
+560
+(9) Correction
+(2) Question answer pair
+561
+(9) Correction
+(7) Elaboration
+562
+(9) Correction
+(2) Question answer pair
+563
+(9) Correction
+(4) Acknowledgement
+564
+(9) Correction
+(7) Elaboration
+565
+(9) Correction
+(2) Question answer pair
+566
+(9) Correction
+(2) Question answer pair
+567
+(9) Correction
+(4) Acknowledgement
+568
+(9) Correction
+(4) Acknowledgement
+569
+(9) Correction
+(2) Question answer pair
+570
+(9) Correction
+(0) Comment
+571
+(9) Correction
+(2) Question answer pair
+572
+(9) Correction
+(7) Elaboration
+573
+(9) Correction
+(5) Question elaboration
+574
+(9) Correction
+(2) Question answer pair
+575
+(9) Correction
+(2) Question answer pair
+576
+(9) Correction
+(7) Elaboration
+577
+(9) Correction
+(5) Question elaboration
+578
+(9) Correction
+(2) Question answer pair
+579
+(9) Correction
+(2) Question answer pair
+580
+(9) Correction
+(4) Acknowledgement
+581
+(9) Correction
+(4) Acknowledgement
+582
+(9) Correction
+(2) Question answer pair
+583
+(9) Correction
+(0) Comment
+584
+(9) Correction
+(2) Question answer pair
+585
+(9) Correction
+(15) Parallel
+586
+(9) Correction
+(10) Contrast
+587
+(9) Correction
+(2) Question answer pair
+588
+(9) Correction
+(0) Comment
+589
+(9) Correction
+(2) Question answer pair
+590
+(9) Correction
+(15) Parallel
+591
+(9) Correction
+(3) Continuation
+592
+(9) Correction
+(4) Acknowledgement
+593
+(9) Correction
+(0) Comment
+594
+(9) Correction
+(8) Explanation
+595
+(9) Correction
+(3) Continuation
+596
+(9) Correction
+(2) Question answer pair
+597
+(9) Correction
+(3) Continuation
+598
+(9) Correction
+(2) Question answer pair
+599
+(9) Correction
+(5) Question elaboration
+600
+(9) Correction
+(2) Question answer pair
+601
+(9) Correction
+(10) Contrast
+602
+(9) Correction
+(2) Question answer pair
+603
+(9) Correction
+(5) Question elaboration
+604
+(9) Correction
+(11) Conditional
+605
+(9) Correction
+(2) Question answer pair
+606
+(9) Correction
+(4) Acknowledgement
+607
+(9) Correction
+(0) Comment
+608
+(9) Correction
+(15) Parallel
+609
+(9) Correction
+(4) Acknowledgement
+610
+(9) Correction
+(7) Elaboration
+611
+(9) Correction
+(3) Continuation
+612
+(9) Correction
+(4) Acknowledgement
+613
+(9) Correction
+(7) Elaboration
+614
+(9) Correction
+(5) Question elaboration
+615
+(9) Correction
+(2) Question answer pair
+616
+(9) Correction
+(4) Acknowledgement
+617
+(9) Correction
+(4) Acknowledgement
+618
+(9) Correction
+(3) Continuation
+619
+(9) Correction
+(4) Acknowledgement
+620
+(9) Correction
+(3) Continuation
+621
+(9) Correction
+(4) Acknowledgement
+622
+(9) Correction
+(1) Clarification question
+623
+(9) Correction
+(3) Continuation
+624
+(9) Correction
+(3) Continuation
+625
+(9) Correction
+(3) Continuation
+626
+(9) Correction
+(4) Acknowledgement
+627
+(9) Correction
+(2) Question answer pair
+628
+(9) Correction
+(2) Question answer pair
+629
+(9) Correction
+(7) Elaboration
+630
+(9) Correction
+(0) Comment
+631
+(9) Correction
+(2) Question answer pair
+632
+(9) Correction
+(14) Alternation
+633
+(9) Correction
+(2) Question answer pair
+634
+(9) Correction
+(4) Acknowledgement
+635
+(9) Correction
+(2) Question answer pair
+636
+(9) Correction
+(2) Question answer pair
+637
+(9) Correction
+(7) Elaboration
+638
+(9) Correction
+(14) Alternation
+639
+(9) Correction
+(2) Question answer pair
+640
+(9) Correction
+(2) Question answer pair
+641
+(9) Correction
+(0) Comment
+642
+(9) Correction
+(4) Acknowledgement
+643
+(9) Correction
+(2) Question answer pair
+644
+(9) Correction
+(5) Question elaboration
+645
+(9) Correction
+(2) Question answer pair
+646
+(9) Correction
+(2) Question answer pair
+647
+(9) Correction
+(15) Parallel
+648
+(9) Correction
+(7) Elaboration
+649
+(9) Correction
+(11) Conditional
+650
+(9) Correction
+(0) Comment
+651
+(9) Correction
+(3) Continuation
+652
+(9) Correction
+(3) Continuation
+653
+(9) Correction
+(7) Elaboration
+654
+(9) Correction
+(6) Result
+655
+(9) Correction
+(5) Question elaboration
+656
+(9) Correction
+(5) Question elaboration
+657
+(9) Correction
+(2) Question answer pair
+658
+(9) Correction
+(2) Question answer pair
+659
+(9) Correction
+(0) Comment
+660
+(9) Correction
+(5) Question elaboration
+661
+(9) Correction
+(2) Question answer pair
+662
+(9) Correction
+(8) Explanation
+663
+(9) Correction
+(3) Continuation
+664
+(9) Correction
+(9) Correction
+665
+(9) Correction
+(7) Elaboration
+666
+(9) Correction
+(0) Comment
+667
+(9) Correction
+(3) Continuation
+668
+(9) Correction
+(0) Comment
+669
+(9) Correction
+(7) Elaboration
+670
+(9) Correction
+(0) Comment
+671
+(9) Correction
+(0) Comment
+672
+(9) Correction
+(4) Acknowledgement
+673
+(9) Correction
+(7) Elaboration
+674
+(9) Correction
+(2) Question answer pair
+675
+(9) Correction
+(2) Question answer pair
+676
+(9) Correction
+(3) Continuation
+677
+(9) Correction
+(1) Clarification question
+678
+(9) Correction
+(2) Question answer pair
+679
+(9) Correction
+(2) Question answer pair
+680
+(9) Correction
+(14) Alternation
+681
+(9) Correction
+(0) Comment
+682
+(9) Correction
+(8) Explanation
+683
+(9) Correction
+(2) Question answer pair
+684
+(9) Correction
+(2) Question answer pair
+685
+(9) Correction
+(2) Question answer pair
+686
+(9) Correction
+(2) Question answer pair
+687
+(9) Correction
+(0) Comment
+688
+(9) Correction
+(2) Question answer pair
+689
+(9) Correction
+(14) Alternation
+690
+(9) Correction
+(2) Question answer pair
+691
+(9) Correction
+(2) Question answer pair
+692
+(9) Correction
+(15) Parallel
+693
+(9) Correction
+(9) Correction
+694
+(9) Correction
+(2) Question answer pair
+695
+(9) Correction
+(4) Acknowledgement
+696
+(9) Correction
+(4) Acknowledgement
+697
+(9) Correction
+(2) Question answer pair
+698
+(9) Correction
+(0) Comment
+699
+(9) Correction
+(5) Question elaboration
+700
+(9) Correction
+(2) Question answer pair
+701
+(9) Correction
+(2) Question answer pair
+702
+(9) Correction
+(4) Acknowledgement
+703
+(9) Correction
+(7) Elaboration
+704
+(9) Correction
+(0) Comment
+705
+(9) Correction
+(14) Alternation
+706
+(9) Correction
+(2) Question answer pair
+707
+(9) Correction
+(2) Question answer pair
+708
+(9) Correction
+(0) Comment
+709
+(9) Correction
+(7) Elaboration
+710
+(9) Correction
+(2) Question answer pair
+711
+(9) Correction
+(2) Question answer pair
+712
+(9) Correction
+(8) Explanation
+713
+(9) Correction
+(8) Explanation
+714
+(9) Correction
+(6) Result
+715
+(9) Correction
+(2) Question answer pair
+716
+(9) Correction
+(14) Alternation
+717
+(9) Correction
+(5) Question elaboration
+718
+(9) Correction
+(4) Acknowledgement
+719
+(9) Correction
+(8) Explanation
+720
+(9) Correction
+(2) Question answer pair
+721
+(9) Correction
+(2) Question answer pair
+722
+(9) Correction
+(0) Comment
+723
+(9) Correction
+(6) Result
+724
+(9) Correction
+(6) Result
+725
+(9) Correction
+(2) Question answer pair
+726
+(9) Correction
+(0) Comment
+727
+(9) Correction
+(0) Comment
+728
+(9) Correction
+(2) Question answer pair
+729
+(9) Correction
+(2) Question answer pair
+730
+(9) Correction
+(0) Comment
+731
+(9) Correction
+(3) Continuation
+732
+(9) Correction
+(2) Question answer pair
+733
+(9) Correction
+(2) Question answer pair
+734
+(9) Correction
+(4) Acknowledgement
+735
+(9) Correction
+(4) Acknowledgement
+736
+(9) Correction
+(2) Question answer pair
+737
+(9) Correction
+(0) Comment
+738
+(9) Correction
+(4) Acknowledgement
+739
+(9) Correction
+(3) Continuation
+740
+(9) Correction
+(0) Comment
+741
+(9) Correction
+(0) Comment
+742
+(9) Correction
+(3) Continuation
+743
+(9) Correction
+(2) Question answer pair
+744
+(9) Correction
+(2) Question answer pair
+745
+(9) Correction
+(8) Explanation
+746
+(9) Correction
+(9) Correction
+747
+(9) Correction
+(3) Continuation
+748
+(5) Question elaboration
+(2) Question answer pair
+749
+(5) Question elaboration
+(5) Question elaboration
+750
+(5) Question elaboration
+(2) Question answer pair
+751
+(5) Question elaboration
+(0) Comment
+752
+(5) Question elaboration
+(2) Question answer pair
+753
+(5) Question elaboration
+(7) Elaboration
+754
+(5) Question elaboration
+(2) Question answer pair
+755
+(5) Question elaboration
+(10) Contrast
+756
+(5) Question elaboration
+(8) Explanation
+757
+(5) Question elaboration
+(2) Question answer pair
+758
+(5) Question elaboration
+(7) Elaboration
+759
+(5) Question elaboration
+(11) Conditional
+760
+(5) Question elaboration
+(2) Question answer pair
+761
+(11) Conditional
+(2) Question answer pair
+762
+(5) Question elaboration
+(4) Acknowledgement
+763
+(5) Question elaboration
+(1) Clarification question
+764
+(5) Question elaboration
+(2) Question answer pair
+765
+(5) Question elaboration
+(10) Contrast
+766
+(5) Question elaboration
+(4) Acknowledgement
+767
+(5) Question elaboration
+(0) Comment
+768
+(11) Conditional
+(0) Comment
+769
+(5) Question elaboration
+(4) Acknowledgement
+770
+(5) Question elaboration
+(1) Clarification question
+771
+(5) Question elaboration
+(8) Explanation
+772
+(5) Question elaboration
+(5) Question elaboration
+773
+(5) Question elaboration
+(2) Question answer pair
+774
+(5) Question elaboration
+(5) Question elaboration
+775
+(5) Question elaboration
+(3) Continuation
+776
+(5) Question elaboration
+(3) Continuation
+777
+(5) Question elaboration
+(0) Comment
+778
+(5) Question elaboration
+(5) Question elaboration
+779
+(9) Correction
+(1) Clarification question
+780
+(9) Correction
+(2) Question answer pair
+781
+(9) Correction
+(2) Question answer pair
+782
+(9) Correction
+(10) Contrast
+783
+(9) Correction
+(2) Question answer pair
+784
+(9) Correction
+(9) Correction
+785
+(9) Correction
+(2) Question answer pair
+786
+(9) Correction
+(3) Continuation
+787
+(9) Correction
+(4) Acknowledgement
+788
+(9) Correction
+(3) Continuation
+789
+(9) Correction
+(0) Comment
+790
+(9) Correction
+(13) Narration
+791
+(9) Correction
+(2) Question answer pair
+792
+(9) Correction
+(7) Elaboration
+793
+(9) Correction
+(0) Comment
+794
+(9) Correction
+(0) Comment
+795
+(9) Correction
+(0) Comment
+796
+(9) Correction
+(2) Question answer pair
+797
+(9) Correction
+(2) Question answer pair
+798
+(9) Correction
+(0) Comment
+799
+(9) Correction
+(8) Explanation
+800
+(9) Correction
+(3) Continuation
+801
+(9) Correction
+(0) Comment
+802
+(9) Correction
+(0) Comment
+803
+(9) Correction
+(0) Comment
+804
+(9) Correction
+(7) Elaboration
+805
+(9) Correction
+(7) Elaboration
+806
+(9) Correction
+(13) Narration
+807
+(9) Correction
+(3) Continuation
+808
+(9) Correction
+(2) Question answer pair
+809
+(9) Correction
+(6) Result
+810
+(1) Clarification question
+(5) Question elaboration
+811
+(1) Clarification question
+(2) Question answer pair
+812
+(1) Clarification question
+(1) Clarification question
+813
+(1) Clarification question
+(4) Acknowledgement
+814
+(1) Clarification question
+(2) Question answer pair
+815
+(1) Clarification question
+(5) Question elaboration
+816
+(5) Question elaboration
+(10) Contrast
+817
+(1) Clarification question
+(4) Acknowledgement
+818
+(5) Question elaboration
+(7) Elaboration
+819
+(5) Question elaboration
+(0) Comment
+820
+(5) Question elaboration
+(0) Comment
+821
+(5) Question elaboration
+(0) Comment
+822
+(1) Clarification question
+(7) Elaboration
+823
+(5) Question elaboration
+(13) Narration
+824
+(5) Question elaboration
+(4) Acknowledgement
+825
+(5) Question elaboration
+(2) Question answer pair
+826
+(11) Conditional
+(7) Elaboration
+827
+(5) Question elaboration
+(5) Question elaboration
+828
+(5) Question elaboration
+(5) Question elaboration
+829
+(11) Conditional
+(7) Elaboration
+830
+(11) Conditional
+(2) Question answer pair
+831
+(5) Question elaboration
+(4) Acknowledgement
+832
+(5) Question elaboration
+(10) Contrast
+833
+(11) Conditional
+(0) Comment
+834
+(1) Clarification question
+(4) Acknowledgement
+835
+(5) Question elaboration
+(9) Correction
+836
+(9) Correction
+(7) Elaboration
+837
+(1) Clarification question
+(5) Question elaboration
+838
+(5) Question elaboration
+(5) Question elaboration
+839
+(5) Question elaboration
+(3) Continuation
+840
+(11) Conditional
+(1) Clarification question
+841
+(9) Correction
+(7) Elaboration
+842
+(9) Correction
+(2) Question answer pair
+843
+(9) Correction
+(8) Explanation
+844
+(9) Correction
+(3) Continuation
+845
+(9) Correction
+(2) Question answer pair
+846
+(9) Correction
+(7) Elaboration
+847
+(9) Correction
+(0) Comment
+848
+(9) Correction
+(7) Elaboration
+849
+(9) Correction
+(2) Question answer pair
+850
+(5) Question elaboration
+(2) Question answer pair
+851
+(5) Question elaboration
+(2) Question answer pair
+852
+(5) Question elaboration
+(15) Parallel
+853
+(5) Question elaboration
+(15) Parallel
+854
+(5) Question elaboration
+(15) Parallel
+855
+(5) Question elaboration
+(6) Result
+856
+(5) Question elaboration
+(6) Result
+857
+(5) Question elaboration
+(6) Result
+858
+(5) Question elaboration
+(4) Acknowledgement
+859
+(5) Question elaboration
+(4) Acknowledgement
+860
+(5) Question elaboration
+(0) Comment
+861
+(5) Question elaboration
+(0) Comment
+862
+(5) Question elaboration
+(0) Comment
+863
+(5) Question elaboration
+(0) Comment
+864
+(5) Question elaboration
+(0) Comment
+865
+(5) Question elaboration
+(0) Comment
+866
+(5) Question elaboration
+(3) Continuation
+867
+(5) Question elaboration
+(0) Comment
+868
+(5) Question elaboration
+(2) Question answer pair
+869
+(5) Question elaboration
+(2) Question answer pair
+870
+(5) Question elaboration
+(4) Acknowledgement
+871
+(5) Question elaboration
+(4) Acknowledgement
+872
+(5) Question elaboration
+(4) Acknowledgement
+873
+(5) Question elaboration
+(0) Comment
+874
+(5) Question elaboration
+(0) Comment
+875
+(5) Question elaboration
+(9) Correction
+876
+(5) Question elaboration
+(8) Explanation
+877
+(5) Question elaboration
+(0) Comment
+878
+(5) Question elaboration
+(14) Alternation
+879
+(5) Question elaboration
+(11) Conditional
+880
+(11) Conditional
+(5) Question elaboration
+881
+(5) Question elaboration
+(10) Contrast
+882
+(5) Question elaboration
+(10) Contrast
+883
+(5) Question elaboration
+(10) Contrast
+884
+(5) Question elaboration
+(2) Question answer pair
+885
+(5) Question elaboration
+(3) Continuation
+886
+(9) Correction
+(0) Comment
+887
+(9) Correction
+(0) Comment
+888
+(9) Correction
+(0) Comment
+889
+(9) Correction
+(3) Continuation
+890
+(9) Correction
+(0) Comment
+891
+(9) Correction
+(7) Elaboration
+892
+(9) Correction
+(1) Clarification question
+893
+(9) Correction
+(0) Comment
+894
+(9) Correction
+(10) Contrast
+895
+(9) Correction
+(0) Comment
+896
+(9) Correction
+(7) Elaboration
+897
+(9) Correction
+(6) Result
+898
+(9) Correction
+(2) Question answer pair
+899
+(9) Correction
+(2) Question answer pair
+900
+(9) Correction
+(2) Question answer pair
+901
+(9) Correction
+(4) Acknowledgement
+902
+(9) Correction
+(4) Acknowledgement
+903
+(9) Correction
+(3) Continuation
+904
+(9) Correction
+(2) Question answer pair
+905
+(9) Correction
+(8) Explanation
+906
+(9) Correction
+(2) Question answer pair
+907
+(9) Correction
+(4) Acknowledgement
+908
+(9) Correction
+(4) Acknowledgement
+909
+(9) Correction
+(5) Question elaboration
+910
+(9) Correction
+(2) Question answer pair
+911
+(9) Correction
+(3) Continuation
+912
+(9) Correction
+(2) Question answer pair
+913
+(9) Correction
+(0) Comment
+914
+(9) Correction
+(2) Question answer pair
+915
+(9) Correction
+(0) Comment
+916
+(9) Correction
+(10) Contrast
+917
+(9) Correction
+(10) Contrast
+918
+(9) Correction
+(6) Result
+919
+(9) Correction
+(2) Question answer pair
+920
+(9) Correction
+(0) Comment
+921
+(9) Correction
+(0) Comment
+922
+(9) Correction
+(4) Acknowledgement
+923
+(9) Correction
+(7) Elaboration
+924
+(9) Correction
+(4) Acknowledgement
+925
+(9) Correction
+(0) Comment
+926
+(9) Correction
+(5) Question elaboration
+927
+(9) Correction
+(0) Comment
+928
+(9) Correction
+(1) Clarification question
+929
+(9) Correction
+(7) Elaboration
+930
+(9) Correction
+(2) Question answer pair
+931
+(9) Correction
+(8) Explanation
+932
+(9) Correction
+(0) Comment
+933
+(9) Correction
+(7) Elaboration
+934
+(9) Correction
+(2) Question answer pair
+935
+(9) Correction
+(2) Question answer pair
+936
+(9) Correction
+(3) Continuation
+937
+(9) Correction
+(2) Question answer pair
+938
+(9) Correction
+(7) Elaboration
+939
+(9) Correction
+(6) Result
+940
+(9) Correction
+(3) Continuation
+941
+(9) Correction
+(6) Result
+942
+(9) Correction
+(5) Question elaboration
+943
+(9) Correction
+(2) Question answer pair
+944
+(9) Correction
+(2) Question answer pair
+945
+(9) Correction
+(2) Question answer pair
+946
+(9) Correction
+(1) Clarification question
+947
+(9) Correction
+(14) Alternation
+948
+(9) Correction
+(0) Comment
+949
+(9) Correction
+(7) Elaboration
+950
+(9) Correction
+(9) Correction
+951
+(9) Correction
+(5) Question elaboration
+952
+(9) Correction
+(2) Question answer pair
+953
+(9) Correction
+(4) Acknowledgement
+954
+(9) Correction
+(2) Question answer pair
+955
+(9) Correction
+(0) Comment
+956
+(9) Correction
+(4) Acknowledgement
+957
+(9) Correction
+(10) Contrast
+958
+(9) Correction
+(0) Comment
+959
+(9) Correction
+(7) Elaboration
+960
+(9) Correction
+(2) Question answer pair
+961
+(9) Correction
+(0) Comment
+962
+(9) Correction
+(5) Question elaboration
+963
+(9) Correction
+(10) Contrast
+964
+(9) Correction
+(2) Question answer pair
+965
+(9) Correction
+(0) Comment
+966
+(9) Correction
+(2) Question answer pair
+967
+(9) Correction
+(1) Clarification question
+968
+(9) Correction
+(8) Explanation
+969
+(9) Correction
+(5) Question elaboration
+970
+(9) Correction
+(1) Clarification question
+971
+(9) Correction
+(3) Continuation
+972
+(9) Correction
+(7) Elaboration
+973
+(9) Correction
+(7) Elaboration
+974
+(9) Correction
+(1) Clarification question
+975
+(9) Correction
+(7) Elaboration
+976
+(9) Correction
+(3) Continuation
+977
+(9) Correction
+(2) Question answer pair
+978
+(9) Correction
+(4) Acknowledgement
+979
+(9) Correction
+(0) Comment
+980
+(9) Correction
+(3) Continuation
+981
+(9) Correction
+(7) Elaboration
+982
+(9) Correction
+(2) Question answer pair
+983
+(9) Correction
+(7) Elaboration
+984
+(9) Correction
+(10) Contrast
+985
+(9) Correction
+(3) Continuation
+986
+(9) Correction
+(0) Comment
+987
+(9) Correction
+(0) Comment
+988
+(9) Correction
+(4) Acknowledgement
+989
+(9) Correction
+(0) Comment
+990
+(9) Correction
+(4) Acknowledgement
+991
+(9) Correction
+(0) Comment
+992
+(9) Correction
+(1) Clarification question
+993
+(11) Conditional
+(4) Acknowledgement
+994
+(5) Question elaboration
+(3) Continuation
+995
+(5) Question elaboration
+(7) Elaboration
+996
+(5) Question elaboration
+(0) Comment
+997
+(5) Question elaboration
+(4) Acknowledgement
+998
+(5) Question elaboration
+(3) Continuation
+999
+(5) Question elaboration
+(0) Comment
+1000
+(5) Question elaboration
+(1) Clarification question
+1001
+(11) Conditional
+(10) Contrast
+1002
+(5) Question elaboration
+(4) Acknowledgement
+1003
+(5) Question elaboration
+(7) Elaboration
+1004
+(5) Question elaboration
+(0) Comment
+1005
+(5) Question elaboration
+(10) Contrast
+1006
+(11) Conditional
+(10) Contrast
+1007
+(11) Conditional
+(10) Contrast
+1008
+(5) Question elaboration
+(7) Elaboration
+1009
+(5) Question elaboration
+(0) Comment
+1010
+(5) Question elaboration
+(3) Continuation
+1011
+(11) Conditional
+(6) Result
+1012
+(11) Conditional
+(3) Continuation
+1013
+(11) Conditional
+(0) Comment
+1014
+(5) Question elaboration
+(3) Continuation
+1015
+(11) Conditional
+(10) Contrast
+1016
+(11) Conditional
+(3) Continuation
+1017
+(5) Question elaboration
+(0) Comment
+1018
+(5) Question elaboration
+(3) Continuation
+1019
+(5) Question elaboration
+(3) Continuation
+1020
+(11) Conditional
+(3) Continuation
+1021
+(5) Question elaboration
+(3) Continuation
+1022
+(5) Question elaboration
+(0) Comment
+1023
+(11) Conditional
+(4) Acknowledgement
+1024
+(11) Conditional
+(4) Acknowledgement
+1025
+(5) Question elaboration
+(14) Alternation
+1026
+(11) Conditional
+(3) Continuation
+1027
+(11) Conditional
+(4) Acknowledgement
+1028
+(1) Clarification question
+(7) Elaboration
+1029
+(1) Clarification question
+(2) Question answer pair
+1030
+(1) Clarification question
+(2) Question answer pair
+1031
+(1) Clarification question
+(0) Comment
+1032
+(1) Clarification question
+(0) Comment
+1033
+(1) Clarification question
+(0) Comment
+1034
+(1) Clarification question
+(0) Comment
+1035
+(1) Clarification question
+(0) Comment
+1036
+(1) Clarification question
+(3) Continuation
+1037
+(1) Clarification question
+(3) Continuation
+1038
+(5) Question elaboration
+(0) Comment
+1039
+(1) Clarification question
+(3) Continuation
+1040
+(1) Clarification question
+(0) Comment
+1041
+(1) Clarification question
+(0) Comment
+1042
+(1) Clarification question
+(0) Comment
+1043
+(1) Clarification question
+(5) Question elaboration
+1044
+(1) Clarification question
+(2) Question answer pair
+1045
+(1) Clarification question
+(0) Comment
+1046
+(1) Clarification question
+(0) Comment
+1047
+(1) Clarification question
+(3) Continuation
+1048
+(1) Clarification question
+(2) Question answer pair
+1049
+(1) Clarification question
+(2) Question answer pair
+1050
+(1) Clarification question
+(2) Question answer pair
+1051
+(1) Clarification question
+(6) Result
+1052
+(1) Clarification question
+(0) Comment
+1053
+(1) Clarification question
+(1) Clarification question
+1054
+(1) Clarification question
+(1) Clarification question
+1055
+(1) Clarification question
+(2) Question answer pair
+1056
+(1) Clarification question
+(8) Explanation
+1057
+(11) Conditional
+(2) Question answer pair
+1058
+(1) Clarification question
+(0) Comment
+1059
+(1) Clarification question
+(0) Comment
+1060
+(1) Clarification question
+(3) Continuation
+1061
+(1) Clarification question
+(9) Correction
+1062
+(1) Clarification question
+(3) Continuation
+1063
+(1) Clarification question
+(3) Continuation
+1064
+(1) Clarification question
+(2) Question answer pair
+1065
+(1) Clarification question
+(4) Acknowledgement
+1066
+(9) Correction
+(0) Comment
+1067
+(9) Correction
+(0) Comment
+1068
+(9) Correction
+(4) Acknowledgement
+1069
+(9) Correction
+(0) Comment
+1070
+(9) Correction
+(3) Continuation
+1071
+(9) Correction
+(7) Elaboration
+1072
+(9) Correction
+(2) Question answer pair
+1073
+(9) Correction
+(2) Question answer pair
+1074
+(9) Correction
+(0) Comment
+1075
+(9) Correction
+(7) Elaboration
+1076
+(9) Correction
+(7) Elaboration
+1077
+(9) Correction
+(2) Question answer pair
+1078
+(9) Correction
+(2) Question answer pair
+1079
+(9) Correction
+(10) Contrast
+1080
+(9) Correction
+(0) Comment
+1081
+(9) Correction
+(0) Comment
+1082
+(9) Correction
+(10) Contrast
+1083
+(9) Correction
+(0) Comment
+1084
+(9) Correction
+(1) Clarification question
+1085
+(9) Correction
+(7) Elaboration
+1086
+(9) Correction
+(2) Question answer pair
+1087
+(9) Correction
+(0) Comment
+1088
+(9) Correction
+(0) Comment
+1089
+(9) Correction
+(7) Elaboration
+1090
+(9) Correction
+(10) Contrast
+1091
+(9) Correction
+(7) Elaboration
+1092
+(9) Correction
+(0) Comment
+1093
+(9) Correction
+(2) Question answer pair
+1094
+(9) Correction
+(2) Question answer pair
+1095
+(9) Correction
+(0) Comment
+1096
+(9) Correction
+(3) Continuation
+1097
+(9) Correction
+(10) Contrast
+1098
+(9) Correction
+(8) Explanation
+1099
+(9) Correction
+(4) Acknowledgement
+1100
+(9) Correction
+(6) Result
+1101
+(9) Correction
+(0) Comment
+1102
+(9) Correction
+(2) Question answer pair
+1103
+(9) Correction
+(7) Elaboration
+1104
+(9) Correction
+(2) Question answer pair
+1105
+(9) Correction
+(7) Elaboration
+1106
+(9) Correction
+(1) Clarification question
+1107
+(9) Correction
+(5) Question elaboration
+1108
+(9) Correction
+(2) Question answer pair
+1109
+(9) Correction
+(9) Correction
+1110
+(9) Correction
+(10) Contrast
+1111
+(9) Correction
+(13) Narration
+1112
+(9) Correction
+(7) Elaboration
+1113
+(9) Correction
+(2) Question answer pair
+1114
+(9) Correction
+(0) Comment
+1115
+(9) Correction
+(2) Question answer pair
+1116
+(9) Correction
+(2) Question answer pair
+1117
+(9) Correction
+(2) Question answer pair
+1118
+(9) Correction
+(7) Elaboration
+1119
+(9) Correction
+(5) Question elaboration
+1120
+(9) Correction
+(2) Question answer pair
+1121
+(9) Correction
+(0) Comment
+1122
+(9) Correction
+(6) Result
+1123
+(9) Correction
+(5) Question elaboration
+1124
+(9) Correction
+(2) Question answer pair
+1125
+(9) Correction
+(4) Acknowledgement
+1126
+(9) Correction
+(5) Question elaboration
+1127
+(9) Correction
+(3) Continuation
+accuracy: 0.028368794326241134, total: 1128, correct: 32
+F1 Macro: 0.013808364434068052
+F1 Micro: 0.028368794326241134
