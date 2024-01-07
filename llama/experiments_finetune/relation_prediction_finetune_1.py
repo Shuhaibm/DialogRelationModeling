@@ -1,30 +1,49 @@
-# from datasets import Dataset
-# import evaluate
 from transformers import AutoTokenizer, DataCollatorWithPadding, LlamaForCausalLM, AutoModelForCausalLM, TrainingArguments, Trainer
 import torch
 
 import json
-from relation_prediction_finetune_helpers import *
-from dataset_helpers import *
+from helpers import *
+from prompts import *
+from DataLoader import *
+
+def test_llama(model, tokenizer, test_dataset):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    y_pred,y_true = [],[]
+    total = len(test_dataset)
+
+    for i,elem in enumerate(test_dataset):
+        x,y = elem["feature"],elem["label"]
+
+        model_input = tokenizer(x, return_tensors="pt").to(device)
+
+        generations = model.generate(model_input["input_ids"], max_length=4096)
+        generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+
+        answer = generated_text.split("\n")[-1]
+        y_pred.append(answer)
+        y_true.append(y)
+
+        print(f'\n\n\n***** Example #{i}')
+        print(f'***** Model generated text: {generated_text}')
+        print(f'***** Model answer label {answer}')
+        print(f'***** Correct label {y}')
+
+    correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
+    f1_macro,f1_micro = f1_score(y_true, y_pred, average='macro'), f1_score(y_true, y_pred, average='micro')
+
+    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
+    print(f"F1 Macro: {f1_macro}")
+    print(f"F1 Micro: {f1_micro}")
 
 def main(
     max_seq_len: int = 4096,
     max_batch_size: int = 8,
 ):
-    train_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/train_stac.json'))
-    dev_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/dev_stac.json'))
-    test_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/test_stac.json'))
-    x_train,y_train,id2label,label2id = prepare_dataset(train_stac, get_prompt_3)
-    x_dev,y_dev,id2label,label2id = prepare_dataset(dev_stac, get_prompt_3)
-    x_test,y_test,id2label,label2id = prepare_dataset(test_stac, get_prompt_3)
-
-    
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
-    # model = LlamaForSequenceClassification.from_pretrained("meta-llama/Llama-2-7b-chat-hf", num_labels=len(label2id), id2label=id2label, label2id=label2id, token="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").bfloat16()
-    # model = LlamaForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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").bfloat16()
-    # tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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")
 
+    # model = LlamaForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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").bfloat16()
+    # tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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")    
     model = LlamaForCausalLM.from_pretrained("./model/LlamaForCausalLM").bfloat16()
     model = model.to(device)
     tokenizer = AutoTokenizer.from_pretrained("./tokenizer")
@@ -37,32 +56,16 @@ def main(
     # model.save_pretrained("./model/LlamaForCausalLM")
 
 
-    # Prepare datasets
+    dataloader = DataLoader(tokenizer, get_prompt_3)
+    train_dataset,dev_dataset,test_dataset = dataloader.get_data()
 
 
     # Fine tune
-    #   - Use huggingface trainer
-
-    # train_ds = Dataset.from_dict({"dialog": x, "relation": y})
-    # accuracy = evaluate.load("accuracy")
 
 
-    # def tokenize_function(examples):
-    #     return tokenizer(examples["dialog"], padding="longest", max_length=max_seq_len, truncation=True)
-    # tokenized_train_ds = train_ds.map(tokenize_function, batched=True)
+    # TODO: prepare dataset to pass it to the huggingface trainer!
+    # Begine finetuning, look at hyper params and stuff...
 
-    # data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
-
-
-    #Test
-    # import evaluate    
-
-    # accuracy = evaluate.load("accuracy")
-
-    # def compute_metrics(eval_pred):
-    #     predictions, labels = eval_pred
-    #     predictions = np.argmax(predictions, axis=1)
-    #     return accuracy.compute(predictions=predictions, references=labels)
 
     # training_args = TrainingArguments(
     #     output_dir="clf",
@@ -87,9 +90,8 @@ def main(
     #     compute_metrics=compute_metrics,
     # )
     
-
     # Test
-    test_llama(model, tokenizer, x_test, y_test, id2label)
+    test_llama(model, tokenizer, test_dataset)
 
     
 if __name__ == "__main__":

@@ -73,33 +73,4 @@ def get_stac_dialogs():
             stac_dialogs[curr_id] = context
     return stac_dialogs
 
-def test_llama(model, tokenizer, x_test, y_test, id2label):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    y_pred,y_true = [],[]
-    total = len(x_test)
-
-    for i,elem in enumerate(x_test):
-        model_input = tokenizer(elem, return_tensors="pt").to(device)
-
-        print(model_input["input_ids"].shape)
-        generations = model.generate(model_input["input_ids"], max_length=4096)
-        generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
-
-
-        answer = generated_text.split("\n")[-1]
-        y_pred.append(answer)
-        y_true.append(y_test[i])
-
-        print(f'\n\n\n***** Example #{i}')
-        print(f'***** Model generated text: {generated_text}')
-        print(f'***** Model answer label {answer}')
-        print(f'***** Correct label {y_test[i]}')
-
-    correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
-    f1_macro,f1_micro = f1_score(y_true, y_pred, average='macro'), f1_score(y_true, y_pred, average='micro')
-
-    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
-    print(f"F1 Macro: {f1_macro}")
-    print(f"F1 Micro: {f1_micro}")
 
