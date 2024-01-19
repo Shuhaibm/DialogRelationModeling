@@ -6,9 +6,10 @@ import json
 from helpers import *
 
 class DataLoader():
-    def __init__(self, tokenizer, prompt_function):
+    def __init__(self, tokenizer, prompt_function, max_length):
         self.tokenizer = tokenizer
         self.prompt_function = prompt_function
+        self.max_length = max_length
         
         self.train_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/train_stac.json'))
         self.dev_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/dev_stac.json'))
@@ -77,33 +78,59 @@ class DataLoader():
         x_dev,y_dev = self.prepare_dataset(self.dev_stac)
         x_test,y_test = self.prepare_dataset(self.test_stac)
 
-        train_df = pd.DataFrame({'feature': x_train, 'label': y_train})
+        train_df = pd.DataFrame({'prompt': x_train, 'target': y_train})
         train_dataset = Dataset.from_pandas(train_df)
 
-        dev_df = pd.DataFrame({'feature': x_dev, 'label': y_dev})
+        dev_df = pd.DataFrame({'prompt': x_dev, 'target': y_dev})
         dev_dataset = Dataset.from_pandas(dev_df)
 
-        test_df = pd.DataFrame({'feature': x_test, 'label': y_test})
+        test_df = pd.DataFrame({'prompt': x_test, 'target': y_test})
         test_dataset = Dataset.from_pandas(test_df)
 
         return train_dataset,dev_dataset,test_dataset
     
     def tokenize_dataset(self, dataset):
-        return dataset
-        #TODO: Tokenize the dataset, prepare it for finetuning!
-        # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        # train_dataset,dev_dataset,test_dataset = self.get_data()
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-        # tokenizer = self.tokenizer
-        # def tokenize_function(examples):
-        #     return tokenizer(examples['feature'], padding='max_length', truncation=True, max_length=4096, return_tensors="pt").to(device)
+        combined_inputs = [f'{elem["prompt"]} {elem["target"]}' for elem in dataset]
+        tokenized_inputs = self.tokenizer(combined_inputs, padding=True, truncation='only_first', max_length=self.max_length, return_tensors='pt')
+        tokenized_inputs.labels = []
 
-        # train_dataset = train_dataset.map(tokenize_function, batched=True)
-        # dev_dataset = dev_dataset.map(tokenize_function, batched=True)
-        # test_dataset = test_dataset.map(tokenize_function, batched=True)
+        tokenized_dataset = []
+        for i,elem in enumerate(dataset):
+            x,y = elem["prompt"],elem["target"]
 
-        # return train_dataset,dev_dataset,test_dataset
-    
+            tokenized_prompt = self.tokenizer(x, return_tensors="pt")
+            tokenized_target = self.tokenizer(y, return_tensors="pt")
+            target_len,prompt_len = tokenized_target.input_ids.size(1),tokenized_prompt.input_ids.size(1)
+
+            # set attention mask to 0 --> for text we want to predict
+            tokenized_inputs.attention_mask[i][prompt_len:prompt_len+target_len] = 0
+            # set label value to -100 --> for everything we want to ignore
+            labels = torch.full(tokenized_inputs.input_ids[i].shape, -100)
+            labels[prompt_len:prompt_len+target_len-1] = tokenized_inputs.input_ids[i][prompt_len:prompt_len+target_len-1]
+
+            tokenized_dataset.append({
+                "input_ids": tokenized_inputs.input_ids[i],
+                "attention_mask": tokenized_inputs.attention_mask[i],
+                "labels": labels
+            })
+
+        return tokenized_dataset
 
 
+# from transformers import AutoTokenizer
+# from prompts import *
 
+# tokenizer = AutoTokenizer.from_pretrained("./tokenizer")
+# t = DataLoader(tokenizer,get_prompt_3)
+
+# train_dataset,dev_dataset,test_dataset = t.get_data()
+# a = t.tokenize_dataset(train_dataset)
+
+
+# # Set print options to increase threshold
+# torch.set_printoptions(threshold=10_000)
+# print(a)
+
+# print(a.labels)

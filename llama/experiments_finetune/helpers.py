@@ -73,4 +73,11 @@ def get_stac_dialogs():
             stac_dialogs[curr_id] = context
     return stac_dialogs
 
+def log_memory_usage(i):
+    torch.cuda.empty_cache()
 
+    print(f'Log memory: {i}')
+    allocated_memory = torch.cuda.memory_allocated() / (1024 ** 3) # Convert bytes to GB
+    reserved_memory = torch.cuda.memory_reserved() / (1024 ** 3) # Convert bytes to GB
+    print(f"Allocated memory: {allocated_memory:.2f} GB")
+    print(f"Reserved memory: {reserved_memory:.2f} GB")
