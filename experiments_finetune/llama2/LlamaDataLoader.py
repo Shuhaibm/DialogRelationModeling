@@ -5,15 +5,15 @@ import torch
 import json
 from helpers import *
 
-class DataLoader():
+class LlamaDataLoader():
     def __init__(self, tokenizer, prompt_function, max_length):
         self.tokenizer = tokenizer
         self.prompt_function = prompt_function
         self.max_length = max_length
         
-        self.train_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/train_stac.json'))
-        self.dev_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/dev_stac.json'))
-        self.test_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/llama/experiments_finetune/data/test_stac.json'))
+        self.train_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/data/train_stac.json'))
+        self.dev_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/data/dev_stac.json'))
+        self.test_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/data/test_stac.json'))
 
         self.id2label = {0: "(0) Comment", 1: "(1) Clarification question", 2: "(2) Question answer pair", 3: "(3) Continuation",
                     4: "(4) Acknowledgement", 5: "(5) Question elaboration", 6: "(6) Result", 7: "(7) Elaboration", 8: "(8) Explanation",
@@ -123,7 +123,7 @@ class DataLoader():
 # from prompts import *
 
 # tokenizer = AutoTokenizer.from_pretrained("./tokenizer")
-# t = DataLoader(tokenizer,get_prompt_3)
+# t = LlamaDataLoader(tokenizer,get_prompt_3)
 
 # train_dataset,dev_dataset,test_dataset = t.get_data()
 # a = t.tokenize_dataset(train_dataset)
