@@ -3,7 +3,7 @@ import os
 import shutil
 import json
 from collections import OrderedDict
-from helpers import *
+from DialogRelationModeling.experiments_finetune.models.helpers import *
 
 stac_dialogs = get_stac_dialogs()
 test_stac_qud = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/qud/qud_question_classification/data/test_stac_qud.json'))

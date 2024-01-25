@@ -56,9 +56,35 @@ def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
     print(f"F1 Macro: {f1_macro}")
     print(f"F1 Micro: {f1_micro}")
 
+def collect_questions(model, tokenizer, test_dataset, max_length):
+    print("\nCollecting Questions")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    question_dataset = test_dataset.copy()
+    for i,elem in enumerate(test_dataset):
+        x,y = elem["prompt"],elem["target"]
+
+        model_input = tokenizer(x, return_tensors="pt").to(device)
+        generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
+        generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+
+        generated_question = generated_text.split("[/INST] ")[-1]
+
+        print(f'\n\n\n***** Example #{i}')
+        print(f'***** Model generated text: {generated_text}')
+        print(f'***** Model question: {generated_question}')
+        print(f'***** Target question: {y}')
+
+        question_dataset[i]["question"] = generated_question
+        print(question_dataset[i])
+    
+    return question_dataset
+
+
 def main(
     model_type,
     prompt_fn,
+    followup_fn,
     max_length,
     batch_size,
     learning_rate,
@@ -151,14 +177,24 @@ def main(
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=tokenized_train_dataset[:1000], #use a subset for hyperparameter tuning
+        train_dataset=tokenized_train_dataset,
         data_collator=data_collator,
     )
 
     trainer.train()
 
+    # Collect Questions
+    question_dataset = collect_questions(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    print(question_dataset)
+    
+    with open('dev_question_data_1.json', 'w') as file:
+        # Write JSON data to the file
+        json.dump(question_dataset, file)
+    question_dataset.to_json('dev_question_data_2.json', orient='records', lines=True)
+
+    
     # Test
-    test_model(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label )
+    # test_model(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label )
 
     
 if __name__ == "__main__":
@@ -176,8 +212,8 @@ if __name__ == "__main__":
     print(f'Random seed: {args.random_seed}\n')
     print(f'Model type: {args.model_type}\nPrompt: {args.prompt}\nMax length: {args.max_length}\nBatch size: {args.batch_size}\nLearning rate: {args.learning_rate}\nEpochs: {args.epochs}\n\n')
 
-    if args.prompt == 3:
-        prompt = get_prompt_3
-
+    if args.prompt == 8:
+        prompt,followup = get_prompt_8,get_followup_prompt_8
+    
     lr = float(args.learning_rate) if args.learning_rate else None
-    main(args.model_type, prompt, args.max_length, args.batch_size, lr, args.epochs)
+    main(args.model_type, prompt, followup, args.max_length, args.batch_size, lr, args.epochs)
