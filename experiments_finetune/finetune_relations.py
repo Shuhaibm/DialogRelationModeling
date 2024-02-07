@@ -4,7 +4,7 @@ from optimum.bettertransformer import BetterTransformer
 from peft import (get_peft_model, LoraConfig, TaskType, prepare_model_for_int8_training)
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 from torch.distributed.fsdp import (FullyShardedDataParallel as FSDP)
-
+from sklearn.metrics import f1_score
 import sys
 sys.path.append('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/models')
 
@@ -14,6 +14,10 @@ from models.helpers import *
 from prompts import *
 from models.LlamaDataLoader import *
 from models.MistralDataLoader import *
+
+
+from transformers import logging as hf_logging
+hf_logging.set_verbosity_debug()
 
 def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
     print("\ntesting")
@@ -50,7 +54,7 @@ def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
                 break
         if not added: f1_y_pred.append(-1)
     
-    f1_macro,f1_micro = f1_score(f1_y_true, f1_y_pred, average='macro'), f1_score(y_true, y_pred, average='micro')
+    f1_macro,f1_micro = f1_score(f1_y_true, f1_y_pred, average='macro'), f1_score(f1_y_true, f1_y_pred, average='micro')
 
     print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
     print(f"F1 Macro: {f1_macro}")
@@ -92,10 +96,13 @@ def main(
             model.save_pretrained(base_model_dir)
             tokenizer.save_pretrained(tokenizer_dir)
 
+        print("Dataloader")
         dataloader = LlamaDataLoader(tokenizer, prompt_fn, max_length)
 
+        print("Quantizing")
         # quantization
         model = prepare_model_for_int8_training(model)
+        print("PEFT")
         # PEFT
         peft_config = LoraConfig(
             task_type=TaskType.CAUSAL_LM,
@@ -106,6 +113,7 @@ def main(
             target_modules = ["q_proj", "v_proj"]
         )
         model = get_peft_model(model, peft_config)
+        print("DONE")
 
     elif model_type == "mistral":
         # dataloader = MistralDataLoader(tokenizer, prompt_fn, max_length)
@@ -129,7 +137,7 @@ def main(
 
     # Load data
     print("\nloading data")
-    train_dataset,dev_dataset,test_dataset = dataloader.get_question_data()
+    train_dataset,dev_dataset,test_dataset = dataloader.get_relation_data()
     tokenized_train_dataset,tokenized_dev_dataset = dataloader.tokenize_dataset(train_dataset),dataloader.tokenize_dataset(dev_dataset)
 
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
@@ -144,18 +152,22 @@ def main(
         logging_strategy="steps",
         logging_steps=10,
         per_device_train_batch_size=batch_size, #2, 3
-        # learning_rate=learning_rate,#try 1e-4, 2e-4, 3e-4, 1e-5,2e-5,3e-5,4e-5,5e-5
-        # num_train_epochs=epochs, #try 2-4
+        learning_rate=learning_rate,#try 1e-4, 2e-4, 3e-4, 1e-5,2e-5,3e-5,4e-5,5e-5
+        num_train_epochs=epochs, #try 2-4
     )
 
     trainer = Trainer(
         model=model,
         args=training_args,
-        train_dataset=tokenized_train_dataset[:1000], #use a subset for hyperparameter tuning
+        train_dataset=tokenized_train_dataset,
         data_collator=data_collator,
     )
 
     trainer.train()
+    print("Done training")
+
+    if model_type == "llama2": model.save_pretrained(f"./models/llama2/LlamaRelationPredictor")
+    if model_type == "mistral": model.save_pretrained(f"./models/mistral/MistralRelationPredictor")
 
     # Test
     test_model(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label )

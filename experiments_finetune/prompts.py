@@ -1,6 +1,6 @@
 from models.helpers import *
 
-system_message = {
+system_message_1 = {
         "role": "system", 
         "content": f"""Respond with only one of the following labels. The labels are listed below, along with their definitions:
                 (0) Comment: when the second utterance provides an opinion or evaluation of the first utterance
@@ -22,13 +22,36 @@ system_message = {
 Please respond with one of the labels, without adding any additional information or context."""
     }
 
+system_message_2 = {
+        "role": "system", 
+        "content": f"""Respond with the a question that aligns with one of the gold standard question types.
+                (0) How is the content or situation in the previous statement being personally evaluated or commented on?
+                (1) Can you provide more details or clarify what you just mentioned?
+                (2) What is the response to the previously asked question?",
+                (3) What additional information or details are provided on the same topic?
+                (4) Is there an acknowledgment in response to the previous statement or situation?
+                (5) What further clarification or information is being sought with the follow-up question?
+                (6) What is the effect or result caused by the first statement?
+                (7) How is the initial statement or situation further detailed or expanded upon?
+                (8) What is the reason or cause for this situation?
+                (9) Is the first statement being corrected or refuted as factual or accurate?
+                (10) Is there a statement that contrasts or differs in theme or consequence from the first statement?
+                (11) What will be the outcome if a certain condition is met?
+                (12) What background or context information sets the stage for the main event or situation?
+                (13) What happens next in the sequence of events?
+                (14) What are the different options or alternatives presented?
+                (15) Is there a statement that shares a common theme or idea with the first statement?
+
+Please respond with only a question, without adding any additional information or context."""
+    }
+
 def get_prompt_3(dialog, utterance_1, utterance_2):
     user_message = {
         "role": "user",
         "content": f'Given the following dialog: \n{dialog} \nWhat is the relation between \'{utterance_1}\' and \'{utterance_2}\'? Please provide only the label that best fits your response, and refrain from including any extra details or examples.'
     }
 
-    return [system_message, user_message]
+    return [system_message_1, user_message]
 
 def get_prompt_8(dialog, utterance_1, utterance_2):
     user_message = {
@@ -36,7 +59,7 @@ def get_prompt_8(dialog, utterance_1, utterance_2):
         "content": f'Given the following dialog: \n{dialog} \nGenerate a question that is raised from the first utterance and answered by the second utterance. The first utterance is \'{utterance_1}\' and the second utterance is \'{utterance_2}\'. Please only respond with the question, without adding any additional information or context.'
     }
 
-    return [system_message, user_message]
+    return [system_message_2, user_message]
 
 def get_followup_prompt_8(dialog, utterance_1, utterance_2, question):
     messages = get_prompt_8(dialog, utterance_1, utterance_2)
@@ -49,3 +72,11 @@ def get_followup_prompt_8(dialog, utterance_1, utterance_2, question):
     }
 
     return messages + [assistant_message, user_message]
+
+def get_question_prompt_10(dialog, utterance_1, utterance_2):
+    user_message = {
+        "role": "user",
+        "content": f'Given the following dialog: \n{dialog} \nGenerate a question that is raised from the first utterance and answered by the second utterance. The first utterance is \'{utterance_1}\' and the second utterance is \'{utterance_2}\'. Please only respond with the question, without adding any additional information or context.'
+    }
+
+    return [system_message_2, user_message]
