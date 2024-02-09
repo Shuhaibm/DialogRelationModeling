@@ -40,6 +40,9 @@ def test_model(model, tokenizer, dataset, max_length, label2id, id2label):
         print(f'***** Model relation {generated_relation}')
         print(f'***** Target relation {y}')
 
+
+
+    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
     correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
     f1_y_true = [label2id[y_true_elem] for y_true_elem in y_true]
     f1_y_pred = []
