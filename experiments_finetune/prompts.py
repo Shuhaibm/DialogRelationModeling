@@ -62,16 +62,19 @@ def get_prompt_8(dialog, utterance_1, utterance_2):
     return [system_message_2, user_message]
 
 def get_followup_prompt_8(dialog, utterance_1, utterance_2, question):
-    messages = get_prompt_8(dialog, utterance_1, utterance_2)
+    user_message_1 = {
+        "role": "user",
+        "content": f'Given the following dialog: \n{dialog} \nGenerate a question that is raised from the first utterance and answered by the second utterance. The first utterance is \'{utterance_1}\' and the second utterance is \'{utterance_2}\'. Please only respond with the question, without adding any additional information or context.'
+    }
     
     assistant_message = {"role": "assistant", "content": question}
 
-    user_message = {
+    user_message_2 = {
         "role": "user",
         "content": f'Now predict the relation between \'{utterance_1}\' and \'{utterance_2}\'? Please respond with one of the labels, without adding any additional information or context.'
     }
 
-    return messages + [assistant_message, user_message]
+    return [system_message_2, user_message_1, assistant_message, user_message_2]
 
 def get_question_prompt_10(dialog, utterance_1, utterance_2):
     user_message = {

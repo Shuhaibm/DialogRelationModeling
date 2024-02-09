@@ -170,7 +170,7 @@ def main(
     if model_type == "mistral": model.save_pretrained(f"./models/mistral/MistralRelationPredictor")
 
     # Test
-    test_model(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label )
+    test_model(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label)
 
     
 if __name__ == "__main__":

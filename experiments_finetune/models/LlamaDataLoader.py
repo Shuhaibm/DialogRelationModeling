@@ -34,7 +34,7 @@ class LlamaDataLoader(DataLoader):
 
         dialog_final = ""
         for prompt, answer in zip(dialog[::2],dialog[1::2]):
-            curr_elem = f"{BOS}{B_INST} {(prompt['content']).strip()} {E_INST} {(answer['content']).strip()} {EOS}",
+            curr_elem = f"{BOS}{B_INST} {(prompt['content']).strip()} {E_INST} {(answer['content']).strip()} {EOS}"
             dialog_final += curr_elem
         
         assert (
