@@ -86,25 +86,15 @@ def main(
     # Load model and tokenizer
     print("\nloading model and tokenizer")
     if model_type == "llama2":
-        base_model_dir,tokenizer_dir = "./models/llama2/LlamaForCausalLM","./models/llama2/tokenizer"
-        if os.path.exists(base_model_dir) and os.path.exists(tokenizer_dir):
-            model = LlamaForCausalLM.from_pretrained(base_model_dir, load_in_8bit=True, device_map="auto", use_cache=False)#.to(device)
-            tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
-            
-            tokenizer.add_special_tokens({"pad_token":"<pad>"})
-            model.resize_token_embeddings(len(tokenizer))
-            model.config.pad_token_id = tokenizer.pad_token_id
-            model.embed_tokens = torch.nn.Embedding(model.config.vocab_size, model.config.hidden_size, padding_idx=tokenizer.pad_token_id)
+        base_model_dir,tokenizer_dir = "./models/llama2/LlamaRelationPredictor","./models/llama2/tokenizer"
 
-        else:
-            tokenizer = AutoTokenizer.from_pretrained("./models/llama2/tokenizer")
-            model = LlamaForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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", device_map="auto", use_cache=False)
-
-            tokenizer.pad_token_id = tokenizer.eos_token_id
-            tokenizer.padding_side = "right"
-
-            model.save_pretrained(base_model_dir)
-            tokenizer.save_pretrained(tokenizer_dir)
+        model = LlamaForCausalLM.from_pretrained(base_model_dir, load_in_8bit=True, device_map="auto", use_cache=False)#.to(device)
+        tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
+        
+        tokenizer.add_special_tokens({"pad_token":"<pad>"})
+        model.resize_token_embeddings(len(tokenizer))
+        model.config.pad_token_id = tokenizer.pad_token_id
+        model.embed_tokens = torch.nn.Embedding(model.config.vocab_size, model.config.hidden_size, padding_idx=tokenizer.pad_token_id)
 
         print("Dataloader")
         dataloader = LlamaDataLoader(tokenizer, prompt_fn, max_length)
@@ -125,25 +115,7 @@ def main(
         model = get_peft_model(model, peft_config)
         print("DONE")
 
-    elif model_type == "mistral":
-        # dataloader = MistralDataLoader(tokenizer, prompt_fn, max_length)
-
-        base_model_dir,tokenizer_dir = "./models/mistral/model","./models/mistral/tokenizer" #TODO update /mistral/model once i have it downloaded
-        if os.path.exists(base_model_dir) and os.path.exists(tokenizer_dir):
-            model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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", device_map="auto", use_cache=False)
-            tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
-        else:
-            model_id = "mistralai/Mistral-7B-Instruct-v0.2"
-            
-            tokenizer = AutoTokenizer.from_pretrained(model_id)
-            tokenizer.save_pretrained(tokenizer_dir)
-            model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16)
-            model.save_pretrained(base_model_dir)
-
-            return
-        
-        # TODO: add mistral configs if needed
-
+ 
 
     # Load data
     print("\nloading data")
@@ -151,33 +123,6 @@ def main(
     tokenized_train_dataset,tokenized_dev_dataset = dataloader.tokenize_dataset(train_dataset),dataloader.tokenize_dataset(dev_dataset)
 
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
-
-
-    # Fine tune
-    print("\nfinetuning")
-    training_args = TrainingArguments(
-        output_dir="output_dir",
-        overwrite_output_dir=True,
-        save_strategy="no",
-        logging_strategy="steps",
-        logging_steps=10,
-        per_device_train_batch_size=batch_size, #2, 3
-        # learning_rate=learning_rate,#try 1e-4, 2e-4, 3e-4, 1e-5,2e-5,3e-5,4e-5,5e-5
-        # num_train_epochs=epochs, #try 2-4
-    )
-
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized_train_dataset,
-        data_collator=data_collator,
-    )
-
-    trainer.train()
-    print("Done training")
-
-    if model_type == "llama2": model.save_pretrained(f"./models/llama2/LlamaRelationPredictor")
-    if model_type == "mistral": model.save_pretrained(f"./models/mistral/MistralRelationPredictor")
 
     # Get confusion matrix
     prediction_to_true_label = test_model(model, tokenizer, tokenized_train_dataset, max_length, dataloader.label2id, dataloader.id2label)
