@@ -5,6 +5,7 @@ from peft import (get_peft_model, LoraConfig, TaskType, prepare_model_for_int8_t
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 from torch.distributed.fsdp import (FullyShardedDataParallel as FSDP)
 from sklearn.utils import shuffle
+from sklearn.metrics import f1_score
 
 import sys
 sys.path.append('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/models')
@@ -42,8 +43,8 @@ def test_model(model, tokenizer, dataset, max_length, label2id, id2label):
 
 
 
-    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
     correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
+    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
     f1_y_true = [label2id[y_true_elem] for y_true_elem in y_true]
     f1_y_pred = []
     for y_pred_elem in y_pred:

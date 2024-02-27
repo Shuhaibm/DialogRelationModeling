@@ -60,13 +60,23 @@ def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
     print(f"F1 Macro: {f1_macro}")
     print(f"F1 Micro: {f1_micro}")
 
+    # Get confusino matrix
+    prediction_to_true_label = {} # Key = model prediction, value = list of the true answers when model predicted this
+    for i,true in enumerate(f1_y_true):
+        label,prediction = id2label[true],id2label[f1_y_pred[i]]
+        
+        if prediction not in predictions_per_label: predictions_per_label[prediction] = []
+
+        predictions_per_label[prediction].append(label)
+    
+    return prediction_to_true_label
+
+
 def main(
     model_type,
     prompt_fn,
     max_length,
     batch_size,
-    learning_rate,
-    epochs
 ):
     num_gpus = torch.cuda.device_count()
     print(f"Number of GPUs available: {num_gpus}")
@@ -152,8 +162,8 @@ def main(
         logging_strategy="steps",
         logging_steps=10,
         per_device_train_batch_size=batch_size, #2, 3
-        learning_rate=learning_rate,#try 1e-4, 2e-4, 3e-4, 1e-5,2e-5,3e-5,4e-5,5e-5
-        num_train_epochs=epochs, #try 2-4
+        # learning_rate=learning_rate,#try 1e-4, 2e-4, 3e-4, 1e-5,2e-5,3e-5,4e-5,5e-5
+        # num_train_epochs=epochs, #try 2-4
     )
 
     trainer = Trainer(
@@ -169,8 +179,19 @@ def main(
     if model_type == "llama2": model.save_pretrained(f"./models/llama2/LlamaRelationPredictor")
     if model_type == "mistral": model.save_pretrained(f"./models/mistral/MistralRelationPredictor")
 
+    # Get confusion matrix
+    prediction_to_true_label = test_model(model, tokenizer, tokenized_train_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    print("prediction_to_true_label")
+    print(prediction_to_true_label)
+    for keys,values in prediction_to_true_label.items():
+        print(keys)
+        print(values)
+    
+    
     # Test
-    test_model(model, tokenizer, test_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    print("Beginning test on dev set")
+    test_model(model, tokenizer, tokenized_dev_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    
 
     
 if __name__ == "__main__":
@@ -180,16 +201,13 @@ if __name__ == "__main__":
     parser.add_argument("--prompt", type=int, help="An integer number")
     parser.add_argument("--max_length", type=int, help="An integer number")
     parser.add_argument("--batch_size", type=int, help="An integer number")
-    parser.add_argument("--learning_rate", type=str)
-    parser.add_argument("--epochs", type=int, help="An integer number")
     args = parser.parse_args()
 
     set_seed(args.random_seed)
     print(f'Random seed: {args.random_seed}\n')
-    print(f'Model type: {args.model_type}\nPrompt: {args.prompt}\nMax length: {args.max_length}\nBatch size: {args.batch_size}\nLearning rate: {args.learning_rate}\nEpochs: {args.epochs}\n\n')
+    print(f'Model type: {args.model_type}\nPrompt: {args.prompt}\nMax length: {args.max_length}\nBatch size: {args.batch_size}\n')
 
     if args.prompt == 3:
         prompt = get_prompt_3
 
-    lr = float(args.learning_rate) if args.learning_rate else None
-    main(args.model_type, prompt, args.max_length, args.batch_size, lr, args.epochs)
+    main(args.model_type, prompt, args.max_length, args.batch_size)

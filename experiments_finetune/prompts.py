@@ -71,7 +71,7 @@ def get_followup_prompt_8(dialog, utterance_1, utterance_2, question):
 
     user_message_2 = {
         "role": "user",
-        "content": f'Now predict the relation between \'{utterance_1}\' and \'{utterance_2}\'? Please respond with one of the labels, without adding any additional information or context.'
+        "content": f'Using this question and the provided definitions, predict the relation between \'{utterance_1}\' and \'{utterance_2}\'? Please respond with one of the labels, without adding any additional information or context.'
     }
 
     return [system_message_1, user_message_1, assistant_message, user_message_2]

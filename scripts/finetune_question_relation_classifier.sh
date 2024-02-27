@@ -16,4 +16,4 @@ source env_llama/bin/activate
 cd DialogRelationModeling/experiments_finetune
 
 
-python3 finetune_questions.py --model_type llama2 --random_seed 123 --prompt 8 --max_length 2048 --batch_size 4 --size 10000
+python3 finetune_question_relation_classifier.py --model_type llama2 --random_seed 123 --prompt 8 --max_length 2048 --batch_size 4 --size 10000

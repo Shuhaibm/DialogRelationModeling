@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --mem=40G
-#SBATCH --gres=gpu:v100l:1
+#SBATCH --gres=gpu:a100:1
 #SBATCH --time=5-15:0:0   
 #SBATCH --mail-user=<mesm.shuhaib@gmail.com
 #SBATCH --mail-type=ALL
@@ -16,4 +16,4 @@ source env_llama/bin/activate
 cd DialogRelationModeling/experiments_finetune
 
 
-python3 followup.py --model_type llama2 --random_seed 123 --prompt 8 --max_length 2048 --size 5000
+python3 finetune_questions_followup.py --model_type llama2 --random_seed 123 --prompt 8 --max_length 2048 --size 10000
