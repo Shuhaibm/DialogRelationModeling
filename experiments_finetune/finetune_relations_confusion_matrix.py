@@ -4,7 +4,6 @@ from optimum.bettertransformer import BetterTransformer
 from peft import (get_peft_model, LoraConfig, TaskType, prepare_model_for_int8_training)
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 from torch.distributed.fsdp import (FullyShardedDataParallel as FSDP)
-from sklearn.metrics import f1_score
 import sys
 sys.path.append('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/models')
 
@@ -15,62 +14,91 @@ from prompts import *
 from models.LlamaDataLoader import *
 from models.MistralDataLoader import *
 
-
-from transformers import logging as hf_logging
-hf_logging.set_verbosity_debug()
-
-def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
-    print("\ntesting")
+def get_confusion_matrix(model, tokenizer, dev_dataset, max_length, label2id, id2label):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     y_pred,y_true = [],[]
-    total = len(test_dataset)
+    for i,elem in enumerate(dev_dataset):
+        x,y = elem["prompt"],elem["target"]
 
+        model_input = tokenizer(x, return_tensors="pt").to(device)
+        generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
+        generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+        generated_relation = generated_text.split("[/INST] ")[-1]
+
+        y_pred.append(generated_relation)
+        y_true.append(y)
+
+        print(f'\n\n\n***** Example #{i}')
+        print(f'***** Model generated text: {generated_text}')
+        print(f'***** Model answer label {generated_relation}')
+        print(f'***** Correct label {y}')
+
+    f1_y_true,f1_y_pred = evaluate_performance(y_true, y_pred, label2id)
+
+    # Get confusion matrix
+    prediction_to_true_label = {} # Key = model prediction, value = list of the true answers when model predicted this
+    for i,true in enumerate(f1_y_true):
+        label,prediction = id2label[true],id2label[f1_y_pred[i]]
+        
+        if prediction not in prediction_to_true_label: prediction_to_true_label[prediction] = []
+        prediction_to_true_label[prediction].append(label)
+
+    return prediction_to_true_label
+
+def test_model_with_confusion_matrix(model, tokenizer, test_dataset, max_length, prediction_to_true_label, label2id, id2label):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    y_pred,y_true = [],[]
     for i,elem in enumerate(test_dataset):
         x,y = elem["prompt"],elem["target"]
 
         model_input = tokenizer(x, return_tensors="pt").to(device)
         generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
         generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+        generated_relation = generated_text.split("[/INST] ")[-1]
 
-        answer = generated_text.split("\n")[-1]
-        y_pred.append(answer)
+        generated_label = -1
+        for label in label2id:
+            if label in generated_relation:
+                generated_label = label
+                break
+        
+        if generated_label == -1:
+            followup_message = "You have not responded with one of the given labels. Please try again."
+            followup_x = generated_text + " [INST] " + followup_message + " [/INST] "
+
+            model_input = tokenizer(followup_x, return_tensors="pt").to(device)
+            generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
+            generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+            generated_relation = generated_text.split("[/INST] ")[-1]
+        else:
+            if generated_label not in prediction_to_true_label:
+                print("SKIPPING, SOMETHINGS WRONG")
+                continue
+            followup_message = f"You predicted {generated_relation}. "
+            for relation in set(prediction_to_true_label[generated_label]):
+                percent = 100*prediction_to_true_label[generated_label].count(relation)/len(prediction_to_true_label[generated_label])
+                followup_message += f"{percent}% of the time when you predicted {generated_relation}, the correct answer was {relation}. "
+
+            followup_message += "Considering this information, predict a label, and refrain from including any extra details or examples. "
+
+            followup_x = generated_text + "[INST]" + followup_message + "[/INST]"
+
+            model_input = tokenizer(followup_x, return_tensors="pt").to(device)
+            generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
+            generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
+            generated_relation = generated_text.split("[/INST] ")[-1]
+
+        y_pred.append(generated_relation)
         y_true.append(y)
 
         print(f'\n\n\n***** Example #{i}')
         print(f'***** Model generated text: {generated_text}')
-        print(f'***** Model answer label {answer}')
+        print(f'***** Model answer label {generated_relation}')
         print(f'***** Correct label {y}')
 
-    correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
-    f1_y_true = [label2id[y_true_elem] for y_true_elem in y_true]
-    f1_y_pred = []
-    for y_pred_elem in y_pred:
-        added = False
-        for label in label2id:
-            if label in y_pred_elem:
-                f1_y_pred.append(label2id[label])
-                added = True
-                break
-        if not added: f1_y_pred.append(-1)
-    
-    f1_macro,f1_micro = f1_score(f1_y_true, f1_y_pred, average='macro'), f1_score(f1_y_true, f1_y_pred, average='micro')
-
-    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
-    print(f"F1 Macro: {f1_macro}")
-    print(f"F1 Micro: {f1_micro}")
-
-    # Get confusino matrix
-    prediction_to_true_label = {} # Key = model prediction, value = list of the true answers when model predicted this
-    for i,true in enumerate(f1_y_true):
-        label,prediction = id2label[true],id2label[f1_y_pred[i]]
-        
-        if prediction not in predictions_per_label: predictions_per_label[prediction] = []
-
-        predictions_per_label[prediction].append(label)
-    
-    return prediction_to_true_label
-
+    f1_y_true,f1_y_pred = evaluate_performance(y_true, y_pred, label2id)
 
 def main(
     model_type,
@@ -82,14 +110,13 @@ def main(
     print(f"Number of GPUs available: {num_gpus}")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
     # Load model and tokenizer
     print("\nloading model and tokenizer")
     if model_type == "llama2":
-        base_model_dir,tokenizer_dir = "./models/llama2/LlamaRelationPredictor","./models/llama2/tokenizer"
+        base_model_dir,tokenizer_dir = "./models/llama2/LlamaForCausalLM","./models/llama2/tokenizer"
 
-        model = LlamaForCausalLM.from_pretrained(base_model_dir, load_in_8bit=True, device_map="auto", use_cache=False)#.to(device)
         tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
+        model = AutoModelForCausalLM.from_pretrained(base_model_dir, load_in_8bit=True, device_map="auto", use_cache=False)
         
         tokenizer.add_special_tokens({"pad_token":"<pad>"})
         model.resize_token_embeddings(len(tokenizer))
@@ -100,10 +127,8 @@ def main(
         dataloader = LlamaDataLoader(tokenizer, prompt_fn, max_length)
 
         print("Quantizing")
-        # quantization
         model = prepare_model_for_int8_training(model)
         print("PEFT")
-        # PEFT
         peft_config = LoraConfig(
             task_type=TaskType.CAUSAL_LM,
             inference_mode=False,
@@ -113,8 +138,6 @@ def main(
             target_modules = ["q_proj", "v_proj"]
         )
         model = get_peft_model(model, peft_config)
-        print("DONE")
-
  
 
     # Load data
@@ -125,18 +148,19 @@ def main(
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
 
     # Get confusion matrix
-    prediction_to_true_label = test_model(model, tokenizer, tokenized_train_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    prediction_to_true_label = get_confusion_matrix(model, tokenizer, dev_dataset, max_length, dataloader.label2id, dataloader.id2label)
     print("prediction_to_true_label")
     print(prediction_to_true_label)
     for keys,values in prediction_to_true_label.items():
         print(keys)
         print(values)
-    
-    
+
     # Test
-    print("Beginning test on dev set")
-    test_model(model, tokenizer, tokenized_dev_dataset, max_length, dataloader.label2id, dataloader.id2label)
-    
+    print("\n\n Test on test set, without confusion matrix")
+    get_confusion_matrix(model, tokenizer, test_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    print("\n\n Test on test set, with confusion matrix")
+    test_model_with_confusion_matrix(model, tokenizer, test_dataset, max_length, prediction_to_true_label, dataloader.label2id, dataloader.id2label)
+
 
     
 if __name__ == "__main__":

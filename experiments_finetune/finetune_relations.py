@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, DataCollatorWithPadding, LlamaForCausalLM, AutoModelForCausalLM, TrainingArguments, Trainer, set_seed
+from transformers import AutoTokenizer, DataCollatorWithPadding, LlamaForCausalLM, AutoModelForCausalLM, TrainingArguments, Trainer, set_seed, TrainerCallback
 import torch
 from optimum.bettertransformer import BetterTransformer
 from peft import (get_peft_model, LoraConfig, TaskType, prepare_model_for_int8_training)
@@ -19,13 +19,27 @@ from models.MistralDataLoader import *
 from transformers import logging as hf_logging
 hf_logging.set_verbosity_debug()
 
-def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
-    print("\ntesting")
+class CustomCallback(TrainerCallback):
+    def __init__(self, trainer) -> None:
+        super().__init__()
+        self._trainer = trainer
+    
+    def on_epoch_end(self, args, state, control, **kwargs):
+        dev_dataset = self._trainer.eval_dataset
+        
+        print("*** Begin Post Epoch Evaluate ***")
+        id2label = {0: "Comment", 1: "Clarification question", 2: "Question answer pair", 3: "Continuation",
+                    4: "Acknowledgement", 5: "Question elaboration", 6: "Result", 7: "Elaboration", 8: "Explanation",
+                    9: "Correction", 10: "Contrast", 11: "Conditional", 12: "Background", 13: "Narration",
+                    14: "Alternation", 15: "Parallel"}
+        label2id = {v: k for k, v in id2label.items()}
+        test_model(self._trainer.model, self._trainer.tokenizer, dev_dataset, label2id, id2label)
+        print("*** Done Post Epoch Evaluate ***")
+
+def test_model(model, tokenizer, test_dataset, label2id, id2label, max_length=2048):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     y_pred,y_true = [],[]
-    total = len(test_dataset)
-
     for i,elem in enumerate(test_dataset):
         x,y = elem["prompt"],elem["target"]
 
@@ -33,7 +47,7 @@ def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
         generations = model.generate(input_ids=model_input["input_ids"], max_new_tokens=max_length+500)
         generated_text = tokenizer.decode(generations[0], skip_special_tokens=True)
 
-        answer = generated_text.split("\n")[-1]
+        answer = generated_text.split("[/INST] ")[-1]
         y_pred.append(answer)
         y_true.append(y)
 
@@ -42,23 +56,7 @@ def test_model(model, tokenizer, test_dataset, max_length, label2id, id2label):
         print(f'***** Model answer label {answer}')
         print(f'***** Correct label {y}')
 
-    correct = sum([1 for i in range(total) if y_true[i] in y_pred[i]])
-    f1_y_true = [label2id[y_true_elem] for y_true_elem in y_true]
-    f1_y_pred = []
-    for y_pred_elem in y_pred:
-        added = False
-        for label in label2id:
-            if label in y_pred_elem:
-                f1_y_pred.append(label2id[label])
-                added = True
-                break
-        if not added: f1_y_pred.append(-1)
-    
-    f1_macro,f1_micro = f1_score(f1_y_true, f1_y_pred, average='macro'), f1_score(f1_y_true, f1_y_pred, average='micro')
-
-    print(f'accuracy: {correct/total}, total: {len(y_true)}, correct: {correct}')
-    print(f"F1 Macro: {f1_macro}")
-    print(f"F1 Micro: {f1_micro}")
+    evaluate_performance(y_true, y_pred, label2id)
 
 def main(
     model_type,
@@ -71,7 +69,6 @@ def main(
     num_gpus = torch.cuda.device_count()
     print(f"Number of GPUs available: {num_gpus}")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
     # Load model and tokenizer
     print("\nloading model and tokenizer")
@@ -100,10 +97,8 @@ def main(
         dataloader = LlamaDataLoader(tokenizer, prompt_fn, max_length)
 
         print("Quantizing")
-        # quantization
         model = prepare_model_for_int8_training(model)
         print("PEFT")
-        # PEFT
         peft_config = LoraConfig(
             task_type=TaskType.CAUSAL_LM,
             inference_mode=False,
@@ -113,27 +108,6 @@ def main(
             target_modules = ["q_proj", "v_proj"]
         )
         model = get_peft_model(model, peft_config)
-        print("DONE")
-
-    elif model_type == "mistral":
-        # dataloader = MistralDataLoader(tokenizer, prompt_fn, max_length)
-
-        base_model_dir,tokenizer_dir = "./models/mistral/model","./models/mistral/tokenizer" #TODO update /mistral/model once i have it downloaded
-        if os.path.exists(base_model_dir) and os.path.exists(tokenizer_dir):
-            model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf", token="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", device_map="auto", use_cache=False)
-            tokenizer = AutoTokenizer.from_pretrained(tokenizer_dir)
-        else:
-            model_id = "mistralai/Mistral-7B-Instruct-v0.2"
-            
-            tokenizer = AutoTokenizer.from_pretrained(model_id)
-            tokenizer.save_pretrained(tokenizer_dir)
-            model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16)
-            model.save_pretrained(base_model_dir)
-
-            return
-        
-        # TODO: add mistral configs if needed
-
 
     # Load data
     print("\nloading data")
@@ -141,7 +115,6 @@ def main(
     tokenized_train_dataset,tokenized_dev_dataset = dataloader.tokenize_dataset(train_dataset),dataloader.tokenize_dataset(dev_dataset)
 
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
-
 
     # Fine tune
     print("\nfinetuning")
@@ -160,17 +133,19 @@ def main(
         model=model,
         args=training_args,
         train_dataset=tokenized_train_dataset,
+        eval_dataset=dev_dataset,
+        tokenizer=tokenizer,
         data_collator=data_collator,
     )
+    trainer.add_callback(CustomCallback(trainer)) 
 
     trainer.train()
     print("Done training")
 
-    if model_type == "llama2": model.save_pretrained(f"./models/llama2/LlamaRelationPredictor")
-    if model_type == "mistral": model.save_pretrained(f"./models/mistral/MistralRelationPredictor")
+    if model_type == "llama2": model.save_pretrained(f"./models/llama2/LlamaRelationPredictor_10000")
 
     # Test
-    test_model(model, tokenizer, test_dataset, max_length, dataloader.label2id, dataloader.id2label)
+    test_model(model, tokenizer, test_dataset, dataloader.label2id, dataloader.id2label, max_length)
 
     
 if __name__ == "__main__":

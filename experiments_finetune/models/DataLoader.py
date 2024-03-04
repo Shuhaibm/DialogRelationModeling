@@ -16,10 +16,10 @@ class DataLoader(ABC):
         self.dev_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/data/dialog_relation/dev_stac.json'))
         self.test_stac = json.load(open('/home/shuhaibm/projects/def-vshwartz/shuhaibm/DialogRelationModeling/experiments_finetune/data/dialog_relation/test_stac.json'))
 
-        self.id2label = {0: "(0) Comment", 1: "(1) Clarification question", 2: "(2) Question answer pair", 3: "(3) Continuation",
-                    4: "(4) Acknowledgement", 5: "(5) Question elaboration", 6: "(6) Result", 7: "(7) Elaboration", 8: "(8) Explanation",
-                    9: "(9) Correction", 10: "(10) Contrast", 11: "(11) Conditional", 12: "(12) Background", 13: "(13) Narration",
-                    14: "(14) Alternation", 15: "(15) Parallel"}
+        self.id2label = {0: "Comment", 1: "Clarification question", 2: "Question answer pair", 3: "Continuation",
+                    4: "Acknowledgement", 5: "Question elaboration", 6: "Result", 7: "Elaboration", 8: "Explanation",
+                    9: "Correction", 10: "Contrast", 11: "Conditional", 12: "Background", 13: "Narration",
+                    14: "Alternation", 15: "Parallel", -1: "Invalid label"}
         self.label2id = {v: k for k, v in self.id2label.items()}
 
     @abstractmethod

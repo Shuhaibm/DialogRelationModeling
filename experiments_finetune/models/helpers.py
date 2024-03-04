@@ -1,23 +1,24 @@
 import torch
 from torch.nn.functional import softmax
 import jsonlines
+from sklearn.metrics import f1_score
 
-correct_relations = {"Elaboration": "(7) Elaboration",
-                        "Explanation": "(8) Explanation",
-                        "Acknowledgement": "(4) Acknowledgement",
-                        "Question_answer_pair": "(2) Question answer pair",
-                        "Q_Elab": "(5) Question elaboration",
-                        "Clarification_question": "(1) Clarification question",
-                        "Comment": "(0) Comment",
-                        "Narration": "(13) Narration",
-                        "Continuation": "(3) Continuation",
-                        "Contrast": "(10) Contrast",
-                        "Parallel": "(15) Parallel",
-                        "Result": "(6) Result",
-                        "Background": "(12) Background",
-                        "Conditional": "(11) Conditional",
-                        "Alternation": "(14) Alternation",
-                        "Correction": "(9) Correction"
+correct_relations = {"Elaboration": "Elaboration",
+                        "Explanation": "Explanation",
+                        "Acknowledgement": "Acknowledgement",
+                        "Question_answer_pair": "Question answer pair",
+                        "Q_Elab": "Question elaboration",
+                        "Clarification_question": "Clarification question",
+                        "Comment": "Comment",
+                        "Narration": "Narration",
+                        "Continuation": "Continuation",
+                        "Contrast": "Contrast",
+                        "Parallel": "Parallel",
+                        "Result": "Result",
+                        "Background": "Background",
+                        "Conditional": "Conditional",
+                        "Alternation": "Alternation",
+                        "Correction": "Correction"
                         }
 
 relation_to_gpt4_gold_standard_question = {"Elaboration": "How is the initial statement or situation further detailed or expanded upon?",
@@ -80,3 +81,24 @@ def log_memory_usage(i):
     reserved_memory = torch.cuda.memory_reserved() / (1024 ** 3) # Convert bytes to GB
     print(f"Allocated memory: {allocated_memory:.2f} GB")
     print(f"Reserved memory: {reserved_memory:.2f} GB")
+
+def evaluate_performance(y_true, y_pred, label2id):
+    correct = sum([1 for i,y_true_elem in enumerate(y_true) if y_true_elem in y_pred[i]])
+    f1_y_true = [label2id[y_true_elem] for y_true_elem in y_true]
+    f1_y_pred = []
+    for y_pred_elem in y_pred:
+        added = False
+        for label in label2id:
+            if label in y_pred_elem:
+                f1_y_pred.append(label2id[label])
+                added = True
+                break
+        if not added: f1_y_pred.append(-1)
+    
+    f1_macro,f1_micro = f1_score(f1_y_true, f1_y_pred, average='macro'), f1_score(f1_y_true, f1_y_pred, average='micro')
+
+    print(f'accuracy: {correct/len(y_true)}, total: {len(y_true)}, correct: {correct}')
+    print(f"F1 Macro: {f1_macro}")
+    print(f"F1 Micro: {f1_micro}")
+
+    return f1_y_true,f1_y_pred
